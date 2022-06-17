@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* 
+========================================
+MAIN
+========================================
+*/
+
+body {
+	overflow-y: scroll;
+	background: #313131;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	  sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#main {
+    margin: 50px 28% 150px 28%;
+	background: #212121;
+	color: #c9d1d9;
+}
+
+.header {
+    text-align: center;
+}
+
+.container {
+    min-height: 60%;
+    min-width: 40%;
+	
+    padding: 25px 50px;
+	margin-top: 35px;
+
+    border-style: outset;
+    border-color: #00000017;
+	border-radius: 10px;
+}
+
+.btn {
+	cursor: pointer;
+    padding: 5px 5px;
+	background-color:darkcyan;
+	color: whitesmoke;
+    font-size: 1.1em;
+}
+.btn:hover {
+	background-color:#00bcd4;
+}
+.btn:active {
+	opacity: 0.8;
+	background-color:#00bcd4;
+}
+
+.btn.link {
+    cursor: pointer;
+    padding: 5px 5px;
+    background-color: darkcyan;
+    color: whitesmoke;
+    font-size: 1.1em;
+    margin-right: 5px;
+    float: right;
+    border-style: solid;
+    border-color: #212121;
+    border-width: 0.2em;
+    text-decoration: none;
+}
+.btn.link:link { text-decoration: none; }
+.btn.link:visited { text-decoration: none; }
+.btn.link:hover {
+	background-color:#00bcd4;
+    text-decoration: none;
+}
+.btn.link:active {
+	opacity: 0.8;
+	background-color:#00bcd4;
+    text-decoration: none;
+}
+
+.div {
+    border-style: solid;
+}
+
+.div.header {
+    border-top: 2.5em;
+    border-color: #c9d1d9;
+    margin: 10px auto;
+    width: 65%;
+}
+
+.div.page {
+    border-color: #313131;
+    margin: 10px auto;
+    width: 85%;
+}
+
+.div.footer {
+    border-color: #313131;
+    margin: 10px auto;
+}
+
+.testFrame {
+    border-style: inset;
+    border-color: #f8f8f817;
+	width: 100%;
+    height: 150px;
+}
+
+.testImage {
+    opacity: 0.6;
+    background-image: url(./res/img/background_border.png);
+    background-position: -250px -250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+
+    border-radius: 2.5em;
+
+    background-image: url(./res/img/avatar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: lighten;
+}
