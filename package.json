@@ -1,7 +1,7 @@
 {
   "name": "morick-tech-site",
   "version": "0.1.0",
-  "homepage": "https://morickclive.github.io/Profile",
+  "homepage": "https://morickclive.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "feature-react -d build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
