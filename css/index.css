@@ -3,6 +3,38 @@
 	padding: 0;
 }
 
+p {
+    margin-bottom: 25px;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+/* 
+========================================
+FOREGROUND/BACKGROUND LAYERS
+========================================
+*/
+#frontLayer, #backLayer { 
+    width: 100%; 
+}
+
+#frontLayer { 
+    z-index: 3;
+    position: absolute; 
+}
+
+#backLayer { 
+    z-index: 1;
+    min-height: 100vh; 
+    opacity: 0.6;
+    background-image: url(./res/img/background.jpg);
+    position: fixed;
+    mix-blend-mode: multiply;
+	-webkit-filter: blur(8px);
+	filter: blur(8px);
+}
 
 /* 
 ========================================
@@ -22,74 +54,144 @@ body {
 }
 
 #main {
-    margin: 50px 28% 150px 28%;
-	background: #212121;
-	color: #c9d1d9;
+    margin: 150px 30vw;
+    margin-top: 50px;
+    display: flex;
 }
 
-.header {
+#nameHeader {
+    margin: 25px auto;
     text-align: center;
 }
 
+#avatar {
+    width: 250px;
+    height: 250px;
+
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+
+    border-style: solid;
+    border-color: #404040;
+    border-radius: 2.5em;
+
+    background-image: url(./res/img/avatar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: difference;
+}
+
+#roleTitle {
+    color: #00a6a9;
+    text-align: center;
+    margin: 50px auto;
+}
+
 .container {
-    min-height: 60%;
-    min-width: 40%;
-	
     padding: 25px 50px;
-	margin-top: 35px;
-
-    border-style: outset;
-    border-color: #00000017;
-	border-radius: 10px;
+    
+    color: #d2d2d2;
+    background: #121212;
+    border-style: solid;
+    border-color: #404040;
+    border-radius: 10px;
 }
 
-.btn {
-	cursor: pointer;
-    padding: 5px 5px;
-	background-color:darkcyan;
-	color: whitesmoke;
+#skillList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 25px;
+}
+#skillList ul {
+    padding-left: 50px;
+}
+
+#navLayer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#navLayer li {
+    margin-bottom: 15px;
+    padding: 5px 10px;
+
+    background-color: #a23e004a;
+    color: whitesmoke;
     font-size: 1.1em;
+    font-family: math;
+    text-align: right;
+
+    border-style: solid;
+    border-color: #404040;
+    border-radius: 10px 0px 0px 10px;
+    border-width: 0.2em;
+    border-right-style: none;
+
+    cursor: pointer;
 }
-.btn:hover {
+#navLayer li:hover {
 	background-color:#00bcd4;
+    text-decoration: none;
 }
-.btn:active {
+#navLayer li:active {
 	opacity: 0.8;
 	background-color:#00bcd4;
+    text-decoration: none;
 }
+
+/* 
+========================================
+BUTTONS
+========================================
+*/
 
 .btn.link {
     cursor: pointer;
     padding: 5px 5px;
-    background-color: darkcyan;
+    background-color: #a23e0080;
     color: whitesmoke;
     font-size: 1.1em;
     margin-right: 5px;
-    float: right;
     border-style: solid;
-    border-color: #212121;
+    border-color: #030303;
     border-width: 0.2em;
+    font-family: math;
     text-decoration: none;
 }
 .btn.link:link { text-decoration: none; }
 .btn.link:visited { text-decoration: none; }
 .btn.link:hover {
-	background-color:#00bcd4;
+	background-color:#00bcd480;
     text-decoration: none;
 }
 .btn.link:active {
 	opacity: 0.8;
-	background-color:#00bcd4;
+	background-color:#00bcd4f0;
     text-decoration: none;
 }
 
+#socialMediaBar {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+}
+
+/* 
+========================================
+PAGE DIVIDES
+========================================
+*/
 .div {
     border-style: solid;
 }
 
 .div.header {
     border-top: 2.5em;
-    border-color: #c9d1d9;
+    border-color: #9b9b9b;
     margin: 10px auto;
     width: 65%;
 }
@@ -103,39 +205,4 @@ body {
 .div.footer {
     border-color: #313131;
     margin: 10px auto;
-}
-
-.testFrame {
-    border-style: inset;
-    border-color: #f8f8f817;
-	width: 100%;
-    height: 150px;
-}
-
-.testImage {
-    opacity: 0.6;
-    background-image: url(./res/img/background_border.png);
-    background-position: -250px -250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-}
-
-.avatar {
-    width: 250px;
-    height: 250px;
-
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 50px;
-
-    border-radius: 2.5em;
-
-    background-image: url(./res/img/avatar.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    mix-blend-mode: lighten;
 }
