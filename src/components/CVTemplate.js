@@ -26,7 +26,7 @@ const ProfileHeader = () => {
 const Footer = () => {
     return <>
         <div className="div footer" />
-        <p className="italic">Interested in contacting me for a development/dev-test role?<br />Please reach out on LinkedIn.</p>
+        <p className="italic">Interested in knowing more or contacting me for a role?<br />Please reach out on LinkedIn.</p>
         <div className="div footer" />
         <p  className="italic" style={{"float": "left"}}>This project is hosted on GitHub.</p>
         
