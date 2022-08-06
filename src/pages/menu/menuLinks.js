@@ -4,9 +4,9 @@ const Menu = () => {
 return <>
     <nav>
     <ul className="menuOptions">
-        <Link to="/Profile"><li>Profile</li></Link>
-        <Link to="/Experience"><li>Experience</li></Link>
-        <Link to="/AboutMe"><li>About Me</li></Link>
+        <Link to="/profile"><li>Profile</li></Link>
+        <Link to="/experience"><li>Experience</li></Link>
+        <Link to="/about_me"><li>About Me</li></Link>
     </ul>
     </nav>
     <Outlet />
