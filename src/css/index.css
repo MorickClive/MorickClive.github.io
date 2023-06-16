@@ -42,21 +42,102 @@ MAIN
 ========================================
 */
 
-body {
-	overflow-y: scroll;
-	background: #313131;
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-	  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-	  sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+/*========================================
+MAIN: NON-DESKTOP
+*/
+@media screen and (max-width: 500px) {
+
+    #main {
+        margin: 50px 10vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        padding: 15px 25px;
+        
+        color: #d2d2d2;
+        background: #121212;
+        border-style: solid;
+        border-color: #404040;
+        border-radius: 10px;
+        
+        overflow-x: scroll;
+    }
+
+    #avatar {
+        width: 150px;
+        height: 150px;
+    
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    
+        border-style: solid;
+        border-color: #404040;
+        border-radius: 2.5em;
+    
+        background-image: url(./img/avatar.png);
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        mix-blend-mode: difference;
+    }
+    
+}
+/*========================================
+MAIN: DESKTOP
+*/
+@media (min-width: 501px) {
+
+    #main {
+        margin: 50px 30vw;
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    .container {
+        padding: 25px 50px;
+        
+        color: #d2d2d2;
+        background: #121212;
+        border-style: solid;
+        border-color: #404040;
+        border-radius: 10px;
+    }
+
+    #avatar {
+        width: 250px;
+        height: 250px;
+
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 50px;
+
+        border-style: solid;
+        border-color: #404040;
+        border-radius: 2.5em;
+
+        background-image: url(./img/avatar.png);
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        mix-blend-mode: difference;
+    }
+    
 }
 
-#main {
-    margin: 50px 30vw;
-    display: flex;
-    flex-direction: column;
+body {
+    overflow-y: scroll;
+    background: #313131;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 #nameHeader {
@@ -64,39 +145,10 @@ body {
     text-align: center;
 }
 
-#avatar {
-    width: 250px;
-    height: 250px;
-
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 50px;
-
-    border-style: solid;
-    border-color: #404040;
-    border-radius: 2.5em;
-
-    background-image: url(./img/avatar.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    mix-blend-mode: difference;
-}
-
 #roleTitle {
     color: #00a6a9;
     text-align: center;
     margin: 50px auto;
-}
-
-.container {
-    padding: 25px 50px;
-    
-    color: #d2d2d2;
-    background: #121212;
-    border-style: solid;
-    border-color: #404040;
-    border-radius: 10px;
 }
 
 #skillList {
@@ -109,38 +161,11 @@ body {
     padding-left: 50px;
 }
 
-#navLayer ul {
+.list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    list-style: none;
-}
-
-#navLayer li {
-    margin-bottom: 15px;
-    padding: 5px 10px;
-
-    background-color: #a23e004a;
-    color: whitesmoke;
-    font-size: 1.1em;
-    font-family: math;
-    text-align: right;
-
-    border-style: solid;
-    border-color: #404040;
-    border-radius: 10px 0px 0px 10px;
-    border-width: 0.2em;
-    border-right-style: none;
-
-    cursor: pointer;
-}
-#navLayer li:hover {
-	background-color:#00bcd4;
-    text-decoration: none;
-}
-#navLayer li:active {
-	opacity: 0.8;
-	background-color:#00bcd4;
-    text-decoration: none;
+    padding-left: 50px;
 }
 
 /* 
@@ -180,7 +205,6 @@ BUTTONS
     align-content: flex-end;
 }
 
-
 .menuOptions {
     margin-left: 50px;
     display: flex;
@@ -189,25 +213,61 @@ BUTTONS
     overflow-x: hidden;
 }
 
-.menuOptions li {
-    cursor: pointer;
-    list-style: none;
+/*========================================
+TABS: NON-DESKTOP
+*/
+@media screen and (max-width: 500px) {
 
-    color: #d2d2d2;
-    background: #121212;
+    .menuOptions li {
+        cursor: pointer;
+        list-style: none;
 
-    width: 6vw;
-    margin-right: 15px;
-    padding: 5px 15px;
+        color: #d2d2d2;
+        background: #121212;
 
-    text-align: center;
-    font-weight: bolder;
-    font-variant-caps: small-caps;
+        width: 6vw;
+        margin-right: 15px;
+        padding: 5px 15px;
+
+        text-align: center;
+        font-size: 0.75em;
+        font-weight: bolder;
+        font-variant-caps: small-caps;
+        
+        border-style: solid;
+        border-color: #404040;
+        border-radius: 8px 8px 0px 0px;
+        border-bottom-style: none;
+    }
+
+}
+
+/*========================================
+TABS: DESKTOP
+*/
+@media (min-width: 501px) {
+
+    .menuOptions li {
+        cursor: pointer;
+        list-style: none;
+
+        color: #d2d2d2;
+        background: #121212;
+
+        width: 6vw;
+        margin-right: 15px;
+        padding: 5px 15px;
+
+        text-align: center;
+        font-weight: bolder;
+        font-variant-caps: small-caps;
+
+        border-style: solid;
+        border-color: #404040;
+        border-radius: 8px 8px 0px 0px;
+        border-bottom-style: none;
+    }
     
-    border-style: solid;
-    border-color: #404040;
-    border-radius: 8px 8px 0px 0px;
-    border-bottom-style: none;
 }
 
 .menuOptions li:hover {
@@ -255,4 +315,75 @@ PAGE DIVIDES
 .div.footer {
     border-color: #313131;
     margin: 10px auto;
+}
+
+/* 
+========================================
+BANNERS
+========================================
+*/
+
+.banner {
+    height: 100px;
+
+    border-style: solid none;
+    border-color: black;
+    border-width: thick;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent);
+    
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+}
+
+.bannerContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.bannerText {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-family: fantasy;
+    font-size: x-large;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    color: darkorange;
+}
+
+.banner:hover {
+    border-color: cyan;
+}
+
+#ashadow_banner { 
+    background-image: url(./img/banners/A_Shadow_banner.png);
+    background-position: center;
+}
+#cnc_banner { 
+    background-image: url(./img/banners/C&C_banner.png);
+    background-position: center;
+}
+#warrick_banner { 
+    background-image: url(./img/banners/Warrick_banner.png);
+    background-position: center;
+}
+#disseration_banner { 
+    background-image: url(./img/banners/dissertation_banner.jpg);
+    background-position: center;
+}
+#projectvale_banner { 
+    background-image: url(./img/banners/projectvale_banner.jpg);
+    background-position: center;
+}
+#unity_banner { 
+    background-image: url(./img/banners/unity_banner.jpg);
+    background-position: center;
 }
