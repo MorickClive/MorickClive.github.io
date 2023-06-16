@@ -1,5 +1,5 @@
-'use client';
 import SocialMediaBar from "./components/SocialMediaBar";
+import onSubmit from './components/onSubmit'
 
 export const metadata = { title: "Contact" };
 
@@ -19,7 +19,7 @@ const ContactInfo = () => {
         <div className="div footer" />
 
         <details><summary>[Disabled:] Custom Form (API testing required)</summary>
-            <form className="" onSubmit={onSubmit} action="https://docs.google.com/forms/d/1jGsW-O_TuuRQXRMRarApvHGZmSaSR4a39bGFF_e0kFc/formResponse" disabled >
+            <form className="" onSubmit={<onSubmit />} action="https://docs.google.com/forms/d/1jGsW-O_TuuRQXRMRarApvHGZmSaSR4a39bGFF_e0kFc/formResponse" disabled >
                 <h1>Contact Me</h1>
                 <div>
                     <label htmlFor="entry.1349333892" ><h3>Name:</h3></label>
@@ -56,30 +56,4 @@ const ContactInfo = () => {
             <SocialMediaBar />
         </div>
     </>
-}
-
-async function onSubmit(e) {
-    e.preventDefault();
-
-    let formData = new FormData(e.target);
-
-    try {
-        const response = await fetch('https://docs.google.com/forms/d/1jGsW-O_TuuRQXRMRarApvHGZmSaSR4a39bGFF_e0kFc/formResponse', {
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            method: 'POST',
-            body: formData
-        }).then(response => { alert("Email Sent!"); });
-
-        if (response.ok) {
-            alert("Email Sent!");
-        }
-    } catch (error) {
-        console.error(error);
-        alert("Something went wrong!");
-    } finally {
-        e.target.reset();
-    }
 }
