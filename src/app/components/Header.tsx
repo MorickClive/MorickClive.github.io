@@ -11,7 +11,7 @@ export default function Header() {
       <Link href="/">Home</Link>
       <Link href="/blog" className='wip'>Blog</Link>
       <Link href="/projects">Projects</Link>
-      <Link href="/about">About</Link>
+      <Link href="/work-in-progress">About</Link>
       <Link href="/contact" className="contact">Contact</Link>
     </div>
   </header>
