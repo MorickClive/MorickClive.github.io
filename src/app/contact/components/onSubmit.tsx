@@ -1,6 +1,7 @@
-export default async function onSubmit(e) {
-    e.preventDefault();
 
+export default async function onSubmit(e : React.FormEvent) {
+    e.preventDefault();
+/*
     let formData = new FormData(e.target);
 
     try {
@@ -22,4 +23,5 @@ export default async function onSubmit(e) {
     } finally {
         e.target.reset();
     }
+    */
 }
