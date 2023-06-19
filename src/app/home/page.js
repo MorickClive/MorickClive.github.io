@@ -13,7 +13,7 @@ export default function Portal() {
 
 const Splash = () => {
     return <>
-        <div id="main_page">
+        <div id="portal">
             <br />
             <h1>Welcome to my Site!</h1>
             <p>Checkout my <Link href="/about">[About Page]</Link> for more details.</p>
