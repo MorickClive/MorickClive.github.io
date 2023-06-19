@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SkillList from "./components/SkillList";
 
 export const metadata = { title: 'About' };
@@ -95,6 +96,7 @@ const Hobbies = () => {
 
         <details><summary>Game modification</summary>
             <p>I've always been inspired video games, growing up I had limited opportunities to sample the most recent releases and found myself programming content for myself from the Command & Conquer series, this developed into map creation and the exploration of games that enabled community development.</p>
+            Check out some of these <Link href='./projects#hobby_projects'>[Projects here]</Link>
             <div className="div footer" />
         </details>
 
