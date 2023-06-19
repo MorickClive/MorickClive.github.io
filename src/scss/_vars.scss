@@ -16,9 +16,9 @@ $font-weight: (
     "med":500,
     "bold":700,
 );
-$mobile: 900px;
+$mobile: 1400px;
 
-$button-color: whitesmoke;
+$button-color: $text-color;
 $button-backgroundColor: #a23e0080;
 $button-borderColor: #030303;
 $button-link-hoverColor: #00bcd480;
@@ -29,3 +29,5 @@ $div-color: #313131;
 
 $logo-size: 3.5rem;
 $primary-avatar: url(./img/avatar.png);
+$blog-avatar: url(./img/avatar.png);
+$primary-favicon: url(./favicon.ico);
