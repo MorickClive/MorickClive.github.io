@@ -1,7 +1,7 @@
 
 export const metadata = {title : '404 - Not Found'};
 
-export default function Custom404() {
+export default function NotFound() {
 	
 	return (<>
 			<div className="container">

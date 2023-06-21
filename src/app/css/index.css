@@ -51,7 +51,7 @@ form p {
 }
 form input[type=text],
 form textarea {
-  color: whitesmoke;
+  color: #bfbfbf;
   background: #1e1e1e;
   padding: 12px;
   border: 1px solid #5c5c5c;
@@ -66,13 +66,20 @@ form div {
   align-items: flex-start;
   gap: 1em;
 }
-form div.controls,
-form div container {
-  flex-direction: row-reverse;
+form .div {
+  border-style: solid;
+  border-color: #313131;
+  margin: 0% 0% 1em 0%;
 }
-
-IFRAME {
-  height: 100vh;
+form .controlBox {
+  padding: 0.2em 1em;
+  align-items: center;
+  overflow: hidden;
+  border: solid;
+  border-color: #404040;
+  border-radius: 10px;
+  min-width: 30vw;
+  margin-bottom: 1.5em;
 }
 
 details {
@@ -190,7 +197,7 @@ MAIN
 }
 @media (max-width: 1400px) {
   #main {
-    padding: 10em 10vw;
+    padding: 15em 10vw;
     padding-bottom: 0em;
   }
 }
@@ -315,7 +322,7 @@ BUTTONS
 */
 .btn.link {
   cursor: pointer;
-  padding: 0.3em;
+  padding: 0.5em;
   background-color: rgba(162, 62, 0, 0.5019607843);
   color: #bfbfbf;
   font-size: 1.1em;
@@ -326,26 +333,37 @@ BUTTONS
   font-family: math;
   text-decoration: none;
 }
-.btn.link.link:link {
-  text-decoration: none;
-}
-.btn.link.link:visited {
-  text-decoration: none;
-}
 .btn.link.link:hover {
   background-color: rgba(0, 188, 212, 0.5019607843);
-  text-decoration: none;
 }
 .btn.link.link:active {
   opacity: 0.8;
   background-color: rgba(0, 188, 212, 0.9411764706);
-  text-decoration: none;
 }
 
 #socialMediaBar {
   display: flex;
-  flex-direction: row-reverse;
-  align-content: flex-end;
+  gap: 1em;
+  padding: 0em 1em;
+}
+#socialMediaBar a {
+  color: #cb4614;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 8px;
+  border: 2px solid;
+  text-decoration: none;
+}
+#socialMediaBar a:hover {
+  color: rgba(0, 188, 212, 0.9411764706);
+  background-color: rgba(0, 188, 212, 0.5019607843);
+}
+#socialMediaBar a:active {
+  color: rgba(0, 188, 212, 0.9411764706);
+  opacity: 0.8;
+  background-color: rgba(0, 188, 212, 0.9411764706);
 }
 
 /*========================================
@@ -501,4 +519,9 @@ Cards & Card Lists
 }
 .projectCards .card a:hover {
   background-color: #14c1cb;
+}
+
+.formCard {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
