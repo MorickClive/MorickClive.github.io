@@ -1,13 +1,29 @@
 'use client'
-import onSubmit from "./onSubmit";
 
 export default async function ContactForm() {
-    return <form onSubmit={onSubmit}>
+
+    async function onSubmit(e : any) {
+        e.preventDefault();
+        let formData = new FormData(e.target);
+        try {
+            const response = await fetch('https://docs.google.com/forms/d/1jGsW-O_TuuRQXRMRarApvHGZmSaSR4a39bGFF_e0kFc/formResponse', {
+                method: 'POST',
+                body: formData
+            });
+        } catch (error) {
+            console.log(error);
+            alert("Email sent!");
+        } finally {
+            e.target.reset();
+        }
+    }
+
+    return <form action="https://docs.google.com/forms/d/1jGsW-O_TuuRQXRMRarApvHGZmSaSR4a39bGFF_e0kFc/formResponse" method="POST" target="_blank" onSubmit={onSubmit}>
         <h1>Contact Me</h1>
         <div className="div" />
         <input id="name" type="text" placeholder="Name" required={true} name="entry.1349333892" />
-        <input id="email" type="text" placeholder="Email" required={true} name="emailAddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-        <textarea id="msg" className="textarea" required={true} style={{ "height": "10em" }} name="entry.1455586602" placeholder="Message" />
+        <input id="email" type="text" placeholder="Email" required={true} name="emailAddress" />
+        <textarea id="msg" className="textarea" placeholder="Message" required={true} style={{ "height": "10em" }} name="entry.1455586602" />
 
         <div className="controlBox">
             <div className="controls">
