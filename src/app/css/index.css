@@ -22,7 +22,7 @@ body {
 }
 
 p {
-  margin: 1.2em 0em;
+  margin: 0.75em 0em;
 }
 p.gap {
   margin-bottom: 1em;
@@ -524,4 +524,94 @@ Cards & Card Lists
 .formCard {
   display: flex;
   justify-content: center;
+}
+
+.blogCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10em;
+  margin: 2em 0em;
+}
+.blogCards .card {
+  width: 95%;
+  overflow: hidden;
+  color: #bfbfbf;
+  background-color: rgba(0, 188, 212, 0.9411764706);
+  border: 0.3em solid #404040;
+  border-radius: 10px;
+  /*
+  &:hover {
+      box-shadow: 0 0px 20px 0px $nav-primary-color;
+  } */
+}
+.blogCards .card .title,
+.blogCards .card .mainTitle {
+  align-self: center;
+  margin: 0.25em 0em;
+}
+.blogCards .card .mainTitle {
+  margin: 1.25em 0em;
+}
+.blogCards .card .body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0.5em 0em;
+  padding: 0em 1em;
+  background-color: #121212;
+  border: 0.2em solid #404040;
+  border-left: 0;
+  border-right: 0;
+}
+.blogCards .card p {
+  padding: 0em 2em;
+}
+.blogCards .card h1,
+.blogCards .card h2,
+.blogCards .card h3,
+.blogCards .card h4 {
+  text-align: center;
+}
+.blogCards .card h3 {
+  margin: 0.5em 0.5em;
+}
+.blogCards .card a {
+  display: block;
+  text-decoration: none;
+  border-top: 0.2em solid #404040;
+  padding: 0.75em;
+  color: #121212;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  background-color: #6d2d03;
+  border-radius: 0px 0px 25px 25px;
+}
+.blogCards .card a:hover {
+  background-color: #14c1cb;
+}
+.blogCards .card .cardImage {
+  background-color: #9b9b9b;
+  border: 0.2em solid #404040;
+  border-radius: 1em;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+.blogCards .card .cardImage.floatLeft {
+  float: left;
+}
+.blogCards .card div .imageBlock {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em 2em;
+  flex-direction: row;
+}
+.blogCards .card div .imageBlock .cardImage {
+  flex: none;
+}
+.blogCards .card div .imageBlock p {
+  padding-left: 1.5em;
+  margin-top: 0em;
 }/*# sourceMappingURL=index.css.map */
