@@ -79,7 +79,7 @@ export default function projects() {
                     <h3>Command & Conquer: Community Map Development</h3>
                     <div className="div page" />
                     <p>A portfolio of custom Command & Conquer maps developed for the online community.</p>
-                    <a href='./work-in-progress'>Read More</a>
+                    <a href='./work-in-progress' className='wip'>Read More</a>
                 </div>
                 <div id="dst_warrick" className='card'>
                     <div className='cardImage' style={{ "backgroundImage": "url('/img/Warrick_banner.png')" }} />
