@@ -153,7 +153,7 @@ MAIN
 
     // mobile
     @include mobile {
-        padding: 10em 10vw;
+        padding: 15em 10vw;
         padding-bottom: 0em;
     }
 
@@ -285,10 +285,9 @@ MAIN
 BUTTONS
 ========================================
 */
-
 .btn.link {
     cursor: pointer;
-    padding: 0.3em;
+    padding: 0.5em;
     background-color: $button-backgroundColor;
     color: $button-color;
     font-size: 1.1em;
@@ -299,30 +298,44 @@ BUTTONS
     font-family: math;
     text-decoration: none;
 
-    &.link:link {
-        text-decoration: none;
-    }
-
-    &.link:visited {
-        text-decoration: none;
-    }
-
     &.link:hover {
         background-color: $button-link-hoverColor;
-        text-decoration: none;
     }
 
     &.link:active {
         opacity: 0.8;
         background-color: $button-link-activeColor;
-        text-decoration: none;
     }
 }
 
 #socialMediaBar {
     display: flex;
-    flex-direction: row-reverse;
-    align-content: flex-end;
+    gap: 1em;
+    padding: 0em 1em;
+    
+    a {
+        color: #cb4614;
+        font-size: 1.1em;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 7px;
+        border-radius: 8px;
+        border: 2px solid;
+        text-decoration: none;
+    
+        &:hover {
+            
+            color: $primary-accent;
+            background-color: $button-link-hoverColor;
+        }
+    
+        &:active {
+            
+            color: $primary-accent;
+            opacity: 0.8;
+            background-color: $button-link-activeColor;
+        }
+    }
 }
 
 /*========================================
@@ -491,4 +504,9 @@ Cards & Card Lists
             }
         }
     }
+}
+
+.formCard {
+    display: flex;
+    justify-content: center;
 }

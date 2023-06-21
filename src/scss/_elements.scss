@@ -1,8 +1,7 @@
-
 a {
     color: $primary-accent;
     font-weight: 700;
-    
+
     &:active {
         color: $text-color;
     }
@@ -53,13 +52,13 @@ form {
 
     input[type=text],
     textarea {
-        color: whitesmoke;
+        color: $text-color;
         background: #1e1e1e;
         padding: 12px;
         border: 1px solid #5c5c5c;
         border-radius: 4px;
         resize: vertical;
-        max-width: 100%
+        max-width: 100%;
     }
 
     div {
@@ -68,14 +67,22 @@ form {
         flex-direction: row;
         align-items: flex-start;
         gap: 1em;
-
-        &.controls,
-        container {
-            flex-direction: row-reverse;
-        }
     }
-}
 
-IFRAME {
-    height: 100vh;
+    .div {
+        border-style: solid;
+        border-color: #313131;
+        margin: 0% 0% 1em 0%;
+    }
+
+    .controlBox {
+        padding: 0.2em 1em;
+        align-items: center;
+        overflow: hidden;
+        border: solid;
+        border-color: #404040;
+        border-radius: 10px;
+        min-width: 30vw;
+        margin-bottom: 1.5em;
+    }
 }
