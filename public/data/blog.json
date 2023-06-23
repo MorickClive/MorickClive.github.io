@@ -1,0 +1,19 @@
+[
+    {"mainTitle": "JSON Data",
+        "intro": {
+            "title": "Intro",
+            "content": "<p>An update about maintenance of blog posts</p>"
+        },
+        "body": {
+            "title": "JSON Update",
+            "content": "<p>Explores hydration issues, looking at concerns about innerhtml set</p>"
+        },
+        "ending": {
+            "title": "What's Next?",
+            "content": "<p>Implement project page, consider CSS implications as a result of parsed string injection.</p>"
+        },
+        "meta": {
+            "date": "24/06/2023"
+        }
+    }
+]

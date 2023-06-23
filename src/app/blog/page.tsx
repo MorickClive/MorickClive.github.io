@@ -1,11 +1,15 @@
+import GetPosts from "./components/getPosts";
+
 export default async function Blog() {
     return <div className='blogCards' >
+
         <div id="CnC_Maps" className='card'>
             <div className="body">
 
 
                 <h2 className="mainTitle">First Post!</h2>
                 <div className="div page"></div>
+                
                 <h4 className="title">Intro</h4>
                 <p>Welcome to my blog section!</p>
                 <p>My name is Alan Davies and this is my first blog post. <br />
@@ -14,6 +18,7 @@ export default async function Blog() {
                     The objective of this section will mainly be to outline my developments, focuses and achievements as a software engineer.
                 </p>
                 <div className="div page" />
+
                 <h4 className="title">What's About?</h4>
                 <ul style={{ 'margin': '0em 3.5em' }}>
                     <li>[Home Page]</li>
@@ -24,7 +29,7 @@ export default async function Blog() {
                 </ul>
                 <p>Feel free to checkout the site and let me know if you have any feedback!</p>
                 <div className="div page"></div>
-                <p>Date Posted: 12/06/2023</p>
+                <p>Date Posted: 21/06/2023</p>
             </div>
         </div>
 
@@ -64,9 +69,11 @@ export default async function Blog() {
                 </ul>
                 <p>I may not be continuously developing the site as I come from a Java/C++ background; however, I hope it becomes a good reference for my activities and achievements.</p>
                 <div className="div page"></div>
-                <p>Date Posted: 12/06/2023</p>
+                <p>Date Posted: 21/06/2023</p>
             </div>
         </div>
+        
+        <GetPosts />
 
     </div>
 }
