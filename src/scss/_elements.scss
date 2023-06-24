@@ -1,5 +1,5 @@
 a {
-    color: $primary-accent;
+    color: $primary-link;
     font-weight: 700;
 
     &:active {
@@ -34,55 +34,14 @@ p {
     }
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    color: $text-color;
+details {
+    margin: .5em 0em;
 
-    p {
-        font-family: Arial, sans-serif;
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: .3px;
-        line-height: 16px;
-        font-style: italic;
-        color: #9d9d9d;
+    *:not(summary) {
+        margin-left: 1em;
     }
 
-    input[type=text],
-    textarea {
-        color: $text-color;
-        background: #1e1e1e;
-        padding: 12px;
-        border: 1px solid #5c5c5c;
-        border-radius: 4px;
-        resize: vertical;
-        max-width: 100%;
-    }
-
-    div {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 1em;
-    }
-
-    .div {
-        border-style: solid;
-        border-color: #313131;
-        margin: 0% 0% 1em 0%;
-    }
-
-    .controlBox {
-        padding: 0.2em 1em;
-        align-items: center;
-        overflow: hidden;
-        border: solid;
-        border-color: #404040;
-        border-radius: 10px;
-        min-width: 30vw;
-        margin-bottom: 1.5em;
+    summary {
+        cursor: pointer;
     }
 }

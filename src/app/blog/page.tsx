@@ -1,11 +1,15 @@
+import GetPosts from "./components/getPosts";
+
 export default async function Blog() {
     return <div className='blogCards' >
+
         <div id="CnC_Maps" className='card'>
             <div className="body">
 
 
                 <h2 className="mainTitle">First Post!</h2>
                 <div className="div page"></div>
+                
                 <h4 className="title">Intro</h4>
                 <p>Welcome to my blog section!</p>
                 <p>My name is Alan Davies and this is my first blog post. <br />
@@ -14,8 +18,9 @@ export default async function Blog() {
                     The objective of this section will mainly be to outline my developments, focuses and achievements as a software engineer.
                 </p>
                 <div className="div page" />
+
                 <h4 className="title">What's About?</h4>
-                <ul style={{ 'margin': '0em 3.5em' }}>
+                <ul>
                     <li>[Home Page]</li>
                     <li>[Blog Page]</li>
                     <li>[Projects Page]</li>
@@ -24,7 +29,7 @@ export default async function Blog() {
                 </ul>
                 <p>Feel free to checkout the site and let me know if you have any feedback!</p>
                 <div className="div page"></div>
-                <p>Date Posted: 12/06/2023</p>
+                <p>Date Posted: 21/06/2023</p>
             </div>
         </div>
 
@@ -42,7 +47,8 @@ export default async function Blog() {
                 <div className="imageBlock">
                     <div className='cardImage' style={{
                         "backgroundImage": "url('/img/blog/21-06-2023/theme-img.jpg')",
-                        "width": "350px", "height": "250px"
+                        "aspectRatio": "7/5",
+                        "width": "300px", "height": "200px"
                     }} />
                     <p>Designed around an art piece focusing on my Guild Wars 2 character: 'Aster', it explores silhouette themes with a limited colour palette. <br /><br />Due to the striking nature of the colour theme, it seemed reasonable to use it as a template for the site.</p>
                 </div>
@@ -55,7 +61,7 @@ export default async function Blog() {
                 <p>Part of designing this site is my focus on constructing the CSS, React/Typescript/Javascript, as well as migrating the whole site from a router-based package to Next.js</p>
                 <p>Whilst I have designs for how the website should appear in paper documentation, I wish to get the content available and then begin adapting the site around the data available as a template.</p>
                 <p>To maintain this website, I want to focus on main projects and blog posts as well as simplifying the addition of such articles. I'm outlining the following areas to work on:</p>
-                <ul style={{ 'margin': '0em 3.5em' }}>
+                <ul>
                     <li>Expanded Project pages</li>
                     <li>Image Galleries</li>
                     <li>Translate Blog posts & Project pages to JSON format</li>
@@ -64,9 +70,11 @@ export default async function Blog() {
                 </ul>
                 <p>I may not be continuously developing the site as I come from a Java/C++ background; however, I hope it becomes a good reference for my activities and achievements.</p>
                 <div className="div page"></div>
-                <p>Date Posted: 12/06/2023</p>
+                <p>Date Posted: 21/06/2023</p>
             </div>
         </div>
+        
+        <GetPosts />
 
     </div>
 }

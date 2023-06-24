@@ -1,0 +1,86 @@
+@mixin mobile() {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+.projectCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    margin: 2em 0em;
+
+    .cardImage {
+        background-color: #9b9b9b;
+        height: 15vh;
+        border-bottom: .2em solid $background-primary-border;
+        border-radius: 25px 25px 0px 0px;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    .card {
+        width: 95%;
+        border: .3em solid $background-primary-border;
+        border-radius: 2rem;
+
+        /*
+        &:hover {
+            box-shadow: 0 0px 20px 0px $nav-primary-color;
+        } */
+
+        p {
+            padding: 0em 2em;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            text-align: center;
+        }
+
+        h3 {
+            margin: .5em .5em;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            border-top: .2em solid $background-primary-border;
+            padding: .75em;
+
+            color: $background-primary-color;
+            text-align: center;
+            font-weight: bold;
+            font-size: medium;
+            background-color: #6d2d03;
+
+            border-radius: 0px 0px 25px 25px;
+
+            &:hover {
+                background-color: $nav-primary-accent;
+            }
+        }
+    }
+}
+
+.projectCard {
+    @include mobile {
+        padding: .99em 1.5em;
+        overflow-x: scroll;
+    }
+
+    padding: 1.5em 3.1em;
+    overflow: hidden;
+
+    color: $text-color;
+    background: $background-primary-color;
+    border-style: solid;
+    border-color: $background-primary-border;
+    border-radius: 10px;
+    min-width: 30vw;
+}

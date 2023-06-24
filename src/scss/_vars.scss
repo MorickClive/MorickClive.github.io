@@ -1,33 +1,47 @@
-$primary-color: #00bcd480;
+/* Primary Colours */
+$primary-color: #cb4614;
 $primary-accent: #00bcd4f0;
-$primary-warning: #c8cb14;
 
-$nav-primary-color: #cb4614;
-$nav-primary-accent: #14c1cb;
+/* Navigational Colours Background */
+$nav-primary-color: $primary-color;
+$nav-primary-accent: $primary-accent;
 $nav-primary-warning: #c8cb14;
 
+/* Main Background */
 $background-primary-color: #121212;
 $background-primary-border: #404040;
 
+/* Text */
 $text-color: #bfbfbf;
-$role-color: #00a6a9;
 $font-weight: (
     "reg":400,
     "med":500,
     "bold":700,
 );
-$mobile: 1400px;
+$primary-link: $primary-accent;
 
+/* ScrollBar */
+$primary-scroll-color: #313131;
+$primary-scroll-accent: #00bcd4f0;
+$primary-scroll-arrow: #555555;
+$primary-scroll-background: #121212;
+
+/* Buttons */
 $button-color: $text-color;
 $button-backgroundColor: #a23e0080;
 $button-borderColor: #030303;
 $button-link-hoverColor: #00bcd480;
 $button-link-activeColor: #00bcd4f0;
 
+/* Page Divides */
 $div-headerColor: #9b9b9b;
 $div-color: #313131;
 
+/* Brand & Logos*/
 $logo-size: 3.5rem;
 $primary-avatar: url(./img/avatar.png);
 $blog-avatar: url(./img/avatar.png);
 $primary-favicon: url(./favicon.ico);
+
+/* Control Variables */
+$mobile: 1400px;
