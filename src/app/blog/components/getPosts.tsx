@@ -2,18 +2,14 @@ import Data from '../../../../public/data/blog.json'
 import { BlogPost, BlogSection } from '../../../../types';
 
 export default function GetPosts() {
-
     let Posts: Array<BlogPost> = Data;
-
     return Posts.map(post => parsePost(post));
-
 }
 
 function parsePost(post: BlogPost) {
-    return <div className='card'>
+    return <div id={post.mainTitle.toLowerCase().replaceAll(' ', '_')} className='card'>
         <div className="body">
             <h2 className="mainTitle">{post.mainTitle}</h2>
-            <div className="div page"></div>
             {checkSection(post.intro)}
             {checkSection(post.body)}
             {checkSection(post.ending)}

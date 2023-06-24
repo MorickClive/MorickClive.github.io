@@ -7,7 +7,7 @@ type SkillList = {
 
 type BlogSection = {
   "title": string | null,
-  "content": JsxElement
+  "content": string
 }
 
 type BlogMeta = {
