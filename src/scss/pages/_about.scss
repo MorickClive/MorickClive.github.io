@@ -1,0 +1,62 @@
+#avatar {
+    max-width: 15.6rem;
+    max-height: 15.6rem;
+    aspect-ratio: 1/1;
+
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 3.1em;
+
+    border: .2em solid $background-primary-border;
+    border-radius: 2.5em;
+
+    background-image: $primary-avatar;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: difference;
+}
+
+#roleTitle {
+    color: $nav-primary-accent;
+    text-align: center;
+    margin: 1em auto;
+}
+
+#skillList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 1.5em;
+}
+
+#socialMediaBar {
+    display: flex;
+    gap: 1em;
+    padding: 0em 1em;
+
+    a {
+        color: #cb4614;
+        font-size: 1.1em;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 7px;
+        border-radius: 8px;
+        border: 2px solid;
+        text-decoration: none;
+
+        &:hover {
+
+            color: $primary-accent;
+            background-color: $button-link-hoverColor;
+        }
+
+        &:active {
+
+            color: $primary-accent;
+            opacity: 0.8;
+            background-color: $button-link-activeColor;
+        }
+    }
+}
