@@ -29,6 +29,19 @@
     flex-wrap: wrap;
     flex-direction: column;
     padding-left: 1.5em;
+
+    .title {
+        margin: .5em 0em;
+    }
+    
+    .skillSection {
+        margin-bottom: 1em;
+    }
+
+    details, ul {
+        margin: 0em 1.5em;
+    }
+    
 }
 
 #socialMediaBar {

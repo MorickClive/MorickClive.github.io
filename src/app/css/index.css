@@ -32,7 +32,7 @@ body {
 }
 
 p {
-  margin: 0.75em 0em;
+  margin: 0.75em 0;
 }
 p.gap {
   margin-bottom: 1em;
@@ -45,13 +45,44 @@ p.indentation {
 }
 
 details {
-  margin: 0.5em 0em;
+  margin: 0.75em 0em;
 }
 details *:not(summary) {
   margin-left: 1em;
 }
 details summary {
   cursor: pointer;
+}
+
+/* 
+========================================
+PAGE DIVIDES
+========================================
+*/
+hr {
+  border-style: solid;
+  border-color: #313131;
+  margin: 10px auto;
+  border-width: 3px;
+  width: 100%;
+}
+hr.markdown-body {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--color-border-default);
+  border: 0;
+}
+hr.header {
+  border-top: 2.5em;
+  border-color: #9b9b9b;
+  width: 65%;
+}
+hr.title {
+  margin: 0 0 1em;
+}
+hr.article {
+  width: 85%;
 }
 
 header {
@@ -130,7 +161,7 @@ header .brand div {
 }
 #portal h1,
 #portal h2 {
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 #portal a {
   color: rgba(0, 188, 212, 0.9411764706);
@@ -154,56 +185,32 @@ header .brand div {
   background-color: rgba(0, 188, 212, 0.9411764706);
   border: 0.3em solid #404040;
   border-radius: 10px;
-  /*
-  &:hover {
-      box-shadow: 0 0px 20px 0px $nav-primary-color;
-  } */
 }
-.blogCards .card .title,
-.blogCards .card .mainTitle {
-  align-self: center;
-  margin: 0.25em 0em;
-}
-.blogCards .card .mainTitle {
-  margin: 1.25em 0em;
+.blogCards .card * {
+  padding: 0em 2em;
 }
 .blogCards .card .body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 0.5em 0em;
-  padding: 0em 1em;
+  padding: 0em 1em 1em 1em;
   background-color: #121212;
   border: 0.2em solid #404040;
   border-left: 0;
   border-right: 0;
 }
-.blogCards .card * {
-  padding: 0em 2em;
+.blogCards .card .body h1, .blogCards .card .body h2, .blogCards .card .body h3, .blogCards .card .body h4 {
+  align-self: center;
 }
-.blogCards .card h1,
-.blogCards .card h2,
-.blogCards .card h3,
-.blogCards .card h4 {
-  text-align: center;
+.blogCards .card .body h1.title, .blogCards .card .body h2.title, .blogCards .card .body h3.title, .blogCards .card .body h4.title {
+  margin: 0.5em 0em;
 }
-.blogCards .card h3 {
-  margin: 0.5em 0.5em;
+.blogCards .card .body h1.mainTitle, .blogCards .card .body h2.mainTitle, .blogCards .card .body h3.mainTitle, .blogCards .card .body h4.mainTitle {
+  margin: 1em 0em;
 }
-.blogCards .card a {
-  display: block;
-  text-decoration: none;
-  border-top: 0.2em solid #404040;
-  padding: 0.75em;
-  color: #121212;
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
-  background-color: #6d2d03;
-  border-radius: 0px 0px 25px 25px;
-}
-.blogCards .card a:hover {
-  background-color: rgba(0, 188, 212, 0.9411764706);
+.blogCards .card .body ul {
+  margin: 0em 4em;
 }
 .blogCards .card .cardImage {
   background-color: #9b9b9b;
@@ -219,7 +226,7 @@ header .brand div {
 .blogCards .card div .imageBlock {
   display: flex;
   justify-content: space-between;
-  margin: 0em 2em;
+  margin: 0.5em 2em;
   flex-direction: row;
 }
 .blogCards .card div .imageBlock .cardImage {
@@ -231,8 +238,9 @@ header .brand div {
   margin-top: 0em;
 }
 
-ul {
-  margin: 0em 4em;
+.titleHeader {
+  margin: 0.5em auto;
+  text-align: center;
 }
 
 .projectCards {
@@ -334,6 +342,15 @@ ul {
   flex-direction: column;
   padding-left: 1.5em;
 }
+#skillList .title {
+  margin: 0.5em 0em;
+}
+#skillList .skillSection {
+  margin-bottom: 1em;
+}
+#skillList details, #skillList ul {
+  margin: 0em 1.5em;
+}
 
 #socialMediaBar {
   display: flex;
@@ -434,6 +451,27 @@ form .btn.link:active {
   background-color: rgba(0, 188, 212, 0.9411764706);
 }
 
+.wipBox {
+  text-align: center;
+  margin: 5vh 0vh;
+}
+.wipBox .constructionBanner {
+  background-image: repeating-linear-gradient(-45deg, rgba(200, 203, 20, 0.4509803922) 0 20px, black 20px 40px);
+  border: 0.2em solid black;
+}
+.wipBox hr.article {
+  margin: 50px auto 25px auto;
+}
+.wipBox hr.article.top {
+  margin: 50px auto;
+}
+.wipBox hr.article.bottom {
+  margin: 50px auto 25px auto;
+}
+.wipBox hr.article.footer {
+  margin: 25px auto;
+}
+
 /* 
 ========================================
 FUNCTIONS
@@ -499,11 +537,6 @@ MAIN
   }
 }
 
-.titleHeader {
-  margin: 1em auto;
-  text-align: center;
-}
-
 /* 
 ========================================
 ScrollBar
@@ -549,35 +582,4 @@ ScrollBar
 }
 ::-webkit-scrollbar-button:single-button:vertical:increment:hover {
   border-color: rgba(0, 188, 212, 0.9411764706) transparent transparent transparent;
-}
-
-/* 
-========================================
-PAGE DIVIDES
-========================================
-*/
-.div {
-  border-style: solid;
-  border-color: #313131;
-  margin: 10px auto;
-}
-.div.header {
-  border-top: 2.5em;
-  border-color: #9b9b9b;
-  width: 65%;
-}
-.div.page {
-  width: 85%;
-}
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-@media (max-width: 900px) {
-  .footer {
-    flex-direction: column;
-  }
 }/*# sourceMappingURL=index.css.map */
