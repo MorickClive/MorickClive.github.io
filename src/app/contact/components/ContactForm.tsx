@@ -20,7 +20,7 @@ export default async function ContactForm() {
 
     return <form action="https://docs.google.com/forms/d/1jGsW-O_TuuRQXRMRarApvHGZmSaSR4a39bGFF_e0kFc/formResponse" method="POST" target="_blank" onSubmit={onSubmit}>
         <h1>Contact Me</h1>
-        <div className="div" />
+        <hr className="title" />
         <input id="name" type="text" placeholder="Name" required={true} name="entry.1349333892" autoComplete="name"/>
         <input id="email" type="text" placeholder="Email" required={true} name="emailAddress" autoComplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
         <textarea id="msg" className="textarea" placeholder="Message" required={true} style={{ "height": "10em" }} name="entry.1455586602" />

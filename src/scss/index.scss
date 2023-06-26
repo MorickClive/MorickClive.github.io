@@ -6,7 +6,8 @@
 "./pages/blog",
 "./pages/projects",
 "./pages/about",
-"./pages/contactForm";
+"./pages/contactForm",
+"./pages/wip";
 
 
 /* 
@@ -104,11 +105,6 @@ MAIN
 
 }
 
-.titleHeader {
-    margin: 1em auto;
-    text-align: center;
-}
-
 /* 
 ========================================
 ScrollBar
@@ -160,37 +156,4 @@ ScrollBar
         }
     }
 
-}
-
-
-/* 
-========================================
-PAGE DIVIDES
-========================================
-*/
-.div {
-    border-style: solid;
-    border-color: #313131;
-    margin: 10px auto;
-
-    &.header {
-        border-top: 2.5em;
-        border-color: #9b9b9b;
-        width: 65%;
-    }
-
-    &.page {
-        width: 85%;
-    }
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    @media(max-width: 900px) {
-        flex-direction: column;
-    }
 }

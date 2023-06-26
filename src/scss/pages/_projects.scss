@@ -4,12 +4,18 @@
     }
 }
 
+.titleHeader {
+    margin: .5em auto;
+    text-align: center;
+}
+
 .projectCards {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3em;
     margin: 2em 0em;
+
 
     .cardImage {
         background-color: #9b9b9b;
