@@ -19,7 +19,7 @@ body {
 }
 
 p {
-    margin: .75em 0em;
+    margin: .75em 0;
 
     &.gap {
         margin-bottom: 1em;
@@ -35,7 +35,7 @@ p {
 }
 
 details {
-    margin: .5em 0em;
+    margin: .75em 0em;
 
     *:not(summary) {
         margin-left: 1em;
@@ -44,4 +44,41 @@ details {
     summary {
         cursor: pointer;
     }
+}
+
+
+/* 
+========================================
+PAGE DIVIDES
+========================================
+*/
+hr {
+    border-style: solid;
+    border-color: #313131;
+    margin: 10px auto;
+    border-width: 3px;
+    width: 100%;
+
+    &.markdown-body {
+        height: 0.25em;
+        padding: 0;
+        margin: 24px 0;
+        background-color: var(--color-border-default);
+        border: 0;
+    }
+    
+    &.header {
+        border-top: 2.5em;
+        border-color: #9b9b9b;
+        width: 65%;
+    }
+
+    &.title {
+        margin: 0 0 1em;
+    }
+
+    &.article {
+        width: 85%;
+    }
+
 }

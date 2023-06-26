@@ -13,7 +13,7 @@ export default function contact() {
         
         <div className="container" >
             <SocialMediaBar />
-            <div className="div" />
+            <hr />
         </div>
     </>
 }

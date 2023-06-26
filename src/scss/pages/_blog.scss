@@ -13,14 +13,8 @@
         border: .3em solid $background-primary-border;
         border-radius: 10px;
 
-        .title,
-        .mainTitle {
-            align-self: center;
-            margin: .25em 0em;
-        }
-
-        .mainTitle {
-            margin: 1.25em 0em;
+        * {
+            padding: 0em 2em;
         }
 
         .body {
@@ -29,49 +23,26 @@
             align-items: flex-start;
 
             margin: 0.5em 0em;
-            padding: 0em 1em;
+            padding: 0em 1em 1em 1em;
             background-color: $background-primary-color;
             border: 0.2em solid $background-primary-border;
             border-left: 0;
             border-right: 0;
-        }
 
-        /*
-        &:hover {
-            box-shadow: 0 0px 20px 0px $nav-primary-color;
-        } */
+            h1,h2,h3,h4 {
+                align-self: center;
+    
+                &.title {
+                    margin: .5em 0em;
+                }
+    
+                &.mainTitle {
+                    margin: 1em 0em;
+                }
+            }
 
-        * {
-            padding: 0em 2em;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4 {
-            text-align: center;
-        }
-
-        h3 {
-            margin: .5em .5em;
-        }
-
-        a {
-            display: block;
-            text-decoration: none;
-            border-top: .2em solid $background-primary-border;
-            padding: .75em;
-
-            color: $background-primary-color;
-            text-align: center;
-            font-weight: bold;
-            font-size: medium;
-            background-color: #6d2d03;
-
-            border-radius: 0px 0px 25px 25px;
-
-            &:hover {
-                background-color: $nav-primary-accent;
+            ul {
+                margin: 0em 4em;
             }
         }
 
@@ -91,7 +62,7 @@
         div .imageBlock {
             display: flex;
             justify-content: space-between;
-            margin: 0em 2em;
+            margin: 0.5em 2em;
             flex-direction: row;
 
             .cardImage {
@@ -103,11 +74,6 @@
                 padding-left: 1.5em;
                 margin-top: 0em;
             }
-
         }
     }
-}
-
-ul {
-    margin: 0em 4em;
 }
