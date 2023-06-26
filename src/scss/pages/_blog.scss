@@ -1,0 +1,79 @@
+.blogCards {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5em;
+    margin-bottom: 8em;
+
+    .card {
+        width: 95%;
+        overflow: hidden;
+        color: $text-color;
+        background-color: $primary-accent;
+        border: .3em solid $background-primary-border;
+        border-radius: 10px;
+
+        * {
+            padding: 0em 2em;
+        }
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            margin: 0.5em 0em;
+            padding: 0em 1em 1em 1em;
+            background-color: $background-primary-color;
+            border: 0.2em solid $background-primary-border;
+            border-left: 0;
+            border-right: 0;
+
+            h1,h2,h3,h4 {
+                align-self: center;
+    
+                &.title {
+                    margin: .5em 0em;
+                }
+    
+                &.mainTitle {
+                    margin: 1em 0em;
+                }
+            }
+
+            ul {
+                margin: 0em 4em;
+            }
+        }
+
+        .cardImage {
+            background-color: #9b9b9b;
+            border: .2em solid $background-primary-border;
+            border-radius: 1em;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: cover;
+
+            &.floatLeft {
+                float: left;
+            }
+        }
+
+        div .imageBlock {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5em 2em;
+            flex-direction: row;
+
+            .cardImage {
+                flex: none;
+            }
+
+            p {
+                margin: .75em 0em;
+                padding-left: 1.5em;
+                margin-top: 0em;
+            }
+        }
+    }
+}

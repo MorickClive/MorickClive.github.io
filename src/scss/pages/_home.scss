@@ -1,0 +1,20 @@
+#portal {
+    line-height: 1;
+    text-align: center;
+    align-items: center;
+    padding: 10vh 0px;
+
+    h1,
+    h2 {
+        margin: 1em 0;
+    }
+
+    a {
+        color: $primary-accent;
+        font-weight: 700;
+
+        &:active {
+            color: $text-color;
+        }
+    }
+}

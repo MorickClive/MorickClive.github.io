@@ -1,0 +1,27 @@
+
+
+.wipBox {
+    text-align: center;
+    margin: 5vh 0vh;
+
+    .constructionBanner {
+        background-image: repeating-linear-gradient(-45deg, #c8cb1473 0 20px, black 20px 40px);
+        border: 0.2em solid black;
+    }
+
+    hr.article {
+        margin: 50px auto 25px auto;
+
+        &.top {
+            margin: 50px auto;
+        }
+
+        &.bottom {
+            margin: 50px auto 25px auto;
+        }
+
+        &.footer {
+            margin: 25px auto;
+        }
+    }
+}
