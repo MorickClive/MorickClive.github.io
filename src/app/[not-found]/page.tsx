@@ -8,7 +8,6 @@ export default function NotFound() {
 				<div style={{"textAlign":"center", "margin":" 5vh 0vh"}} >
 					<hr className="page" style={{"margin":"50px auto"}} />
 					<h1>Error 404</h1>
-					<br />
 					<h2>Page not Found!</h2>
 					<hr className="page" style={{"margin":"50px auto"}} />
 				</div>
