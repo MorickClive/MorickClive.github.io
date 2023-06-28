@@ -40,7 +40,7 @@ function projectList(param: string, projectData: Project[]) {
     return projectData
     .filter(project => project.type === param.toString())
     .map(project =>
-        <div id={project.id} className='card'>
+        <div id={project.id} className='card' key={project.id} >
             <div className='cardImage' style={{ "backgroundImage": `url('${project.banner_image}')` }} />
             <h3>{project.title}</h3>
             <hr className="article" />
