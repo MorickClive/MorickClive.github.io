@@ -2,8 +2,6 @@ import { Project } from '../../../../types';
 import getProjects from '@/lib/getProjects';
 import { Metadata, ResolvingMetadata } from 'next';
 import Link from 'next/link';
-
-export const metadata = { title: 'Project' };
    
 export async function generateMetadata(
     { params }: Params): Promise<Metadata> {
