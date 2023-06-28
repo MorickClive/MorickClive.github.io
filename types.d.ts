@@ -27,6 +27,5 @@ type Project = {
   "title" : string,
   "type": string,
   "banner_image" : string,
-  "description" : string,
-  "contents": string
+  "description" : string
 }
