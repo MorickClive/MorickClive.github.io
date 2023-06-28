@@ -1,0 +1,19 @@
+[
+    {"mainTitle": "JSON Data",
+        "intro": {
+            "title": "Intro",
+            "content": "<p>As part of the integration, I've outlined a TypeScriptXml format to inject data and encountered a blocker with how the implementation of images and image galleries might work with this.</p>"
+        },
+        "body": {
+            "title": "JSON Update",
+            "content": "<p>The implementation paints the way forward for project-specific pages generated from JSON-related data; this is a promising start. I will have to consider implementing flexible imagery blocks into the page via JSON data - it may not be able to \"float\" on the page; instead, it might have to be part of a grid or flexbox solution.</p><p>Creating a template and exploring a structured way to present blog posts has meant I've had to revisit the CSS to make it more uniform. I've pushed SCSS data into unique pages and imported them centrally; this should keep page-specific CSS maintainable by keeping page-specific styles contained.</p><p>Additionally, I've encountered the \"aspect-ratio\" property; it's pretty helpful in overcoming a bug I had with the avatar picture on the [About] page; now it scales with the available resolution, and I'm hoping to refine the responsive nature of the site as development progresses.</p>"
+        },
+        "ending": {
+            "title": "What's Next?",
+            "content": "<p>The Projects section also needs a data-driven approach for maintenance; images and their addition to this section could provide insight into adapting future blog posts.</p>"
+        },
+        "meta": {
+            "date": "24/06/2023"
+        }
+    }
+]
