@@ -13,12 +13,12 @@ export default function CreateCarousel({ height, imgList }: Params) {
                 <button className="carousel__button carousel__button--forward" >&#8656;</button>
                 <button className="carousel__button carousel__button--back" >&#8658;</button>
                 <ul>
-                    {imgList.map(img => { return <li className="carousel__slide"><a href={img} target="_blank"><img src={img} alt={alTxt} /></a></li> })}
+                    {imgList.map(img => { return <li key={img} className="carousel__slide"><a href={img} target="_blank"><img src={img} alt={alTxt} /></a></li> })}
                 </ul>
             </div>
             <div className="carousel__nav">
                 <button className="carousel__nav--pip current"></button>
-                {imgList.map(img => { return <button className="carousel__nav--pip "></button> })}
+                {imgList.map(img => { return <button key={img} className="carousel__nav--pip "></button> })}
             </div>
         </div>
     </div>;
