@@ -1,3 +1,5 @@
+import getImageGallery from "@/lib/getImageGallery";
+import CreateCarousel from "@/lib/imageCarousel";
 import Link from "next/link";
 
 export default function project() {
@@ -27,12 +29,12 @@ export default function project() {
             <hr /><p><em>Created with: C#, MonoDevelop&nbsp;and Cg shader language.</em></p>
             <p><em>Created by: Alan Davies</em></p>
             <hr />
-            <Link href={`../projects#unity_research`}>[ return ]</Link>
+            <Link className="project__return-link" href={`../projects#unity_research`}>[ return ]</Link>
         </div>
         <div className="container">
             <h2>Image Gallery</h2>
             <hr className='mainTitle' />
-            <p>Pending</p>
+            <CreateCarousel height="500px" imgList={getImageGallery("unity_research")} />
         </div>
     </>
 }

@@ -4,55 +4,63 @@
         "title": "Team Project: Assassin's Shadow",
         "type": "University",
         "banner_image": "/img/A_Shadow_banner.png",
-        "description": "A two dimensional platformer game with movement, projectiles and item pickups."
+        "description": "A two dimensional platformer game with movement, projectiles and item pickups.",
+        "imageURLs": ["/img/projects/assassins_shadow/assassin_shadow_gameplay1.png"]
     },
     {
         "id": "destruct_droid",
         "title": "Team Project: Destruct Droid",
         "type": "University",
         "banner_image": "/img/DestructDroid_banner.jpg",
-        "description": "Collaborative between programmers and technical artists remotely between two university campuses."
+        "description": "Collaborative between programmers and technical artists remotely between two university campuses.",
+        "imageURLs": ["/img/projects/destruct_droid/rio-scaled.png"]
     },
     {
         "id": "procedural_material_generation",
         "title": "Dissertation – Procedural Materials",
         "type": "University",
         "banner_image": "/img/dissertation_banner.jpg",
-        "description": "Real-time rendering techniques using shaders, using algorithmic expression to generate textures."
+        "description": "Real-time rendering techniques using shaders, using algorithmic expression to generate textures.",
+        "imageURLs": ["/img/projects/proceduralgeneration/procedural.png"]
     },
     {
         "id": "java_opengl_engine",
         "title": "OpenGl Java Project: 3D Game Engine",
         "type": "Independent",
         "banner_image": "/img/3d-engine_banner.jpg",
-        "description": "Post-University research and study: applying OpenGL experience towards Java language to express active C++ familiarity in Java."
+        "description": "Post-University research and study: applying OpenGL experience towards Java language to express active C++ familiarity in Java.",
+        "imageURLs": ["/img/projects/game_engine/render_scene.jpg"]
     },
     {
         "id": "unity_research",
         "title": "Unity Research Project: C#",
         "type": "Independent",
         "banner_image": "/img/unity_banner.jpg",
-        "description": "Post-University research and study: exploring Unity engine, building three-dimensional spaces with shaders, custom textures and models."
+        "description": "Post-University research and study: exploring Unity engine, building three-dimensional spaces with shaders, custom textures and models.",
+        "imageURLs": ["/img/projects/unity_research/unity_project_menu.png"]
     },
     {
         "id": "project_vale",
         "title": "Full-Stack Application: Project Vale",
         "type": "Independent",
         "banner_image": "/img/projectvale_banner.jpg",
-        "description": "Java refresh and full-stack application, including Java-8, JDBC connector, Spring, Junit, Javascript, React."
+        "description": "Java refresh and full-stack application, including Java-8, JDBC connector, Spring, Junit, Javascript, React.",
+        "imageURLs": []
     },
     {
         "id": "community_map_development",
         "title": "Command & Conquer: Community Map Development",
         "type": "Hobby",
         "banner_image": "/img/C&C_banner.png",
-        "description": "A portfolio of custom Command & Conquer maps developed for the online community."
+        "description": "A portfolio of custom Command & Conquer maps developed for the online community.",
+        "imageURLs": ["/img/projects/community_maps/skirmish_scriptmap.jpg"]
     },
     {
         "id": "dst_mod",
         "title": "Mod: Warrick the Afflicted, Don't Starve Together",
         "type": "Hobby",
         "banner_image": "/img/Warrick_banner.png",
-        "description": "A character mod that introduces a new custom character with unique items, structures and mechanics for Don't Starve Together game by Klei, available on the steam workshop."
+        "description": "A character mod that introduces a new custom character with unique items, structures and mechanics for Don't Starve Together game by Klei, available on the steam workshop.",
+        "imageURLs": ["/img/projects/warrick/warrick_greenobelisk.jpg"]
     }
 ]
