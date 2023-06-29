@@ -51,12 +51,7 @@ export default function project() {
                 </p>
             </details >
             <hr />
-            <Link href={`../projects#project_vale`}>[ return ]</Link>
-        </div>
-        <div className="container">
-            <h2>Image Gallery</h2>
-            <hr className='mainTitle' />
-            <p>Pending</p>
+            <Link className="project__return-link" href={`../projects#project_vale`}>[ return ]</Link>
         </div>
     </>
 }
