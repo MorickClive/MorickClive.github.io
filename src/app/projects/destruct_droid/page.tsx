@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function project() {
 
     return <>
-        <div className="container">
+        <div className="container project">
             <h2>Team Project: Destruct Droid</h2>
             <hr />
             <h4>Summary:</h4>
@@ -19,8 +19,8 @@ export default function project() {
             <p>I crafted together a tank and helicopter model that aided as an enemy, working closely with James Evans; who worked with AI aspects of the game, ensuring that the tank was able to move its turret separately from the body(to aim for shooting). I incorporated some changes right at the end with the addition of menu graphics and newly linked menu screens (Customise and Options) for the final release.</p>
             <hr />
             <h4>Final Scenes</h4>
-            <p>pending</p>
             <hr />
+            <CreateCarousel height="500px" imgList={getImageGallery("destruct_droid")} />
             <p><em>Created with: C/C++, 3DS Max, HLSL(Unreal Blueprint system).</em></p>
             <p><em><strong>Module Lecturer</strong>: Mike Reddy&nbsp;(University of South Wales)</em></p>
             <hr />
@@ -29,13 +29,7 @@ export default function project() {
             <p><em><strong>Artists team</strong>: S. Smith, various artists.</em></p>
             <p><strong>Design team</strong>: “JJ”, David, Rob</p>
             <hr />
-            <Link className="project__return-link" href={`../projects#destruct_droid`}>[ return ]</Link>
-        </div>
-
-        <div className="container">
-            <h2>Image Gallery</h2>
-            <hr className='mainTitle' />
-            <CreateCarousel height="500px" imgList={getImageGallery("destruct_droid")} />
+            <Link className="project__return-link" href={`../projects#destruct_droid`}> return </Link>
         </div>
     </>
 }

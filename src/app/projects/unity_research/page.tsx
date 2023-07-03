@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function project() {
 
     return <>
-        <div className="container">
+        <div className="container project">
             <h2>Unity Research Project: C#</h2>
             <hr />
             <h4>Summary:</h4>
@@ -22,19 +22,14 @@ export default function project() {
             <hr />
             <h4>Final Scenes</h4>
             <hr />
-            <p>- pending image gallery/carousel -</p>
+            <CreateCarousel height="500px" imgList={getImageGallery("unity_research")} />
             <hr />
             <h4><span>GitHub Repository:</span></h4>
             <p>pending</p>
             <hr /><p><em>Created with: C#, MonoDevelop&nbsp;and Cg shader language.</em></p>
             <p><em>Created by: Alan Davies</em></p>
             <hr />
-            <Link className="project__return-link" href={`../projects#unity_research`}>[ return ]</Link>
-        </div>
-        <div className="container">
-            <h2>Image Gallery</h2>
-            <hr className='mainTitle' />
-            <CreateCarousel height="500px" imgList={getImageGallery("unity_research")} />
+            <Link className="project__return-link" href={`../projects#unity_research`}> return </Link>
         </div>
     </>
 }
