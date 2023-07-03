@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function project() {
 
     return <>
-        <div className="container">
+        <div className="container project">
             <h2>Command & Conquer: Community Map Development</h2>
             <hr />
             <h4>Summary:</h4>
@@ -18,8 +18,10 @@ export default function project() {
             <hr />
             <h4>Final Scenes</h4>
             <hr />
+            <CreateCarousel height="500px" imgList={getImageGallery("community_map_development")} />
+            <hr />
             <h4>  <u>Competition winner</u></h4>
-            <p>As part of my creation efforts I entered a contest with “CnCMaps.com”, creating the map “Battle Base Koi” as my entry and succeeding at reaching first place. This contest was also highlighted by EA and included prizes by EA themselves for success: the rewards included two t-shirts, 1 Scrin mug and a signed autograph by Ric Flair (of which can be viewed below).</p>
+            <p>As part of my creation efforts I entered a contest with “CnCMaps.com”, creating the map “Battle Base Koi” as my entry and succeeding at reaching first place. This contest was also highlighted by EA and included prizes by EA themselves for success: the rewards included 2x t-shirts, 1x Scrin mug and a signed autograph by Ric Flair (of which can be in the image gallery).</p>
             <p><strong>Other successful entries</strong></p>
             <p>In total, I received three spotlights from EA and create many maps in my spare time. Though this maybe considered just level design, I also created maps that redefined game modes and scripted new ones with their own success conditions. One of these scripted maps is known as Assassin’s Shadow and was also one of the maps that was highlighted by EA.</p>
             <hr />
@@ -34,12 +36,7 @@ export default function project() {
             <hr />
             <p><em>Disclaimer:<br />I do not claim to own any part of Command and Conquer Red Alert 3, all assets/engine code belong to their respective owners. These projects were built purely for the benefit of the Red Alert 3 community from publicly available tool sets.<br /><br />If you own this material and wish it removed please <a href="../contact/">contact</a> me.</em></p>
             <hr />
-            <Link className="project__return-link" href={`../projects#community_map_development`}>[ return ]</Link>
-        </div>
-        <div className="container">
-            <h2>Image Gallery</h2>
-            <hr className='mainTitle' />
-            <CreateCarousel height="500px" imgList={getImageGallery("community_map_development")} />
+            <Link className="project__return-link" href={`../projects#community_map_development`}> return </Link>
         </div>
     </>
 }

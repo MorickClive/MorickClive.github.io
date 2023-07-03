@@ -5,7 +5,15 @@
         "type": "University",
         "banner_image": "/img/A_Shadow_banner.png",
         "description": "A two dimensional platformer game with movement, projectiles and item pickups.",
-        "imageURLs": ["/img/projects/assassins_shadow/assassin_shadow_gameplay1.png"]
+        "imageURLs": [
+            "/img/projects/assassins_shadow/as_menu.png",
+            "/img/projects/assassins_shadow/as_pausemenu.png",
+            "/img/projects/assassins_shadow/as_scenestart.png",
+            "/img/projects/assassins_shadow/as_scene2.png",
+            "/img/projects/assassins_shadow/as_sceneobjective.png",
+            "/img/projects/assassins_shadow/as_citylv1.png",
+            "/img/projects/assassins_shadow/as_citylv2.png"
+        ]
     },
     {
         "id": "destruct_droid",
@@ -13,7 +21,21 @@
         "type": "University",
         "banner_image": "/img/DestructDroid_banner.jpg",
         "description": "Collaborative between programmers and technical artists remotely between two university campuses.",
-        "imageURLs": ["/img/projects/destruct_droid/rio-scaled.png"]
+        "imageURLs": [
+            "/img/projects/destruct_droid/dd_cityatmosphere.png",
+            "/img/projects/destruct_droid/dd_manhattan.png",
+            "/img/projects/destruct_droid/dd_manhattan_full.jpg",
+            "/img/projects/destruct_droid/dd_rio-scaled.png",
+            "/img/projects/destruct_droid/dd_modelroad.png",
+            "/img/projects/destruct_droid/dd_buildingreflect.png",
+            "/img/projects/destruct_droid/dd_citydefence.png",
+            "/img/projects/destruct_droid/dd_tank_example.png",
+            "/img/projects/destruct_droid/dd_helicopter.png",
+            "/img/projects/destruct_droid/dd_shieldsample.png",
+            "/img/projects/destruct_droid/dd_ammo_pick-up.png",
+            "/img/projects/destruct_droid/dd_second_pass.png",
+            "/img/projects/destruct_droid/dd_third_pass.png"
+        ]
     },
     {
         "id": "procedural_material_generation",
@@ -21,7 +43,11 @@
         "type": "University",
         "banner_image": "/img/dissertation_banner.jpg",
         "description": "Real-time rendering techniques using shaders, using algorithmic expression to generate textures.",
-        "imageURLs": ["/img/projects/proceduralgeneration/procedural.png"]
+        "imageURLs": [
+            "/img/projects/proceduralgeneration/directx_sample_2.jpg",
+            "/img/projects/proceduralgeneration/procedural.png",
+            "/img/projects/proceduralgeneration/opengl_sample_1.jpg"
+        ]
     },
     {
         "id": "java_opengl_engine",
@@ -29,7 +55,13 @@
         "type": "Independent",
         "banner_image": "/img/3d-engine_banner.jpg",
         "description": "Post-University research and study: applying OpenGL experience towards Java language to express active C++ familiarity in Java.",
-        "imageURLs": ["/img/projects/game_engine/render_scene.jpg"]
+        "imageURLs": [
+            "/img/projects/game_engine/render_scene.jpg",
+            "/img/projects/game_engine/light_point.jpg",
+            "/img/projects/game_engine/skybox_day.jpg",
+            "/img/projects/game_engine/skybox_night.jpg",
+            "/img/projects/game_engine/stanford_uni_shaderdragon.jpg"
+        ]
     },
     {
         "id": "unity_research",
@@ -37,7 +69,19 @@
         "type": "Independent",
         "banner_image": "/img/unity_banner.jpg",
         "description": "Post-University research and study: exploring Unity engine, building three-dimensional spaces with shaders, custom textures and models.",
-        "imageURLs": ["/img/projects/unity_research/unity_project_menu.png"]
+        "imageURLs": [
+            "/img/projects/unity_research/unity_menu.png",
+            "/img/projects/unity_research/unity_levelpreview.png",
+            "/img/projects/unity_research/unity_levelload.png",
+            "/img/projects/unity_research/unity_coordhighlight.png",
+            "/img/projects/unity_research/unity_doorinteract.png",
+            "/img/projects/unity_research/unity_graphicsamples.png",
+            "/img/projects/unity_research/unity_importedproject.png",
+            "/img/projects/unity_research/unity_materialswap.png",
+            "/img/projects/unity_research/unity_movement.png",
+            "/img/projects/unity_research/unity_settings.png",
+            "/img/projects/unity_research/unity_tutorialgame.png"
+        ]
     },
     {
         "id": "project_vale",
@@ -53,7 +97,20 @@
         "type": "Hobby",
         "banner_image": "/img/C&C_banner.png",
         "description": "A portfolio of custom Command & Conquer maps developed for the online community.",
-        "imageURLs": ["/img/projects/community_maps/skirmish_scriptmap.jpg"]
+        "imageURLs": [
+            "/img/projects/community_maps/c&c_battlebase.jpg",
+            "/img/projects/community_maps/c&c_contestwinner_1.jpg",
+            "/img/projects/community_maps/c&c_contestwinner_2.jpg",
+            "/img/projects/community_maps/c&c_contestwinner_3.jpg",
+            "/img/projects/community_maps/c&c_contestwinner.jpg",
+            "/img/projects/community_maps/c&c_mykonos_1.jpg",
+            "/img/projects/community_maps/c&c_mykonos_2.jpg",
+            "/img/projects/community_maps/c&c_mykonos_3.jpg",
+            "/img/projects/community_maps/c&c_neonglory_1.jpg",
+            "/img/projects/community_maps/c&c_rewards.jpg",
+            "/img/projects/community_maps/c&c_scriptmap.jpg",
+            "/img/projects/community_maps/c&c_silentsolitude.jpg"
+        ]
     },
     {
         "id": "dst_mod",
@@ -61,6 +118,13 @@
         "type": "Hobby",
         "banner_image": "/img/Warrick_banner.png",
         "description": "A character mod that introduces a new custom character with unique items, structures and mechanics for Don't Starve Together game by Klei, available on the steam workshop.",
-        "imageURLs": ["/img/projects/warrick/warrick_greenobelisk.jpg"]
+        "imageURLs": [
+            "/img/projects/warrick/warrick_greenobelisk.jpg",
+            "/img/projects/warrick/warrick_iceobelisk.jpg",
+            "/img/projects/warrick/warrick_mechvisual.jpg",
+            "/img/projects/warrick/warrick_menu.jpg",
+            "/img/projects/warrick/warrick_shadowobelisk.jpg",
+            "/img/projects/warrick/warrick_shadows.jpg"
+        ]
     }
 ]
