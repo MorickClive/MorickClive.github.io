@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function project() {
 
     return <>
-        <div className="container">
+        <div className="container project">
             <h2>Full-Stack Application: Project Vale</h2>
             <hr />
             <h4>Summary:</h4>
@@ -51,7 +51,7 @@ export default function project() {
                 </p>
             </details >
             <hr />
-            <Link className="project__return-link" href={`../projects#project_vale`}>[ return ]</Link>
+            <Link className="project__return-link" href={`../projects#project_vale`}> return </Link>
         </div>
     </>
 }

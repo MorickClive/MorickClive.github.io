@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function project() {
 
     return <>
-        <div className="container">
+        <div className="container project">
             <h2>Mod: Warrick the Afflicted, Don't Starve Together</h2>
             <hr />
             <h4>Summary:</h4>
@@ -21,19 +21,16 @@ export default function project() {
                 <li>Drawback: sanity consistently falls</li>
             </ul>
             <p>Whilst this character has been a success and released with custom art and coding solutions, I found a job opportunity towards summer that then put this project on the backshelf in terms on maintaince.</p>
-            <p>Despite the many releases, the mod is still available to download and can be found below:</p>
-            <h4>Link to Steam Workshop page:</h4>
             <hr />
-            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=935464768" target="_blank">[ Steam Workshop: Warrick the Afflicted ]</a >
+            <h4>Link to Steam Workshop page: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=935464768" target="_blank"> [ Steam Workshop: Warrick the Afflicted ] </a ></h4>
+            <hr />
+            <h3>Image Gallery</h3>
+            <hr className='mainTitle' />
+            <CreateCarousel height="400px" imgList={getImageGallery("dst_mod")} />
             <hr />
             <p><em>Created with:<br />LUA, XML, Don't Starve Mod Tools<br />Local Testing: Don't Starve Together Dedicated Server.&nbsp;</em></p>
-            <hr />            
-            <Link className="project__return-link" href={`../projects#dst_mod`}>[ return ]</Link>
-        </div>
-        <div className="container">
-            <h2>Image Gallery</h2>
-            <hr className='mainTitle' />
-            <CreateCarousel height="500px" imgList={getImageGallery("dst_mod")} />
+            <hr />
+            <Link className="project__return-link" href={`../projects#dst_mod`}> return </Link>
         </div>
     </>
 }
