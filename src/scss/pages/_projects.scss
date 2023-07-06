@@ -12,64 +12,63 @@
 .projectCards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 3em;
-    margin: 2em 0em;
+    gap: 1rem;
 
-
-    .cardImage {
-        background-color: #9b9b9b;
-        height: 15vh;
-        border-bottom: .2em solid $background-primary-border;
-        border-radius: 25px 25px 0px 0px;
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: cover;
-        opacity: 0.8;
-    }
+    padding: 2rem;
+    border-radius: 0.3rem;
+    background: #0a0a0a;
 
     .card {
-        width: 95%;
-        border: .3em solid $background-primary-border;
-        border-radius: 2rem;
+        display: grid;
+        grid-template-columns: .1fr .5fr 1fr;
+        align-content: center;
+        overflow: hidden;
+        gap: .5rem;
+        height: 7rem;
+        border: .2rem solid $background-primary-border;
+        background: $background-primary-color;
+        border-left: none;
+        border-radius: .5rem;
+        text-decoration: none;
 
-        /*
         &:hover {
-            box-shadow: 0 0px 20px 0px $nav-primary-color;
-        } */
+            h3 {
+                color: $primary-accent;
+            }
+        }
 
-        p {
-            padding: 0em 2em;
+        .projectBar {
+            width: .4rem;
+            border-radius: 5px;
+
+            &.university {
+                background: $pip-university-color;
+            }
+
+            &.hobby {
+                background: $pip-hobby-color;
+            }
+        }
+
+        .image {
+            width: inherit;
+            height: inherit;
+            background-color: #9b9b9b;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: cover;
+        }
+
+        h3 {
+            font-size: clamp(.5rem, 1rem, 3rem);
         }
 
         h1,
         h2,
         h3,
         h4 {
+            margin: auto;
             text-align: center;
-        }
-
-        h3 {
-            margin: .5em .5em;
-        }
-
-        a {
-            display: block;
-            text-decoration: none;
-            border-top: .2em solid $background-primary-border;
-            padding: .75em;
-
-            color: $background-primary-color;
-            text-align: center;
-            font-weight: bold;
-            font-size: medium;
-            background-color: #6d2d03;
-
-            border-radius: 0px 0px 25px 25px;
-
-            &:hover {
-                background-color: $nav-primary-accent;
-            }
         }
     }
 }
@@ -83,7 +82,6 @@
     padding: 1.5em 3.1em;
     overflow: hidden;
 
-    color: $text-color;
     background: $background-primary-color;
     border-style: solid;
     border-color: $background-primary-border;

@@ -50,9 +50,17 @@
         ]
     },
     {
+        "id": "project_vale",
+        "title": "Full-Stack Application: Project Vale",
+        "type": "Hobby",
+        "banner_image": "/img/projectvale_banner.jpg",
+        "description": "Java refresh and full-stack application, including Java-8, JDBC connector, Spring, Junit, Javascript, React.",
+        "imageURLs": []
+    },
+    {
         "id": "java_opengl_engine",
         "title": "OpenGl Java Project: 3D Game Engine",
-        "type": "Independent",
+        "type": "Hobby",
         "banner_image": "/img/3d-engine_banner.jpg",
         "description": "Post-University research and study: applying OpenGL experience towards Java language to express active C++ familiarity in Java.",
         "imageURLs": [
@@ -66,7 +74,7 @@
     {
         "id": "unity_research",
         "title": "Unity Research Project: C#",
-        "type": "Independent",
+        "type": "Hobby",
         "banner_image": "/img/unity_banner.jpg",
         "description": "Post-University research and study: exploring Unity engine, building three-dimensional spaces with shaders, custom textures and models.",
         "imageURLs": [
@@ -84,16 +92,23 @@
         ]
     },
     {
-        "id": "project_vale",
-        "title": "Full-Stack Application: Project Vale",
-        "type": "Independent",
-        "banner_image": "/img/projectvale_banner.jpg",
-        "description": "Java refresh and full-stack application, including Java-8, JDBC connector, Spring, Junit, Javascript, React.",
-        "imageURLs": []
+        "id": "dst_mod",
+        "title": "Mod: Warrick the Afflicted, Don't Starve Together",
+        "type": "Hobby",
+        "banner_image": "/img/Warrick_banner.png",
+        "description": "A character mod that introduces a new custom character with unique items, structures and mechanics for Don't Starve Together game by Klei, available on the steam workshop.",
+        "imageURLs": [
+            "/img/projects/warrick/warrick_greenobelisk.jpg",
+            "/img/projects/warrick/warrick_iceobelisk.jpg",
+            "/img/projects/warrick/warrick_mechvisual.jpg",
+            "/img/projects/warrick/warrick_menu.jpg",
+            "/img/projects/warrick/warrick_shadowobelisk.jpg",
+            "/img/projects/warrick/warrick_shadows.jpg"
+        ]
     },
     {
         "id": "community_map_development",
-        "title": "Command & Conquer: Community Map Development",
+        "title": "C&C: Community Map Development",
         "type": "Hobby",
         "banner_image": "/img/C&C_banner.png",
         "description": "A portfolio of custom Command & Conquer maps developed for the online community.",
@@ -110,21 +125,6 @@
             "/img/projects/community_maps/c&c_rewards.jpg",
             "/img/projects/community_maps/c&c_scriptmap.jpg",
             "/img/projects/community_maps/c&c_silentsolitude.jpg"
-        ]
-    },
-    {
-        "id": "dst_mod",
-        "title": "Mod: Warrick the Afflicted, Don't Starve Together",
-        "type": "Hobby",
-        "banner_image": "/img/Warrick_banner.png",
-        "description": "A character mod that introduces a new custom character with unique items, structures and mechanics for Don't Starve Together game by Klei, available on the steam workshop.",
-        "imageURLs": [
-            "/img/projects/warrick/warrick_greenobelisk.jpg",
-            "/img/projects/warrick/warrick_iceobelisk.jpg",
-            "/img/projects/warrick/warrick_mechvisual.jpg",
-            "/img/projects/warrick/warrick_menu.jpg",
-            "/img/projects/warrick/warrick_shadowobelisk.jpg",
-            "/img/projects/warrick/warrick_shadows.jpg"
         ]
     }
 ]
