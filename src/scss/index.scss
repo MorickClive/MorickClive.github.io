@@ -2,6 +2,7 @@
 "./resets",
 "./elements",
 "./layout",
+"./carousel",
 "./pages/home",
 "./pages/blog",
 "./pages/projects",
@@ -101,7 +102,7 @@ MAIN
     border-color: $background-primary-border;
     border-radius: 10px;
     min-width: 30vw;
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
 
 }
 

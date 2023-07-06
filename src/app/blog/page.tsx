@@ -3,7 +3,7 @@ import GetPosts from "./components/getPosts";
 export default async function Blog() {
     return <div className='blogCards' >
 
-        <div id="CnC_Maps" className='card'>
+        <div id="first_post" className='card'>
             <div className="body">
                 <h2 className="mainTitle">First Post!</h2>
                 <hr className="article" />
@@ -33,7 +33,7 @@ export default async function Blog() {
             </div>
         </div>
 
-        <div id="dst_warrick" className='card'>
+        <div id="web_dev" className='card'>
             <div className="body">
                 <h2 className="mainTitle">Website Development</h2>
                 <hr className="article" />

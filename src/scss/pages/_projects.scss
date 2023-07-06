@@ -90,3 +90,20 @@
     border-radius: 10px;
     min-width: 30vw;
 }
+
+.project {
+    display: flex;
+    flex-direction: column;
+
+    &__return-link {
+
+        color: #cb4614;
+        font-size: 1.1em;
+        font-weight: 900;
+        text-decoration: none;
+        padding: 7px 25%;
+        border-radius: 8px;
+        border: 2px solid;
+        margin: 0 auto;
+    }
+}

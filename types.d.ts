@@ -1,4 +1,4 @@
-import { JsxElement } from "typescript"
+import { EnumType, JsxElement } from "typescript"
 
 type SkillList = {
   "Header": string,
@@ -20,4 +20,13 @@ type BlogPost = {
   "body": BlogSection | null,
   "ending": BlogSection | null,
   "meta": BlogMeta
+}
+
+type Project = {
+  "id" : string,
+  "title" : string,
+  "type": string,
+  "banner_image" : string,
+  "description" : string,
+  "imageURLs" : Array<string>
 }
