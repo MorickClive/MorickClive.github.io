@@ -1,5 +1,5 @@
 import getImageGallery from "@/lib/getImageGallery";
-import CreateCarousel from "@/lib/imageCarousel";
+import Carousel from "@/lib/imageCarousel";
 import Link from "next/link";
 
 export default function project() {
@@ -30,7 +30,7 @@ export default function project() {
             <p>As part of a collaboration with the level designer, I assisted with lighting in the final level, adding ambient lighting from city lights and fires. It was a fantastic opportunity to see how the game could develop if we had more time to pursue development.</p>
             <h4>Final Scenes:</h4>
             <hr />
-            <CreateCarousel height="400px" imgList={getImageGallery("assassins_shadow")} />
+            <Carousel height="400px" imgList={getImageGallery("assassins_shadow")} />
             <hr />
             <p><em>Created with: C, GML(Game Maker Language), Adobe Flash, GNU Image Manipulation Program.</em></p>
             <hr />
