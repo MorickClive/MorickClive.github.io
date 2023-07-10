@@ -18,14 +18,14 @@ export default function project() {
                 <li>Buildings  - representing score targets and the city/town they were in.</li>
                 <li>Enemy Ground defences.</li>
                 <ul>
-                    <li>tanks</li>
-                    <li>ships</li>
-                    <li>turrets</li>
+                    <li>Ships</li>
+                    <li>Tanks</li>
+                    <li>Turrets</li>
                 </ul>
                 <li>Enemy Air defences.</li>
                 <ul>
-                    <li>helicopters</li>
-                    <li>fighter jets</li>
+                    <li>Helicopters</li>
+                    <li>Fighter jets</li>
                 </ul>
                 <li>Unique City levels(cultural styles).</li>
                 <ul>
@@ -37,20 +37,21 @@ export default function project() {
             </ul>
             <p>My responsibility and focus in the team was to communicate and integrate the artist team’s assets into the game. My role ensured that the technical aspects of asset integration were smooth and visually matched the intended aesthetics for the project;  this included shader effects(visual effects, reflections and emissive lighting properties) for models, level creation and asset scaling.</p>
             <p>Near the project release for the assignment, unfortunately, we only received two robot models and one tank model (lacking appropriate mesh complexity to scale appropriately). Despite the limitations, we did have a scoring system that kept track of building destruction and a health bar system that would track the players' health.</p>
+            <div className="flex center" >
+                <h4>Final Scenes</h4>
+                <hr />
+                <Carousel height="400px" imgList={getImageGallery("destruct_droid")} />
+            </div>
             <p>As part of delivering a rounded experience, I wanted to ensure that we had some city defences to provide a threat to the player when they attempted to destroy the city levels; during a meeting, I presented some example models we could use as prototype tanks and helicopter models.</p>
             <p>Working closely with J. Evans, who worked with AI/pathing aspects of the game, we ensured turret movement acted separately from the body of the tank and manually tested the result of the enemy.</p>
             <p>I also worked on the menu system, creating the “Customise” and “Options” sub-menus to help control and modify the settings and rules.</p>
-
-            <h4>Final Scenes</h4>
-            <hr />
-            <Carousel height="500px" imgList={getImageGallery("destruct_droid")} />
             <hr />
             <p><em>Created with: C/C++, 3DS Max, HLSL(Unreal Blueprint system).</em></p>
             <hr />
             <details><summary><strong>Project team, 2015</strong></summary>
-                <p><strong>Programmers</strong>: <em>Alan Davies, J. Reynolds, J. Evans, K. Pabari, H. Conibere and S. Skinner.</em></p>
-                <p><strong>Artists team</strong>: <em>S. Smith, various artists.</em></p>
-                <p><strong>Design team</strong>: <em>“JJ”, David, Rob</em></p>
+                <p><strong>Programmers</strong>:<br/><em>Alan Davies, J. Reynolds, J. Evans, K. Pabari, H. Conibere and S. Skinner.</em></p>
+                <p><strong>Artists team</strong>:<br/><em>S. Smith, various artists.</em></p>
+                <p><strong>Design team</strong>:<br/><em>“JJ”, David, Rob</em></p>
             </details>
             <p><em><strong>Module Lecturer</strong>: Mike Reddy&nbsp;(University of South Wales)</em></p>
             <hr />
