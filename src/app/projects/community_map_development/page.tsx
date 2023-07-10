@@ -1,5 +1,5 @@
 import getImageGallery from "@/lib/getImageGallery";
-import CreateCarousel from "@/lib/imageCarousel";
+import Carousel from "@/lib/imageCarousel";
 import Link from "next/link";
 
 export default function project() {
@@ -18,7 +18,7 @@ export default function project() {
             <hr />
             <h4>Final Scenes</h4>
             <hr />
-            <CreateCarousel height="500px" imgList={getImageGallery("community_map_development")} />
+            <Carousel height="500px" imgList={getImageGallery("community_map_development")} />
             <hr />
             <h4>  <u>Competition winner</u></h4>
             <p>As part of my creation efforts I entered a contest with “CnCMaps.com”, creating the map “Battle Base Koi” as my entry and succeeding at reaching first place. This contest was also highlighted by EA and included prizes by EA themselves for success: the rewards included 2x t-shirts, 1x Scrin mug and a signed autograph by Ric Flair (of which can be in the image gallery).</p>

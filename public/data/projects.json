@@ -126,5 +126,21 @@
             "/img/projects/community_maps/c&c_scriptmap.jpg",
             "/img/projects/community_maps/c&c_silentsolitude.jpg"
         ]
+    },
+    {
+        "id": "pending_uni",
+        "title": "- Future Project -",
+        "type": "University",
+        "banner_image": "/img/projects/pending_projects.jpg",
+        "description": "",
+        "imageURLs": []
+    },
+    {
+        "id": "pending_hobby",
+        "title": "- Future Project - ",
+        "type": "Hobby",
+        "banner_image": "/img/projects/pending_projects.jpg",
+        "description": "",
+        "imageURLs": []
     }
 ]

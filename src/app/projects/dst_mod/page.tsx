@@ -1,5 +1,5 @@
 import getImageGallery from "@/lib/getImageGallery";
-import CreateCarousel from "@/lib/imageCarousel";
+import Carousel from "@/lib/imageCarousel";
 import Link from "next/link";
 
 export default function project() {
@@ -26,7 +26,7 @@ export default function project() {
             <hr />
             <h3>Image Gallery</h3>
             <hr className='mainTitle' />
-            <CreateCarousel height="400px" imgList={getImageGallery("dst_mod")} />
+            <Carousel height="400px" imgList={getImageGallery("dst_mod")} />
             <hr />
             <p><em>Created with:<br />LUA, XML, Don't Starve Mod Tools<br />Local Testing: Don't Starve Together Dedicated Server.&nbsp;</em></p>
             <hr />

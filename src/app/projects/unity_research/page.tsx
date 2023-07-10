@@ -1,5 +1,5 @@
 import getImageGallery from "@/lib/getImageGallery";
-import CreateCarousel from "@/lib/imageCarousel";
+import Carousel from "@/lib/imageCarousel";
 import Link from "next/link";
 
 export default function project() {
@@ -22,7 +22,7 @@ export default function project() {
             <hr />
             <h4>Final Scenes</h4>
             <hr />
-            <CreateCarousel height="500px" imgList={getImageGallery("unity_research")} />
+            <Carousel height="500px" imgList={getImageGallery("unity_research")} />
             <hr />
             <h4><span>GitHub Repository:</span></h4>
             <p>pending</p>

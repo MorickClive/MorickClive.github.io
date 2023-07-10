@@ -1,4 +1,4 @@
-import CreateCarousel from "@/lib/imageCarousel";
+import Carousel from "@/lib/imageCarousel";
 import Link from "next/link";
 
 export const metadata = { title: 'Home' };
