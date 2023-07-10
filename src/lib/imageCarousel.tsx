@@ -7,7 +7,7 @@ type Params = {
     imgList: Array<string>
 }
 
-export default function CreateCarousel({ height, imgList }: Params) {
+export default function Carousel({ height, imgList }: Params) {
     const [activeIndex, setActiveIndex] = useState(0);
 
     function moveActiveIndex(value: number) {

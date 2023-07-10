@@ -35,10 +35,20 @@ function section(param: string, projectData: Project[]) {
 function projectList(param: string, projectData: Project[]) {
     return projectData
         .filter(project => project.type === param.toString())
-        .map(project =>
-            <Link key={project.id} id={project.id} className='card' href={"./projects/" + project.id} >
-                <div className={"projectBar ".concat(project.type.toLowerCase())} />
+        .map(project => {
+            if (project.id.includes("pending")) {
+                return <Link key={project.id} id={project.id} className='card' href={"./projects"} >
+                <div className={"projectBar"} />
                 <h3>{project.title}</h3>
-                <div className='image' style={{ "backgroundImage": `url('${project.banner_image}')` }} />
-            </Link>);
+                <div className='image' style={{ "backgroundImage": `url('${project.banner_image}')`, "filter": "blur(2px)" }} />
+            </Link>
+            } else {
+                return <Link key={project.id} id={project.id} className='card' href={"./projects/" + project.id} >
+                    <div className={"projectBar ".concat(project.type.toLowerCase())} />
+                    <h3>{project.title}</h3>
+                    <div className='image' style={{ "backgroundImage": `url('${project.banner_image}')` }} />
+                </Link>
+
+            }
+        });
 }
