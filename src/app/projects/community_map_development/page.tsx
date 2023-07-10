@@ -18,7 +18,7 @@ export default function project() {
             <hr />
             <h4>Final Scenes</h4>
             <hr />
-            <Carousel height="500px" imgList={getImageGallery("community_map_development")} />
+            <Carousel height="400px" imgList={getImageGallery("community_map_development")} />
             <hr />
             <h4>  <u>Competition winner</u></h4>
             <p>As part of my creation efforts I entered a contest with “CnCMaps.com”, creating the map “Battle Base Koi” as my entry and succeeding at reaching first place. This contest was also highlighted by EA and included prizes by EA themselves for success: the rewards included 2x t-shirts, 1x Scrin mug and a signed autograph by Ric Flair (of which can be in the image gallery).</p>
@@ -27,14 +27,14 @@ export default function project() {
             <hr />
             <h4><strong>Links</strong></h4>
             <ul>
-                <li><a href="https:www.cnclabs.com/forums/default.aspx?g=posts&t=9040" target="_blank" >CnCLabs Forum post "<b>Battlebase Koi</b>"</a></li>
-                <li><a href="https:www.cnclabs.com/forums/default.aspx?g=posts&t=9015" target="_blank" >CnCLabs Forum post "<strong>A Place in the Heavens</strong>"</a></li>
+                <li><Link href="https:www.cnclabs.com/forums/default.aspx?g=posts&t=9040" target="_blank" >CnCLabs Forum post "<b>Battlebase Koi</b>"</Link></li>
+                <li><Link href="https:www.cnclabs.com/forums/default.aspx?g=posts&t=9015" target="_blank" >CnCLabs Forum post "<strong>A Place in the Heavens</strong>"</Link></li>
             </ul>
             <hr />
             <p><em>Created with: Command &; Conquer™: Red Alert™  3 World Builder, (Tool set provided by EA)</em></p>
             <p><em>Created by: Alan Davies(Tiberian Fiend), 2007-2010.</em></p>
             <hr />
-            <p><em>Disclaimer:<br />I do not claim to own any part of Command and Conquer Red Alert 3, all assets/engine code belong to their respective owners. These projects were built purely for the benefit of the Red Alert 3 community from publicly available tool sets.<br /><br />If you own this material and wish it removed please <a href="../contact/">contact</a> me.</em></p>
+            <p><em>Disclaimer:<br />I do not claim to own any part of Command and Conquer Red Alert 3, all assets/engine code belong to their respective owners. These projects were built purely for the benefit of the Red Alert 3 community from publicly available tool sets.<br /><br />If you own this material and wish it removed please <a href="../contact">contact</a> me.</em></p>
             <hr />
             <Link className="project__return-link" href={`../projects#community_map_development`}> return </Link>
         </div>

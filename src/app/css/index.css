@@ -61,6 +61,17 @@ ul {
 
 /* 
 ========================================
+div formatting
+========================================
+*/
+div.flex.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 
+========================================
 PAGE DIVIDES
 ========================================
 */
@@ -160,7 +171,7 @@ header .brand div {
 
 .carousel {
   position: relative;
-  gap: 1em;
+  gap: 0.5em;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -350,12 +361,12 @@ header .brand div {
   background: #0a0a0a;
 }
 .projectCards .card {
+  height: 7rem;
   display: grid;
   grid-template-columns: 0.1fr 0.5fr 1fr;
   align-content: center;
   overflow: hidden;
   gap: 0.5rem;
-  height: 7rem;
   border: 0.2rem solid #404040;
   background: #121212;
   border-left: none;
