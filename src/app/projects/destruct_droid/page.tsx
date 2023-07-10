@@ -40,7 +40,7 @@ export default function project() {
             <p>As part of delivering a rounded experience, I wanted to ensure that we had some city defences to provide a threat to the player when they attempted to destroy the city levels; during a meeting, I presented some example models we could use as prototype tanks and helicopter models.</p>
             <p>Working closely with J. Evans, who worked with AI/pathing aspects of the game, we ensured turret movement acted separately from the body of the tank and manually tested the result of the enemy.</p>
             <p>I also worked on the menu system, creating the “Customise” and “Options” sub-menus to help control and modify the settings and rules.</p>
-            
+
             <h4>Final Scenes</h4>
             <hr />
             <Carousel height="500px" imgList={getImageGallery("destruct_droid")} />
@@ -54,7 +54,7 @@ export default function project() {
             </details>
             <p><em><strong>Module Lecturer</strong>: Mike Reddy&nbsp;(University of South Wales)</em></p>
             <hr />
-            <Link className="project__return-link" href={`../projects#destruct_droid`}> return </Link>
+            <Link className="project__return-link" href={`../projects#destruct_droid`}> Return </Link>
         </div>
     </>
 }

@@ -343,6 +343,7 @@ header .brand div {
 .projectCards {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
   gap: 1rem;
   padding: 2rem;
   border-radius: 0.3rem;
