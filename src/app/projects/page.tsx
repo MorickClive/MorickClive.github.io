@@ -12,8 +12,8 @@ export default function projects() {
         <div className="container">
             <h2 className='titleHeader' >Overview</h2>
             <hr className="article" />
-            <p>I've worked on many different projects, I've provided a few projects below for viewing. Currently I'm looking to extend these project pages by adding image galleries and links to respective resources!<br />Currently many of the projects have been transferred from a word press site I use to use, project pages might be lacking consistency, but this has been placed on to issues to resolve.</p>
-            <p>If there is a project you'd like to know more about, contact me, I can update the site or pass you some additional details upon request.</p>
+            <p>I've worked on many different projects, I've provided a few projects below for viewing.</p>
+            <em>~ If there is a project you'd like to know more about then please contact me, I can update the site or pass you some additional details upon request. ~</em>
         </div>
         {ProjectSections(getProjects())}
     </>

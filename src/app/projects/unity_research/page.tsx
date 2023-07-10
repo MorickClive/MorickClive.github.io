@@ -22,7 +22,7 @@ export default function project() {
             <hr />
             <h4>Final Scenes</h4>
             <hr />
-            <Carousel height="500px" imgList={getImageGallery("unity_research")} />
+            <Carousel height="400px" imgList={getImageGallery("unity_research")} />
             <hr />
             <h4><span>GitHub Repository:</span></h4>
             <p>pending</p>

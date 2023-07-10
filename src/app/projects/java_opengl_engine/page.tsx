@@ -17,7 +17,7 @@ export default function project() {
             <hr />
             <h4>Sample Images</h4>
             <p><em>Dragon model credit: Stanford University Dragon model</em></p >
-            <Carousel height="500px" imgList={getImageGallery("java_opengl_engine")} />
+            <Carousel height="400px" imgList={getImageGallery("java_opengl_engine")} />
             <hr />
             <p>On reflection after industry, I can definitely see areas where this project could be made more maintainable - sadly this project suffers from a concrete dependency on a Jar that is no longer available, this drove a lot of the vector mathematics as well as texture loaders. This has presented a block on returning to this project, but the value from creating this project served an important purpose; exploring Java and implementing real-time rendering techniques in a newly introduced programming language.</p>
             <hr />
