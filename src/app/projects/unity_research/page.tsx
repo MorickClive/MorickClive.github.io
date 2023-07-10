@@ -8,28 +8,28 @@ export default function project() {
         <div className="container project">
             <h2>Unity Research Project: C#</h2>
             <hr />
-            <h4>Summary:</h4>
-            <p>An investigative project utilising my combined skills after university; exploring C#, .NET functionality and Cg Shader language.</p>
+            <p>This project was an investigation into C# and Cg Shader language in the Unity engine.</p>
             <hr />
             <h4>About:</h4>
-            <p>This project was originally developed as to learn unity for an internship with a 3D based company, sadly the prototype sent out did not receive any feedback, but I continued to investigate Unity 3D to expand my knowledge in the engine.</p>
-            <p>This project includes script-driven menus, scenes exploring 3D graphic shaders, physics, custom character controller, camera movement and .NET/system file handling.</p>
-            <p><strong>.NET usage</strong></p>
-            <p>A major feature of the .NET system in this project is the reading of files store in a public area of the projects file system. This script reads all the files, stores the names of all material files and then uses the name references to add the materials to a list that can be called upon else where.</p>
-            <p>This .NET driven system was developed due to poor support that Unity has with handling extreme numbers of materials; requiring manual click/dragging of materials to a public array. This newly created system allows for hundreds (possibly more) materials to be automatically assigned for use.</p>
-            <p><strong>Custom Raycaster</strong></p>
-            <p>Another massive development of this project is custom ray caster, the unity character controller struggles to use ray casting to target objects in a scene with a first person camera, this is due to the hiding of the mouse pointer (the dependency), I have written a custom raycaster that enables the use of interaction with the first person camera controller.</p>
-            <hr />
-            <h4>Final Scenes</h4>
-            <hr />
-            <Carousel height="400px" imgList={getImageGallery("unity_research")} />
+            <p>As part of my passion for real-time rendering, I decided to explore Unity and look at translating my shader knowledge into 3D scenes. This project coincided with a role I applied for with a company that worked with structural design; I provided the project as a demonstration of my Unity knowledge and capabilities. I received no feedback, but I continued to investigate Unity 3D to expand my knowledge of working with the engine.</p>
+            <p>This project includes script-driven menus, scenes exploring 3D graphic shaders, physics, custom character controller, camera movement and. NET/system file handling.</p>
+            <p>Using C#, I created an adapter function for a file that stored the names of all material files and referenced this hook to add the materials to any object that called this function; this proved to be a great way to allow the user to select an object in the scene to modify its respective display and demonstrate quick adjustments to the preview on request.</p>
+            <p>Part of this solution extended outside the provided tooling from the unity engine at the time; this newly created system allows hundreds of materials to be available for use, being simple to update the list in the future.</p>
+            <div className="flex center">
+                <hr />
+                <h4>Final Scenes</h4>
+                <hr />
+                <Carousel height="400px" imgList={getImageGallery("unity_research")} />
+            </div>
+            <p>Another development of this project is a custom raycaster as part of the challenge of creating interaction in a 3-dimensional space. Using a raycaster allows the user to target objects in a scene with a first-person camera by firing a line to collide with a specific object; I had to write a custom raycaster that enables the use of interaction with the first-person camera controller as the provided system for Unity had collision issues with the crosshair object and thus failed to behave successfully.</p>
+            <p>Through the combination of the raycaster and material swapper, I created a model set in the scene that a user could click on and change the texture/material that coated it; I hoped that it would present as a good feature, demonstrating different atmospheres by allowing the user to change the model - using provided materials and surfaces.</p>
             <hr />
             <h4><span>GitHub Repository:</span></h4>
             <p>pending</p>
             <hr /><p><em>Created with: C#, MonoDevelop&nbsp;and Cg shader language.</em></p>
             <p><em>Created by: Alan Davies</em></p>
             <hr />
-            <Link className="project__return-link" href={`../projects#unity_research`}> return </Link>
+            <Link className="project__return-link" href={`../projects#unity_research`}> Return </Link>
         </div>
     </>
 }
