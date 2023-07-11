@@ -4,8 +4,7 @@ import Link from "next/link";
 
 export default function project() {
 
-    return <>
-        <div className="container project">
+    return <div className="container project">
             <h2>Mod: Warrick the Afflicted, Don't Starve Together</h2>
             <hr />
             <p>Whilst seeking my first role after graduating, I began exploring ways to incorporate my passion for coding with my gaming.</p>
@@ -37,5 +36,4 @@ export default function project() {
             <hr />
             <Link className="project__return-link" href={`../projects#dst_mod`}> Return </Link>
         </div>
-    </>
 }
