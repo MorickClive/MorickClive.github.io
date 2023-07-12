@@ -2,6 +2,8 @@ import './css/index.css'
 import { Inter } from 'next/font/google'
 import { Metadata } from 'next'
 import Header from './components/Header'
+import Link from 'next/link'
+import SocialMediaBar from '@/lib/getSocialMedia'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +30,10 @@ export default function RootLayout({
             <div id="main">
               {children}
             </div>
+            <footer>
+              <SocialMediaBar />
+              <em>Alan Davies @2023</em>
+            </footer>
           </div>
           <div id="backLayer"></div>
         </div>
