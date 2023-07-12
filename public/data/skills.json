@@ -1,6 +1,7 @@
 [
-    {   "Header" : "Main Skills",
-        "List" : [
+    {
+        "Header": "Main Skills",
+        "List": [
             "Java",
             "SQL",
             "JavaScript",
@@ -9,10 +10,24 @@
             "Junit",
             "Mockito",
             "Selenium",
-            "Cucumber-Gherkin"]
+            "Cucumber-Gherkin"
+        ]
     },
-    {   "Header" : "Continuous Integration",
-        "List" : [
+    {
+        "Header": "Developer Environments",
+        "List": [
+            "Eclipse",
+            "IntelliJ",
+            "Visual Studio Code",
+            "Vim",
+            "Nano",
+            "Sublime Text",
+            "Notepad++"
+        ]
+    },
+    {
+        "Header": "Continuous Integration",
+        "List": [
             "Git",
             "Subversion/SVN",
             "Linux/Unix Bash Shell",
@@ -21,10 +36,12 @@
             "Sonarqube",
             "Tomcat",
             "Weblogic",
-            "Jenkins"]
+            "Jenkins"
+        ]
     },
-    { "Header" : "Previous Utilised",
-        "List" : [
+    {
+        "Header": "Previous Utilised",
+        "List": [
             "C++",
             "C#",
             "Lua",
@@ -37,22 +54,15 @@
             "MySQL Database",
             "H2 Database",
             "Postman",
-            "PuTTY"]
+            "PuTTY"
+        ]
     },
-    { "Header" : "Software Development Lifecycle Models",
-        "List" : [
+    {
+        "Header": "Software Development Lifecycle Models",
+        "List": [
             "Agile-Scrum",
             "V-Model",
-            "Waterfall"]
-    },
-    { "Header" : "Developer environments",
-        "List" : [
-            "Eclipse",
-            "IntelliJ",
-            "Visual Studio Code",
-            "Vim",
-            "Nano",
-            "Sublime Text",
-            "Notepad++"]
+            "Waterfall"
+        ]
     }
 ]

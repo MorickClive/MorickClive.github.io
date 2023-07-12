@@ -1,6 +1,7 @@
 /* Primary Colours */
 /* Navigational Colours Background */
 /* Main Background */
+/* Main Background */
 /* Text */
 /* ScrollBar */
 /* Buttons */
@@ -56,6 +57,17 @@ details summary {
 
 ul {
   margin-left: 2rem;
+}
+
+/* 
+========================================
+div formatting
+========================================
+*/
+div.flex.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* 
@@ -159,7 +171,7 @@ header .brand div {
 
 .carousel {
   position: relative;
-  gap: 1em;
+  gap: 0.5em;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -209,25 +221,25 @@ header .brand div {
   transform: translateY(-55%);
   background: none;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0rem;
   cursor: pointer;
+  height: inherit;
   padding: 0 0.5rem;
-  background-color: rgba(0, 0, 0, 0.2);
-  color: rgba(245, 245, 245, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(245, 245, 245, 0.7);
   font-size: 4rem;
 }
 .carousel__button:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  color: rgba(245, 245, 245, 0.7);
 }
 .carousel__button img {
   width: 1em;
 }
 .carousel__button--forward {
-  right: 1rem;
+  right: 0rem;
 }
 .carousel__button--back {
-  left: 1rem;
+  left: 0rem;
 }
 .carousel__nav {
   position: relative;
@@ -342,61 +354,60 @@ header .brand div {
 .projectCards {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 3em;
-  margin: 2em 0em;
+  overflow-y: scroll;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  background: #0a0a0a;
 }
-.projectCards .cardImage {
+.projectCards .card {
+  height: 7rem;
+  display: grid;
+  grid-template-columns: 0.1fr 0.5fr 1fr;
+  align-content: center;
+  overflow: hidden;
+  gap: 0.5rem;
+  border: 0.2rem solid #404040;
+  background: #121212;
+  border-left: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.projectCards .card:hover h3 {
+  color: rgba(0, 188, 212, 0.9411764706);
+}
+.projectCards .card .projectBar {
+  width: 0.4rem;
+  border-radius: 5px;
+}
+.projectCards .card .projectBar.university {
+  background: rgba(0, 188, 212, 0.9411764706);
+}
+.projectCards .card .projectBar.hobby {
+  background: #cb4614;
+}
+.projectCards .card .image {
+  width: inherit;
+  height: inherit;
   background-color: #9b9b9b;
-  height: 15vh;
-  border-bottom: 0.2em solid #404040;
-  border-radius: 25px 25px 0px 0px;
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-  opacity: 0.8;
 }
-.projectCards .card {
-  width: 95%;
-  border: 0.3em solid #404040;
-  border-radius: 2rem;
-  /*
-  &:hover {
-      box-shadow: 0 0px 20px 0px $nav-primary-color;
-  } */
-}
-.projectCards .card p {
-  padding: 0em 2em;
+.projectCards .card h3 {
+  font-size: 1rem;
 }
 .projectCards .card h1,
 .projectCards .card h2,
 .projectCards .card h3,
 .projectCards .card h4 {
+  margin: auto;
   text-align: center;
-}
-.projectCards .card h3 {
-  margin: 0.5em 0.5em;
-}
-.projectCards .card a {
-  display: block;
-  text-decoration: none;
-  border-top: 0.2em solid #404040;
-  padding: 0.75em;
-  color: #121212;
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
-  background-color: #6d2d03;
-  border-radius: 0px 0px 25px 25px;
-}
-.projectCards .card a:hover {
-  background-color: rgba(0, 188, 212, 0.9411764706);
 }
 
 .projectCard {
   padding: 1.5em 3.1em;
   overflow: hidden;
-  color: #bfbfbf;
   background: #121212;
   border-style: solid;
   border-color: #404040;

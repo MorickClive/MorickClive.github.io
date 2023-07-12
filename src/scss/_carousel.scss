@@ -1,6 +1,6 @@
 .carousel {
     position: relative;
-    gap: 1em;
+    gap: .5em;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -58,17 +58,17 @@
         transform: translateY(-55%);
         background: none;
         border: none;
-        border-radius: .25rem;
+        border-radius: 0rem;
 
         cursor: pointer;
+        height: inherit;
         padding: 0 .5rem;
-        background-color: rgb(0, 0, 0, .2);
-        color: rgb(245, 245, 245, .3);
+        background-color: rgb(0, 0, 0, .1);
+        color: rgb(245, 245, 245, .7);
         font-size: 4rem;
 
         &:hover {
             background-color: rgb(0, 0, 0, .5);
-            color: rgb(245, 245, 245, .7);
         }
 
         img {
@@ -76,11 +76,11 @@
         }
 
         &--forward {
-            right: 1rem;
+            right: 0rem;
         }
 
         &--back {
-            left: 1rem;
+            left: 0rem;
         }
     }
 

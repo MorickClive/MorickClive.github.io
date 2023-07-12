@@ -2,7 +2,7 @@
 
 This readme will be populated with future objectives.
 
-There is a strong likelyhood that active objectives might be visible on the respective feature branch.
+There is a strong likelihood that active objectives might be visible on the respective feature branch.
 
 ### Objectives/TODO:
 
