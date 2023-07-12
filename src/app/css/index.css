@@ -101,9 +101,32 @@ hr.article {
   width: 85%;
 }
 
+footer {
+  background: #121212;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0.9em 2.1em;
+  box-shadow: 0px -4px 9px 0px black;
+  color: #555555;
+}
+footer em {
+  font-size: 0.8em;
+  align-self: flex-end;
+}
+footer a svg {
+  width: 1.3em;
+  height: 1.3rem;
+}
+footer a svg:hover {
+  fill: #cb4614;
+}
+footer a svg:active {
+  fill: rgba(0, 188, 212, 0.9411764706);
+}
+
 header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   top: 0;
@@ -612,6 +635,9 @@ FOREGROUND/BACKGROUND LAYERS
 #frontLayer {
   z-index: 3;
   position: absolute;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 9fr 3rem;
 }
 
 #backLayer {
@@ -629,15 +655,13 @@ MAIN
 ========================================
 */
 #main {
-  padding: 10em 30vw;
-  padding-bottom: 0em;
   display: flex;
   flex-direction: column;
+  padding: 10em 30vw 0;
 }
 @media (max-width: 1400px) {
   #main {
-    padding: 15em 10vw;
-    padding-bottom: 0em;
+    padding: 15em 10vw 0;
   }
 }
 
