@@ -57,6 +57,9 @@ FOREGROUND/BACKGROUND LAYERS
 #frontLayer {
     z-index: 3;
     position: absolute;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 9fr 3rem;
 }
 
 #backLayer {
@@ -77,14 +80,12 @@ MAIN
 
 #main {
     @include mobile {
-        padding: 15em 10vw;
-        padding-bottom: 0em;
+        padding: 15em 10vw 0;
     }
 
-    padding: 10em 30vw;
-    padding-bottom: 0em;
     display: flex;
     flex-direction: column;
+    padding: 10em 30vw 0;
 }
 
 .container {
