@@ -103,7 +103,7 @@ hr.article {
 
 footer {
   background: #121212;
-  display: flex;
+  display: inline-flex;
   justify-content: flex-end;
   gap: 1rem;
   padding: 0.9em 2.1em;
@@ -306,8 +306,8 @@ header .brand div {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  gap: 5em;
-  margin-bottom: 8em;
+  gap: 4em;
+  margin-bottom: 4em;
 }
 .blogCards .card {
   width: 95%;
@@ -657,11 +657,12 @@ MAIN
 #main {
   display: flex;
   flex-direction: column;
-  padding: 10em 30vw 0;
+  align-items: center;
+  padding: 10rem 30vw 0;
 }
 @media (max-width: 1400px) {
   #main {
-    padding: 15em 10vw 0;
+    padding: 15rem 10vw 0;
   }
 }
 
@@ -673,7 +674,7 @@ MAIN
   border-style: solid;
   border-color: #404040;
   border-radius: 10px;
-  min-width: 30vw;
+  width: 95%;
   margin-bottom: 3em;
 }
 @media (max-width: 1400px) {
