@@ -4,9 +4,37 @@
     }
 }
 
+footer {
+    background: #121212;
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    padding: 0.9em 2.1em;
+    box-shadow: 0px -4px 9px 0px black;
+    
+    color: $primary-scroll-arrow;
+
+    em {
+        font-size: .8em;
+        align-self: flex-end;
+    }
+
+    a svg {
+        width: 1.3em;
+        height: 1.3rem;
+
+        &:hover {
+            fill: $primary-color;
+        }
+        &:active {
+            fill: $primary-accent;
+        }
+    }
+}
+
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     top: 0;

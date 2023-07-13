@@ -2,6 +2,7 @@ import './css/index.css'
 import { Inter } from 'next/font/google'
 import { Metadata } from 'next'
 import Header from './components/Header'
+import SiteFooter from '@/lib/siteFooter'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +29,7 @@ export default function RootLayout({
             <div id="main">
               {children}
             </div>
+            <SiteFooter />
           </div>
           <div id="backLayer"></div>
         </div>

@@ -23,7 +23,7 @@ function checkSection(section: BlogSection | null) {
         return <>
             <h4 className="title">{(section.title !== null) ? section.title : "Section"}</h4>
             <div dangerouslySetInnerHTML={{ __html: section.content }} />
-            <hr className="article" />
+            <hr />
         </>;
     }
 
