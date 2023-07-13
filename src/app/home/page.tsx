@@ -5,25 +5,12 @@ export const metadata = { title: 'Home' };
 
 export default function Portal() {
     return <>
-        <div className="container">
-            <Splash />
-            <Introduction />
+        <div className="container flex center">
+            <div id="portal">
+                <h1>Welcome to my Site!</h1>
+            </div>
+            <hr className="footer" />
+            <p>Checkout my <Link href="/about">[About Page]</Link> for more information.</p>
         </div>
     </>;
-}
-
-const Splash = () => {
-    return <>
-        <div id="portal">
-            <h1>Welcome to my Site!</h1>
-            <p>Checkout my <Link href="/about">[About Page]</Link> for more details.</p>
-        </div>
-    </>
-}
-
-const Introduction = () => {
-    return <>
-        <hr className="footer" />
-        <p className="italic">Notice: This site is "Work in Progress" and may not reflect the final intended design.</p>
-    </>
 }
