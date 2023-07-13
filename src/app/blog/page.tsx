@@ -6,7 +6,7 @@ export default async function Blog() {
         <div id="first_post" className='card'>
             <div className="body">
                 <h2 className="mainTitle">First Post!</h2>
-                <hr className="article" />
+                <hr />
 
                 <h4 className="title">Intro</h4>
                 <p>Welcome to my blog section!</p>
@@ -17,7 +17,7 @@ export default async function Blog() {
                 </p><p>
                     The objective of this section will mainly be to outline my developments, focuses and achievements as a software engineer.
                 </p>
-                <hr className="article" />
+                <hr />
 
                 <h4 className="title">What's About?</h4>
                 <ul>
@@ -28,7 +28,7 @@ export default async function Blog() {
                     <li>[Contact Page]</li>
                 </ul>
                 <p>Feel free to checkout the site and let me know if you have any feedback!</p>
-                <hr className="article" />
+                <hr />
                 <p>Date Posted: 21/06/2023</p>
             </div>
         </div>
@@ -36,7 +36,7 @@ export default async function Blog() {
         <div id="web_dev" className='card'>
             <div className="body">
                 <h2 className="mainTitle">Website Development</h2>
-                <hr className="article" />
+                <hr />
 
                 <h4 className="title">Intro</h4>
                 <p>Some of my collective projects sit in abandoned storage devices from my time around University; these projects remain catalogued in my mind but aren't available or outlined anywhere.</p>
@@ -45,7 +45,7 @@ export default async function Blog() {
                     First, however, I'd like to outline the inspiration for the site theme.
                 </p>
 
-                <hr className="article" />
+                <hr />
                 <h4 className="title">Colour/Design Choice</h4>
                 <div className="imageBlock">
                     <div className='cardImage' style={{
@@ -63,7 +63,7 @@ export default async function Blog() {
                 <p>Given that the character silhouette provided a balance of value that draws the attention between two points, the background is much darker on the right-hand side that might push viewers’ attention away from the main cards/articles of the page.</p>
                 <p>In the future, I might make a different background or modify the current one; for now, it's a working template that allows the actualisation of the site - rather than existing as a concept exclusively.</p>
 
-                <hr className="article" />
+                <hr />
                 <h4 className="title">Where to now?</h4>
                 <p>Part of designing this site is my focus on constructing the CSS, React/Typescript/Javascript, as well as migrating the whole site from a router-based package to Next.js</p>
                 <p>Whilst I have designs for how the website should appear in paper documentation, I wish to get the content available and then begin adapting the site around the data available as a template.</p>
@@ -76,7 +76,7 @@ export default async function Blog() {
                     <li>Refine CSS design</li>
                 </ul>
                 <p>I may not be continuously developing the site as I come from a Java/C++ background; however, I hope it becomes a good reference for my activities and achievements.</p>
-                <hr className="article" />
+                <hr />
                 <p>Date Posted: 21/06/2023</p>
             </div>
         </div>
