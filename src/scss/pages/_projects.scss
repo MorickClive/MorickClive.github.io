@@ -1,3 +1,11 @@
+// safe defaults to avoid missing-variable errors when compiling
+$mobile: 768px !default;
+$background-primary-border: #222 !default;
+$background-primary-color: #111 !default;
+$primary-accent: #ff6a00 !default;
+$pip-university-color: #2b8cff !default;
+$pip-hobby-color: #f39c12 !default;
+
 @mixin mobile() {
     @media (max-width: $mobile) {
         @content;
@@ -101,7 +109,6 @@
     flex-direction: column;
 
     &__return-link {
-
         color: #cb4614;
         font-size: 1.1em;
         font-weight: 900;

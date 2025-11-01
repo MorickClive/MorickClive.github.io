@@ -9,6 +9,7 @@
 /* Brand & Logos*/
 /* Control Variables */
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -233,8 +234,7 @@ header .brand div {
 .carousel__slide img {
   height: inherit;
   width: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   aspect-ratio: 1/1;
 }
 .carousel__button {
@@ -729,4 +729,4 @@ ScrollBar
 }
 ::-webkit-scrollbar-button:single-button:vertical:increment:hover {
   border-color: rgba(0, 188, 212, 0.9411764706) transparent transparent transparent;
-}/*# sourceMappingURL=index.css.map */
+}

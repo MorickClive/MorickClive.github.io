@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "scss": "sass src/scss/index.scss src/app/css/index.css --no-source-map --style=expanded",
     "dev": "next dev",
     "build": "next build",
+    "export": "npm run scss && next build && next export",
+    "deploy": "npm run export && gh-pages -d out",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "20.3.1",
