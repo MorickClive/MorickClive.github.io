@@ -4,16 +4,10 @@ This readme will be populated with future objectives.
 
 There is a strong likelihood that active objectives might be visible on the respective feature branch.
 
-### Objectives/TODO:
+### Objectives:
 
-List here:
-- Epic 1
-    - Site wide footer [Linked to Issue](#)
-    - Grammatical/Structure Review [Linked to Issue](#)
-    - item 3 [Linked to Issue](#)
-- Epic 2
-    - item 4 [Linked to Issue](#)
-    - item 5 [Linked to Issue](#)
+- Complete migration from next.js to Vite, React & react-router-dom
+- Restore Project listing
 
 ### Additional Information
 

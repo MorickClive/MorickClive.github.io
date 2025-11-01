@@ -1,3 +1,5 @@
+@use "../vars";
+
 .blogCards {
     display: flex;
     flex-direction: column-reverse;
@@ -8,9 +10,9 @@
     .card {
         width: 95%;
         overflow: hidden;
-        color: $text-color;
-        background-color: $primary-accent;
-        border: .3rem solid $background-primary-border;
+        color: vars.$text-color;
+        background-color: vars.$primary-accent;
+        border: .3rem solid vars.$background-primary-border;
         border-radius: 10px;
 
         .body {
@@ -21,8 +23,8 @@
             margin: 0.5rem 0rem;
             padding: 0rem 4rem;
             
-            background-color: $background-primary-color;
-            border: 0.2rem solid $background-primary-border;
+            background-color: vars.$background-primary-color;
+            border: 0.2rem solid vars.$background-primary-border;
             border-left: 0;
             border-right: 0;
 
@@ -44,7 +46,7 @@
         }
 
         .cardImage {
-            border: .2em solid $background-primary-border;
+            border: .2em solid vars.$background-primary-border;
             border-radius: 1em;
             background-repeat: no-repeat;
             background-position: left;

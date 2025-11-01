@@ -1,14 +1,14 @@
-@import "./vars",
-"./resets",
-"./elements",
-"./layout",
-"./carousel",
-"./pages/home",
-"./pages/blog",
-"./pages/projects",
-"./pages/about",
-"./pages/contactForm",
-"./pages/wip";
+@use "vars";
+@use "resets";
+@use "elements";
+@use "layout";
+@use "carousel";
+@use "pages/home";
+@use "pages/blog";
+@use "pages/projects";
+@use "pages/about";
+@use "pages/contactForm";
+@use "pages/wip";
 
 
 /* 
@@ -39,7 +39,7 @@ FUNCTIONS
 }
 
 @mixin mobile() {
-    @media (max-width: $mobile) {
+    @media (max-width: projects.$mobile) {
         @content;
     }
 }
@@ -98,10 +98,10 @@ MAIN
     padding: 1.5em 3.1em;
     overflow: hidden;
 
-    color: $text-color;
-    background: $background-primary-color;
+    color: vars.$text-color;
+    background: projects.$background-primary-color;
     border-style: solid;
-    border-color: $background-primary-border;
+    border-color: projects.$background-primary-border;
     border-radius: 10px;
     width: clamp(30%, 95%, 100%);
     margin-bottom: 3em;
@@ -122,40 +122,40 @@ ScrollBar
 
 /* Track */
 ::-webkit-scrollbar-track {
-    border: 2px solid $background-primary-color;
+    border: 2px solid projects.$background-primary-color;
     border-radius: 2px;
 }
 
 /* ScrollBar */
 ::-webkit-scrollbar-thumb {
-    background: $primary-scroll-color;
+    background: vars.$primary-scroll-color;
 }
 
 /* Arrows */
 ::-webkit-scrollbar-button {
-    background-color: $primary-scroll-color;
+    background-color: vars.$primary-scroll-color;
     border-style: solid;
-    border-color: $background-primary-color;
+    border-color: projects.$background-primary-color;
     height: 16px;
     width: 15px;
 
     /* Top */
     &:single-button:vertical:decrement {
         border-width: 0 8px 8px 8px;
-        border-color: transparent transparent $primary-scroll-arrow transparent;
+        border-color: transparent transparent vars.$primary-scroll-arrow transparent;
 
         &:hover {
-            border-color: transparent transparent $primary-scroll-accent transparent;
+            border-color: transparent transparent vars.$primary-scroll-accent transparent;
         }
     }
 
     /* Bottom */
     &:single-button:vertical:increment {
         border-width: 8px 8px 0 8px;
-        border-color: $primary-scroll-arrow transparent transparent transparent;
+        border-color: vars.$primary-scroll-arrow transparent transparent transparent;
 
         &:hover {
-            border-color: $primary-scroll-accent transparent transparent transparent;
+            border-color: vars.$primary-scroll-accent transparent transparent transparent;
         }
     }
 

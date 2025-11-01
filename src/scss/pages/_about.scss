@@ -1,3 +1,6 @@
+@use "../vars";
+@use "projects";
+
 #avatar {
     max-width: 15.6rem;
     max-height: 15.6rem;
@@ -7,10 +10,10 @@
     margin-top: 1.5em;
     margin-bottom: 3.1em;
 
-    border: .2em solid $background-primary-border;
+    border: .2em solid projects.$background-primary-border;
     border-radius: 2.5em;
 
-    background-image: $primary-avatar;
+    background-image: vars.$primary-avatar;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +22,7 @@
 }
 
 #roleTitle {
-    color: $nav-primary-accent;
+    color: vars.$nav-primary-accent;
     text-align: center;
     margin: 1em auto;
 }
@@ -61,15 +64,15 @@
 
         &:hover {
 
-            color: $primary-accent;
-            background-color: $button-link-hoverColor;
+            color: projects.$primary-accent;
+            background-color: vars.$button-link-hoverColor;
         }
 
         &:active {
 
-            color: $primary-accent;
+            color: projects.$primary-accent;
             opacity: 0.8;
-            background-color: $button-link-activeColor;
+            background-color: vars.$button-link-activeColor;
         }
     }
 }

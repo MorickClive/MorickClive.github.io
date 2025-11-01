@@ -1,3 +1,5 @@
+@use "../vars";
+
 #portal {
     line-height: 1;
     text-align: center;
@@ -10,11 +12,11 @@
     }
 
     a {
-        color: $primary-accent;
+        color: vars.$primary-accent;
         font-weight: 700;
 
         &:active {
-            color: $text-color;
+            color: vars.$text-color;
         }
     }
 }

@@ -1,3 +1,5 @@
+@use "vars";
+
 .carousel {
     position: relative;
     gap: .5em;
@@ -26,7 +28,7 @@
     &__gallery {
         position: relative;
         overflow: hidden;
-        border: 0.4em solid $background-primary-border;
+        border: 0.4em solid vars.$background-primary-border;
     }
 
     &__slide {
@@ -94,14 +96,14 @@
 
         &--pip {
             cursor: pointer;
-            border: .1em solid $background-primary-color;
+            border: .1em solid vars.$background-primary-color;
             border-radius: 50%;
             width: 15px;
             height: 15px;
-            background-color: $background-primary-border;
+            background-color: vars.$background-primary-border;
 
             &.current {
-                background-color: $primary-color;
+                background-color: vars.$primary-color;
             }
         }
     }

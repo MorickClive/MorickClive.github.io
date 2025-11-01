@@ -1,3 +1,5 @@
+@use "../vars";
+
 
 .card {
     display: flex;
@@ -9,7 +11,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    color: $text-color;
+    color: vars.$text-color;
 
     p {
         font-family: Arial, sans-serif;
@@ -23,7 +25,7 @@ form {
 
     input[type=text],
     textarea {
-        color: $text-color;
+        color: vars.$text-color;
         background: #1e1e1e;
         padding: 12px;
         border: 1px solid #5c5c5c;
@@ -60,23 +62,23 @@ form {
     .btn {
         cursor: pointer;
         padding: 0.5em;
-        background-color: $button-backgroundColor;
-        color: $button-color;
+        background-color: vars.$button-backgroundColor;
+        color: vars.$button-color;
         font-size: 1.1em;
         margin-right: 5px;
         border-style: solid;
-        border-color: $button-borderColor;
+        border-color: vars.$button-borderColor;
         border-width: 0.2em;
         font-family: math;
         text-decoration: none;
     
         &.link:hover {
-            background-color: $button-link-hoverColor;
+            background-color: vars.$button-link-hoverColor;
         }
     
         &.link:active {
             opacity: 0.8;
-            background-color: $button-link-activeColor;
+            background-color: vars.$button-link-activeColor;
         }
     }
 }

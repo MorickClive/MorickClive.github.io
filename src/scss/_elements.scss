@@ -1,9 +1,11 @@
+@use "vars";
+
 a {
-    color: $primary-link;
+    color: vars.$primary-link;
     font-weight: 700;
 
     &:active {
-        color: $text-color;
+        color: vars.$text-color;
     }
 }
 
