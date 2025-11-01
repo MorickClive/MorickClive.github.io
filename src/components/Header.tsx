@@ -10,7 +10,7 @@ export default function Header() {
       <div id="nav">
         <Link to="/">Home</Link>
         <Link to="/blog">Blog</Link>
-        <Link to="/wip" role="link" style={{ color: '#888'}}>Projects</Link>
+        <Link to="/projects">Projects</Link>
         <Link to="/about">About</Link>
         <Link to="/contact" className="contact">Contact</Link>
       </div>

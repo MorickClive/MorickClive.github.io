@@ -1,16 +1,23 @@
-import type { Project } from '../../types/types';
+import type { Project } from '../../data/types/types.d.ts';
 import { Link } from "react-router-dom";
 import getProjects from '../../components/getProjects';
 
 const projectTypes = ["University", "Hobby"];
 
-export default function projects() {
+export default function Projects() {
     return <>
         <div className="container">
             <h2 className='titleHeader'>Overview</h2>
             <hr className="article" />
+
             <p>I've worked on many different projects, I've provided a few projects below for viewing.</p>
             <em>~ If there is a project you'd like to know more about then please contact me, I can update the site or pass you some additional details upon request. ~</em>
+            
+		    <div className="wipBox">
+                <hr className="article top"/>
+                <h1 className="constructionBanner">Migration in Progress!</h1>
+                <hr className="article bottom" />
+            </div>
         </div>
         {ProjectSections(getProjects())}
     </>

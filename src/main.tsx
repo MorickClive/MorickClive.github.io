@@ -7,6 +7,7 @@ import App from './App';
 import Home from './pages/home/page';
 import About from './pages/about/page';
 import Blog from './pages/blog/page';
+import Projects from './pages/projects/page';
 import Contact from './pages/contact/page';
 import WorkInProgress from './pages/work-in-progress/page'
 
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           <Route path="wip" element={<WorkInProgress />} />
         </Route>
