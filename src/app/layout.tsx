@@ -1,10 +1,11 @@
-import './css/index.css'
+//import './css/index.css'
 import { Inter } from 'next/font/google'
 import { Metadata } from 'next'
 import Header from './components/Header'
 import SiteFooter from '@/lib/siteFooter'
 
 const inter = Inter({ subsets: ['latin'] })
+const basePath = process.env.BASE_PATH || ''
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
+      <head>
+        <link rel="stylesheet" href={`${basePath}/css/index.css`} />
+      </head>
       <body>
         <Header />
         <div className="App">
