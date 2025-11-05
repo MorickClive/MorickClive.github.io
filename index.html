@@ -12,11 +12,3 @@
     <div id="root"></div>
   </body>
 </html>
-<script>
-  // When a 404 occurs, GitHub Pages serves 404.html directly.
-  // This saves the path we wanted and redirects.
-  if (location.pathname !== '/' && !location.hash && !sessionStorage.redirect) {
-    sessionStorage.redirect = location.href;
-    location.replace('/');
-  }
-</script>
