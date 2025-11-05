@@ -11,8 +11,8 @@ export default function WorkInProgress() {
 			<hr className="article bottom" />
 
 			<button onClick={() => navigate(-1)}>[Go Back]</button>
-			<p>Unfortunately this section of the website is currently pending implementation!</p>
-			<p>As a static website, updates may take a while to release - please keep checking in though!</p>
+			<p>Unfortunately isn't a valid path at the moment.</p>
+			<p>Updates may take a while to release, this path might be available in the future!</p>
 
 			<hr className="article footer" />
 		</div>

@@ -14,11 +14,12 @@ export default function App() {
       '/about': 'About',
       '/blog': 'Blog',
       '/projects': 'Projects',
-      '/contact': 'Contact'
+      '/contact': 'Contact',
+      '/characters/sylben': "Sylben Tanner"
     };
 
     const pageTitle = titleMap[location.pathname] || 'Not Found';
-    document.title = `${pageTitle} | Portfolio`;
+    document.title = location.pathname.includes('characters')  ? `${pageTitle} | D&D ` : `${pageTitle} | Portfolio`;
   }, [location]);
 
   return (
