@@ -3,7 +3,7 @@
         "id": "assassins_shadow",
         "title": "Team Project: Assassin's Shadow",
         "type": "University",
-        "banner_image": "A_Shadow_banner.png",
+        "banner_image": "img/A_Shadow_banner.png",
         "description": "A two dimensional platformer game with movement, projectiles and item pickups.",
         "imageURLs": [
             "projects/assassins_shadow/as_menu.png",
@@ -19,41 +19,41 @@
         "id": "destruct_droid",
         "title": "Team Project: Destruct Droid",
         "type": "University",
-        "banner_image": "/img/DestructDroid_banner.jpg",
+        "banner_image": "img/DestructDroid_banner.jpg",
         "description": "Collaborative between programmers and technical artists remotely between two university campuses.",
         "imageURLs": [
-            "/img/projects/destruct_droid/dd_cityatmosphere.png",
-            "/img/projects/destruct_droid/dd_manhattan.png",
-            "/img/projects/destruct_droid/dd_manhattan_full.jpg",
-            "/img/projects/destruct_droid/dd_rio-scaled.png",
-            "/img/projects/destruct_droid/dd_modelroad.png",
-            "/img/projects/destruct_droid/dd_buildingreflect.png",
-            "/img/projects/destruct_droid/dd_citydefence.png",
-            "/img/projects/destruct_droid/dd_tank_example.png",
-            "/img/projects/destruct_droid/dd_helicopter.png",
-            "/img/projects/destruct_droid/dd_shieldsample.png",
-            "/img/projects/destruct_droid/dd_ammo_pick-up.png",
-            "/img/projects/destruct_droid/dd_second_pass.png",
-            "/img/projects/destruct_droid/dd_third_pass.png"
+            "img/projects/destruct_droid/dd_cityatmosphere.png",
+            "img/projects/destruct_droid/dd_manhattan.png",
+            "img/projects/destruct_droid/dd_manhattan_full.jpg",
+            "img/projects/destruct_droid/dd_rio-scaled.png",
+            "img/projects/destruct_droid/dd_modelroad.png",
+            "img/projects/destruct_droid/dd_buildingreflect.png",
+            "img/projects/destruct_droid/dd_citydefence.png",
+            "img/projects/destruct_droid/dd_tank_example.png",
+            "img/projects/destruct_droid/dd_helicopter.png",
+            "img/projects/destruct_droid/dd_shieldsample.png",
+            "img/projects/destruct_droid/dd_ammo_pick-up.png",
+            "img/projects/destruct_droid/dd_second_pass.png",
+            "img/projects/destruct_droid/dd_third_pass.png"
         ]
     },
     {
         "id": "procedural_material_generation",
-        "title": "Dissertation – Procedural Materials",
+        "title": "Dissertation - Procedural Materials",
         "type": "University",
-        "banner_image": "/img/dissertation_banner.jpg",
+        "banner_image": "img/dissertation_banner.jpg",
         "description": "Real-time rendering techniques using shaders, using algorithmic expression to generate textures.",
         "imageURLs": [
-            "/img/projects/proceduralgeneration/directx_sample_2.jpg",
-            "/img/projects/proceduralgeneration/procedural.png",
-            "/img/projects/proceduralgeneration/opengl_sample_1.jpg"
+            "img/projects/proceduralgeneration/directx_sample_2.jpg",
+            "img/projects/proceduralgeneration/procedural.png",
+            "img/projects/proceduralgeneration/opengl_sample_1.jpg"
         ]
     },
     {
         "id": "project_vale",
         "title": "Full-Stack Application: Project Vale",
         "type": "Hobby",
-        "banner_image": "/img/projectvale_banner.jpg",
+        "banner_image": "img/projectvale_banner.jpg",
         "description": "Java refresh and full-stack application, including Java-8, JDBC connector, Spring, Junit, Javascript, React.",
         "imageURLs": []
     },
@@ -61,76 +61,76 @@
         "id": "java_opengl_engine",
         "title": "OpenGl Java Project: 3D Game Engine",
         "type": "Hobby",
-        "banner_image": "/img/3d-engine_banner.jpg",
+        "banner_image": "img/3d-engine_banner.jpg",
         "description": "Post-University research and study: applying OpenGL experience towards Java language to express active C++ familiarity in Java.",
         "imageURLs": [
-            "/img/projects/game_engine/render_scene.jpg",
-            "/img/projects/game_engine/light_point.jpg",
-            "/img/projects/game_engine/skybox_day.jpg",
-            "/img/projects/game_engine/skybox_night.jpg",
-            "/img/projects/game_engine/stanford_uni_shaderdragon.jpg"
+            "img/projects/game_engine/render_scene.jpg",
+            "img/projects/game_engine/light_point.jpg",
+            "img/projects/game_engine/skybox_day.jpg",
+            "img/projects/game_engine/skybox_night.jpg",
+            "img/projects/game_engine/stanford_uni_shaderdragon.jpg"
         ]
     },
     {
         "id": "unity_research",
         "title": "Unity Research Project: C#",
         "type": "Hobby",
-        "banner_image": "/img/unity_banner.jpg",
+        "banner_image": "img/unity_banner.jpg",
         "description": "Post-University research and study: exploring Unity engine, building three-dimensional spaces with shaders, custom textures and models.",
         "imageURLs": [
-            "/img/projects/unity_research/unity_menu.png",
-            "/img/projects/unity_research/unity_levelpreview.png",
-            "/img/projects/unity_research/unity_levelload.png",
-            "/img/projects/unity_research/unity_coordhighlight.png",
-            "/img/projects/unity_research/unity_doorinteract.png",
-            "/img/projects/unity_research/unity_graphicsamples.png",
-            "/img/projects/unity_research/unity_importedproject.png",
-            "/img/projects/unity_research/unity_materialswap.png",
-            "/img/projects/unity_research/unity_movement.png",
-            "/img/projects/unity_research/unity_settings.png",
-            "/img/projects/unity_research/unity_tutorialgame.png"
+            "img/projects/unity_research/unity_menu.png",
+            "img/projects/unity_research/unity_levelpreview.png",
+            "img/projects/unity_research/unity_levelload.png",
+            "img/projects/unity_research/unity_coordhighlight.png",
+            "img/projects/unity_research/unity_doorinteract.png",
+            "img/projects/unity_research/unity_graphicsamples.png",
+            "img/projects/unity_research/unity_importedproject.png",
+            "img/projects/unity_research/unity_materialswap.png",
+            "img/projects/unity_research/unity_movement.png",
+            "img/projects/unity_research/unity_settings.png",
+            "img/projects/unity_research/unity_tutorialgame.png"
         ]
     },
     {
         "id": "dst_mod",
         "title": "Mod: Warrick the Afflicted, Don't Starve Together",
         "type": "Hobby",
-        "banner_image": "/img/Warrick_banner.png",
+        "banner_image": "img/Warrick_banner.png",
         "description": "A character mod that introduces a new custom character with unique items, structures and mechanics for Don't Starve Together game by Klei, available on the steam workshop.",
         "imageURLs": [
-            "/img/projects/warrick/warrick_greenobelisk.jpg",
-            "/img/projects/warrick/warrick_iceobelisk.jpg",
-            "/img/projects/warrick/warrick_mechvisual.jpg",
-            "/img/projects/warrick/warrick_menu.jpg",
-            "/img/projects/warrick/warrick_shadowobelisk.jpg",
-            "/img/projects/warrick/warrick_shadows.jpg"
+            "img/projects/warrick/warrick_greenobelisk.jpg",
+            "img/projects/warrick/warrick_iceobelisk.jpg",
+            "img/projects/warrick/warrick_mechvisual.jpg",
+            "img/projects/warrick/warrick_menu.jpg",
+            "img/projects/warrick/warrick_shadowobelisk.jpg",
+            "img/projects/warrick/warrick_shadows.jpg"
         ]
     },
     {
         "id": "community_map_development",
         "title": "C&C: Community Map Development",
         "type": "Hobby",
-        "banner_image": "/img/C&C_banner.png",
+        "banner_image": "img/C&C_banner.png",
         "description": "A portfolio of custom Command & Conquer maps developed for the online community.",
         "imageURLs": [
-            "/img/projects/community_maps/c&c_battlebase.jpg",
-            "/img/projects/community_maps/c&c_contestwinner_2.jpg",
-            "/img/projects/community_maps/c&c_contestwinner_3.jpg",
-            "/img/projects/community_maps/c&c_contestwinner.jpg",
-            "/img/projects/community_maps/c&c_mykonos_1.jpg",
-            "/img/projects/community_maps/c&c_mykonos_2.jpg",
-            "/img/projects/community_maps/c&c_mykonos_3.jpg",
-            "/img/projects/community_maps/c&c_neonglory_1.jpg",
-            "/img/projects/community_maps/c&c_rewards.jpg",
-            "/img/projects/community_maps/c&c_scriptmap.jpg",
-            "/img/projects/community_maps/c&c_silentsolitude.jpg"
+            "img/projects/community_maps/c&c_battlebase.jpg",
+            "img/projects/community_maps/c&c_contestwinner_2.jpg",
+            "img/projects/community_maps/c&c_contestwinner_3.jpg",
+            "img/projects/community_maps/c&c_contestwinner.jpg",
+            "img/projects/community_maps/c&c_mykonos_1.jpg",
+            "img/projects/community_maps/c&c_mykonos_2.jpg",
+            "img/projects/community_maps/c&c_mykonos_3.jpg",
+            "img/projects/community_maps/c&c_neonglory_1.jpg",
+            "img/projects/community_maps/c&c_rewards.jpg",
+            "img/projects/community_maps/c&c_scriptmap.jpg",
+            "img/projects/community_maps/c&c_silentsolitude.jpg"
         ]
     },
     {
         "id": "pending_uni",
         "title": "- Future Project -",
         "type": "University",
-        "banner_image": "/img/projects/pending_projects.jpg",
+        "banner_image": "img/projects/pending_projects.jpg",
         "description": "",
         "imageURLs": []
     },
@@ -138,7 +138,7 @@
         "id": "pending_hobby",
         "title": "- Future Project - ",
         "type": "Hobby",
-        "banner_image": "/img/projects/pending_projects.jpg",
+        "banner_image": "img/projects/pending_projects.jpg",
         "description": "",
         "imageURLs": []
     }

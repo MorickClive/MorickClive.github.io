@@ -44,13 +44,13 @@ function projectList(param: string, projectData: Project[]) {
                 return <Link key={project.id} id={project.id} className='card' to="/projects">
                     <div className={"projectBar"} />
                     <h3>{project.title}</h3>
-                    <div className='image' style={{ "backgroundImage": `url('/src/scss/img/${project.banner_image}')`, "filter": "blur(2px)" }} />
+                    <div className='image' style={{ "backgroundImage": `url('${project.banner_image}')`, "filter": "blur(2px)" }} />
                 </Link>
             } else {
                 return <Link key={project.id} id={project.id} className='card' to={`/projects/${project.id}`}>
                     <div className={"projectBar ".concat(project.type.toLowerCase())} />
                     <h3>{project.title}</h3>
-                    <div className='image' style={{ "backgroundImage": `url('/src/scss/img/${project.banner_image}')` }} />
+                    <div className='image' style={{ "backgroundImage": `url('${project.banner_image}')` }} />
                 </Link>
             }
         });
