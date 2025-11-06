@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
-    "manual:scss": "sass src/scss/index.scss src/css/index.css --no-source-map --style=expanded",
+    //"manual:scss": "sass src/scss/index.scss src/css/index.css --no-source-map --style=expanded",
     "manual:build": "npm run manual:scss && vite build",
     "manual:generate_auth": "node ./encryption/genAuthToken.js",
     "manual:generate_keys": "node ./encryption/genKeys.js",
