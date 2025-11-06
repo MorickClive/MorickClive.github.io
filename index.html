@@ -8,6 +8,14 @@
     <script type="module" crossorigin src="/assets/index-5JsLh_Pz.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BzFfMpMj.css">
   </head>
+  <script>
+    // If we were redirected here by 404.html, restore the path.
+    const redirect = sessionStorage.getItem('redirect');
+    if (redirect) {
+      sessionStorage.removeItem('redirect');
+      history.replaceState(null, null, redirect);
+    }
+  </script>
   <body>
     <div id="root"></div>
   </body>
