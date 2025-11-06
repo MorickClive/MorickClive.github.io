@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 type Params = {
     height: string
@@ -26,7 +26,7 @@ export default function Carousel({ height, imgList }: Params) {
             <button className="carousel__button carousel__button--back" onClick={() => moveActiveIndex(-1)} >&#8656;</button>
             <ul style={{ "height": height, "transform": `translate(-${activeIndex * 100}%)` }}>
                 {imgList.map(
-                    img => {return <li key={img} title="Open in tab" className="carousel__slide" ><a href={`/src/scss/img/${img}`} target="_blank"><img src={`/src/scss/img/${img}`} /></a></li> }
+                    img => {return <li key={img} title="Open in tab" className="carousel__slide" ><a href={`${img}`} target="_blank"><img src={`${img}`} alt={"Preview Image"} /></a></li> }
                 )}
             </ul>
         </div>
