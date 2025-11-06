@@ -2,13 +2,7 @@ import React, { useEffect, useState } from "react";
 import { verifyToken } from "../components/encryption/getKey";
 
 const PUBLIC_KEY_PEM = `-----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoN8qTijELBaujWLjUVEq
-u0RFOEDI8PByaA9lc5P4TsdS0N01UtkWtFDio7Bm71BoUb6ihY06zT39gQC7n1vA
-d2lqNFA9fJNfwFxjwtpLxKcfEPZ8G5F9tlWSz4Rt5+xbBi7EWAg1oJUGJpzVoSkz
-GfK5REy19k3/NHSp6m+XRG+7HMv22umWXPE2u7l4oeleVplX0594BJ/n79rH5lTe
-hsxZm4ddOSIQyNd1iS2Fx01Yehy2qSraxqU+a/e9yQDBLCI6YS8B7hejVIhHhLMn
-CzRrfmXryqChdUtE0dUFDaXpVmkxUcshx3oYlY/i/p4w5J3rbLJgQkAOlrLC1EH2
-SQIDAQAB
+MCowBQYDK2VwAyEAWKyB244foj1CxO6Xm2RLftMXbtcP+BGIGkFIma0FDfw=
 -----END PUBLIC KEY-----`;
 
 export default function SylbenPage() {

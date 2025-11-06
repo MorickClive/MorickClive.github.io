@@ -3,7 +3,7 @@ import * as jose from "jose";
 
 export async function verifyToken(PUBLIC_KEY_PEM: string, token: string, expectedCharacter: string) {
   try {
-    const publicKey = await jose.importSPKI(PUBLIC_KEY_PEM, "RS256");
+    const publicKey = await jose.importSPKI(PUBLIC_KEY_PEM, "EdDSA");
     const { payload } = await jose.jwtVerify(token, publicKey);
 
     if ((String)(payload.character).toLowerCase() !== expectedCharacter.toLowerCase()) {

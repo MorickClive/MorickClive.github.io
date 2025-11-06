@@ -8,11 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
-    //"manual:scss": "sass src/scss/index.scss src/css/index.css --no-source-map --style=expanded",
-    "manual:build": "npm run manual:scss && vite build",
-    "manual:generate_auth": "node ./encryption/genAuthToken.js",
-    "manual:generate_keys": "node ./encryption/genKeys.js",
-    "trigger:gen_auth": "npm run manual:generate_keys Sylben && npm run manual:generate_auth Sylben DM-LUKE"
+    "manual:scss": "sass src/scss/index.scss src/css/index.css --no-source-map --style=expanded",
+    "manual:build": "npm run manual:scss && vite build"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
