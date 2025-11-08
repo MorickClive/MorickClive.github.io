@@ -7,21 +7,11 @@ function BackgroundEntry({ title, character, attribute }) {
     <>
       <p><strong>{title}:</strong></p>
       <div className="story-block">
-        {/* "appearance": {
-            "age": 36,
-            "gender": "Male",
-            "height": "TEMPLATE: 0'0\"",
-            "weight": "TEMPLATE: 0 lbs",
-            "eyes": "Silver",
-            "skin": "Olive",
-            "hair": "Brown hair; fades blonde",
-            "description": "TEMPLATE: Short summary of appearance"
-        }, */}
         {
             Object.entries(character[attribute]).map(([key, val]) => (
                 <p key={key}><strong>{key.charAt(0).toUpperCase() + key.slice(1)}:</strong> {val}</p>
             ))
-            }
+        }
       </div>
       </>
   );
