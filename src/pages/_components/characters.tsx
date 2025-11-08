@@ -81,16 +81,24 @@ export default function Characters({path, passkey}: {path: string, passkey: stri
               <span key={key}>{val.name}; </span>
             ))}</p>
         </div>
-
+        
         <div className="background block">
+          <h3>Initial Notes:</h3>
+          {activeCharacter.character.notes.split('\\n').map((line:any, idx:any) => (
+            <p key={idx}>{line}</p>
+          ))}
+        </div>
+
+        {/* <div className="background block">
           <h3>Background</h3>
           <BackgroundEntry title="Appearance" character={activeCharacter.character} attribute="appearance" />
-          {/* <BackgroundList title="Bonds" character={activeCharacter.character.background_details} attribute="bonds" />
+          <BackgroundList title="Bonds" character={activeCharacter.character.background_details} attribute="bonds" />
           <BackgroundEntry title="Traits" character={activeCharacter.character.background_details} attribute="personality_traits" />
           <BackgroundEntry title="Ideals" character={activeCharacter.character.background_details} attribute="ideals" />
           <BackgroundEntry title="Flaws" character={activeCharacter.character.background_details} attribute="flaws" />
-          <BackgroundEntry title="Backstory" character={activeCharacter.character} attribute="notes" /> */}
-        </div>
+          <BackgroundEntry title="Backstory" character={activeCharacter.character} attribute="notes" />
+        </div> */}
+        
       </section>
     </div>
   );
