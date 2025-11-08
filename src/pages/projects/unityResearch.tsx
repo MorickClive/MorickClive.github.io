@@ -1,5 +1,5 @@
-import getImageGallery from "../../../components/getImageGallery";
-import Carousel from "../../../components/imageCarousel";
+import getImageGallery from "../_components/projects/getImageGallery";
+import Carousel from "../_components/projects/imageCarousel";
 import { Link } from "react-router-dom";
 
 export default function UnityResearch() {

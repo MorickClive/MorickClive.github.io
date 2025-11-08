@@ -35,9 +35,9 @@ export default function ProjectVale() {
             <a href="https://github.com/MorickClive/Vale-Java-Practice/network" target="_blank" rel="noopener">[ Example Feature Branch Model ]</a>
             <p>Issue Tracking:</p>
             <ul>
-                <li><Link href="https://github.com/MorickClive/Vale-Java-Practice/issues?q=is%3Aissue+is%3Aclosed" rel="noopener"target="_blank">[ Vale-Java ]</Link></li>
-                <li><Link href="https://github.com/MorickClive/Vale-JDBC-Practice/issues?q=is%3Aissue+is%3Aclosed" rel="noopener"target="_blank">[ Vale-JDBC ]</Link></li >
-                <li><Link href="https://github.com/MorickClive/Vale-SpringREST-Practice/issues?q=is%3Aissue+is%3Aclosed" target="_blank">[ Vale-SpringAPI ]</Link></li >
+                <li><Link to="https://github.com/MorickClive/Vale-Java-Practice/issues?q=is%3Aissue+is%3Aclosed" rel="noopener"target="_blank">[ Vale-Java ]</Link></li>
+                <li><Link to="https://github.com/MorickClive/Vale-JDBC-Practice/issues?q=is%3Aissue+is%3Aclosed" rel="noopener"target="_blank">[ Vale-JDBC ]</Link></li >
+                <li><Link to="https://github.com/MorickClive/Vale-SpringREST-Practice/issues?q=is%3Aissue+is%3Aclosed" target="_blank">[ Vale-SpringAPI ]</Link></li >
             </ul >
             <p>The name "Vale" came from raids instances in Guild Wars 2; it was an arbitrary naming convention that could act as nomenclature for potential projects, becoming a set of significant repositories on my GitHub.<br /><br />The raid instances are titled as follows:</p>
             <ul><li>Spirit [Vale]</li>
@@ -50,6 +50,6 @@ export default function ProjectVale() {
             </ul>
         </details>
         <hr />
-        <Link className="project__return-link" href={`../projects#project_vale`}> Return </Link>
+        <Link className="project__return-link" to={`../projects#project_vale`}> Return </Link>
     </div>
 }

@@ -1,5 +1,5 @@
-import getImageGallery from "../../../components/getImageGallery";
-import Carousel from "../../../components/imageCarousel";
+import getImageGallery from "../_components/projects/getImageGallery";
+import Carousel from "../_components/projects/imageCarousel";
 import { Link } from "react-router-dom";
 
 export default function DestructDroid() {
@@ -17,23 +17,29 @@ export default function DestructDroid() {
             <ul>
                 <li>Buildings  - representing score targets and the city/town they were in.</li>
                 <li>Enemy Ground defences.</li>
-                <ul>
-                    <li>Ships</li>
-                    <li>Tanks</li>
-                    <li>Turrets</li>
-                </ul>
+                <li>
+                    <ul>
+                        <li>Ships</li>
+                        <li>Tanks</li>
+                        <li>Turrets</li>
+                    </ul>
+                </li>
                 <li>Enemy Air defences.</li>
-                <ul>
-                    <li>Helicopters</li>
-                    <li>Fighter jets</li>
-                </ul>
+                <li>
+                    <ul>
+                        <li>Helicopters</li>
+                        <li>Fighter jets</li>
+                    </ul>
+                </li>
                 <li>Unique City levels(cultural styles).</li>
-                <ul>
-                    <li>Rio-de-Janeiro</li>
-                    <li>Manhattan</li>
-                    <li>London</li>
-                    <li>Tokyo</li>
-                </ul>
+                <li>
+                    <ul>
+                        <li>Rio-de-Janeiro</li>
+                        <li>Manhattan</li>
+                        <li>London</li>
+                        <li>Tokyo</li>
+                    </ul>
+                </li>
             </ul>
             <p>My responsibility and focus in the team was to communicate and integrate the artist team’s assets into the game. My role ensured that the technical aspects of asset integration were smooth and visually matched the intended aesthetics for the project;  this included shader effects(visual effects, reflections and emissive lighting properties) for models, level creation and asset scaling.</p>
             <p>Near the project release for the assignment, unfortunately, we only received two robot models and one tank model (lacking appropriate mesh complexity to scale appropriately). Despite the limitations, we did have a scoring system that kept track of building destruction and a health bar system that would track the players' health.</p>
@@ -55,7 +61,7 @@ export default function DestructDroid() {
             </details>
             <p><em><strong>Module Lecturer</strong>: Mike Reddy&nbsp;(University of South Wales)</em></p>
             <hr />
-            <Link className="project__return-link" href={`../projects#destruct_droid`}> Return </Link>
+            <Link className="project__return-link" to={`../projects#destruct_droid`}> Return </Link>
         </div>
     </>
 }

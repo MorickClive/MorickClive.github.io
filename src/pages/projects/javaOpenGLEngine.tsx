@@ -1,5 +1,5 @@
-import getImageGallery from "../../../components/getImageGallery";
-import Carousel from "../../../components/imageCarousel";
+import getImageGallery from "../_components/projects/getImageGallery";
+import Carousel from "../_components/projects/imageCarousel";
 import { Link } from "react-router-dom";
 
 export default function JavaOpenEngine() {
@@ -26,7 +26,7 @@ export default function JavaOpenEngine() {
             <p>Writing code exclusively dependent on the C++ redistributable libraries in university; my training with QA Ltd has shown me Apache Maven, a build tool that helps manage and control the respective versioning of dependencies. Using Maven has shaped my future Java development, particularly as my time with code maintenance with a client has shown the impact of long-term maintainability when using such a build tool.</p>
             <p>The state of this particular project has presented a block in maintaining it; however, the value of creating this project served a valuable purpose - exploring Java and implementing real-time rendering techniques in a newly introduced programming language.</p>
             <hr />
-            <Link className="project__return-link" href={`../projects#java_opengl_engine`}> Return </Link>
+            <Link className="project__return-link" to={`/projects#java_opengl_engine`}> Return </Link>
         </div>
     </>
 }

@@ -1,5 +1,5 @@
-import getImageGallery from "../../../components/getImageGallery";
-import Carousel from "../../../components/imageCarousel";
+import getImageGallery from "../_components/projects/getImageGallery";
+import Carousel from "../_components/projects/imageCarousel";
 import { Link } from "react-router-dom";
 
 export default function DSTMod() {
@@ -26,7 +26,7 @@ export default function DSTMod() {
                 <hr />
                 <Carousel height="300px" imgList={getImageGallery("dst_mod")} />
                 <hr />
-                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=935464768" target="_blank" > [ Steam Workshop: Warrick the Afflicted ] </a >
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=935464768" target="_blank" rel="noopener" > [ Steam Workshop: Warrick the Afflicted ] </a >
                 <hr />
             </div>
             <p>Experienced players might view the lower sanity as a perk; shadow creatures that appear can drop material that is unique to them. Additionally, low sanity is desirable to move past blockades or avoid the antithesis of these creatures: “gestalts”, which spawn with moon-related content.</p>
@@ -34,6 +34,6 @@ export default function DSTMod() {
             <hr />
             <p><em>Created with:<br />LUA, XML, Don't Starve Mod Tools.<br />Testing Tool: Don't Starve Together Dedicated Server.&nbsp;</em></p>
             <hr />
-            <Link className="project__return-link" href={`../projects#dst_mod`}> Return </Link>
+            <Link className="project__return-link" to={`../projects#dst_mod`}> Return </Link>
         </div>
 }
