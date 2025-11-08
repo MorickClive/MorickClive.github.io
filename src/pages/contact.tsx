@@ -1,4 +1,4 @@
-import ContactForm from "./components/ContactForm";
+import ContactForm from "./_components/contact/form";
 
 export const metadata = { title: "Contact" };
 

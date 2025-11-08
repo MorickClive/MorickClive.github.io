@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import SkillList from "./components/SkillList";
+import SkillList from "./_components/about/skillList";
 
 export default function about() {
     return <main id="main">

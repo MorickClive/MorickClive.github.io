@@ -1,6 +1,6 @@
 # Private Encryption Keys
-encryption
 public/data/characters/*.json
+/encryption/
 
 # Logs
 logs

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { verifyToken, extractPassKey } from "../../components/encryption/getKey";
-import Characters from "./Characters";
+import { verifyToken, extractPassKey } from "../_components/encryption/getKey";
+import Characters from "../_components/characters";
 
 const PUBLIC_KEY_PEM = `-----BEGIN PUBLIC KEY-----
 MCowBQYDK2VwAyEAWKyB244foj1CxO6Xm2RLftMXbtcP+BGIGkFIma0FDfw=
@@ -20,18 +20,26 @@ export default function SylbenPage() {
       return;
     }
 
-    verifyToken(PUBLIC_KEY_PEM, token, "sylben").then(payload => {
-      setVerified(!!payload);
-      setLoading(false);
-
-      if (!!payload === true) {
-        extractPassKey(PUBLIC_KEY_PEM, token).then(passkey => {
-          setPasskey(passkey || "???");
-        });
+  const run_decrypt = async () => {
+    try {
+      const payload = await verifyToken(PUBLIC_KEY_PEM, token, "sylben");
+      if (!payload) {
+        setVerified(false);
+        return;
       }
-    });
 
+      setVerified(true);
+      const extractedKey = await extractPassKey(PUBLIC_KEY_PEM, token);
+      setPasskey(extractedKey || "???");
+    } catch (err) {
+      console.error("Verification failed:", err);
+      setVerified(false);
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  run_decrypt();
 
   }, []);
 

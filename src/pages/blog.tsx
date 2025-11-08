@@ -1,4 +1,4 @@
-import GetPosts from "./components/getPosts";
+import GetPosts from "./_components/blog/getPosts";
 
 export default async function Blog() {
     return <main id="main">

@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-//import "./css/Players.scss";
-import {decryptData} from "./decrypt_json";
+import {decryptData} from "./characters/decrypt_json";
 
-function BackgroundEntry({ title, character, attribute }) {
+function BackgroundEntry({ title, character, attribute } : { title: string, character: any, attribute: string }) {
   return (
     <>
       <p><strong>{title}:</strong></p>
@@ -17,12 +16,12 @@ function BackgroundEntry({ title, character, attribute }) {
   );
 }
 
-function BackgroundList({ title, character, attribute }) {
+function BackgroundList({ title, character, attribute } : { title: string, character: any, attribute: string }) {
   return (
     <>
       <p><strong>{title}:</strong></p>
       <ul className="story-block">
-        {character[attribute].split('\n').map((line, idx) => (
+        {character[attribute].split('\n').map((line:any, idx:any) => (
           <li key={idx}>{line}</li>
         ))}
       </ul>
@@ -31,7 +30,7 @@ function BackgroundList({ title, character, attribute }) {
 }
 
 export default function Characters({path, passkey}: {path: string, passkey: string}) {
-  const [characters, setCharacters] = useState([]);
+  //const [characters, setCharacters] = useState([]);
   const [activeCharacter, setActiveCharacter] = useState(null);
 
   useEffect(() => {
@@ -40,7 +39,7 @@ export default function Characters({path, passkey}: {path: string, passkey: stri
       .then((encText) => decryptData(encText, passkey))
       .then((decryptedJsonStr) => JSON.parse(decryptedJsonStr))
       .then((data) => {
-        setCharacters(data);
+        //setCharacters(data);
         setActiveCharacter(data[0]);
       })
       .catch((err) => console.error("Failed to load character data:", err));
@@ -49,8 +48,6 @@ export default function Characters({path, passkey}: {path: string, passkey: stri
   if (!activeCharacter) {
     return <p style={{ color: "white", padding: "1rem" }}>Loading characters...</p>;
   }
-
-  const pb = activeCharacter.character.level ? 2 + Math.floor((activeCharacter.character.level - 1) / 4) : 2;
 
   return (
     <div className="characters-page">

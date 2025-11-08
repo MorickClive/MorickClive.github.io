@@ -1,16 +1,16 @@
 // src/main.tsx
-import './scss/index.scss';
+import './index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
-import Home from './pages/home/page';
-import About from './pages/about/page';
-import Blog from './pages/blog/page';
-import Projects from './pages/projects/page';
+import Home from './pages/home';
+import About from './pages/about';
+import Blog from './pages/blog';
+import Projects from './pages/projects';
 import SylbenPage from './pages/characters/sylben';
-import Contact from './pages/contact/page';
-import WorkInProgress from './pages/work-in-progress/page'
+import Contact from './pages/contact';
+import WorkInProgress from './pages/redirects/work-in-progress'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
