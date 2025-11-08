@@ -1,13 +1,13 @@
-import { useParams, Link, Navigate } from 'react-router-dom';
-import getProjects from './getProjects';
-import AssassinsShadowProject from '../pages/projects/assassins_shadow/page';
-import CommunityMapDevelopmentProject from '../pages/projects/community_map_development/page';
-import DestructDroid from '../pages/projects/destruct_droid/page';
-import DSTMod from '../pages/projects/dst_mod/page';
-import JavaOpenEngine from '../pages/projects/java_opengl_engine/page';
-import Procedural from '../pages/projects/procedural_material_generation/page';
-import ProjectVale from '../pages/projects/project_vale/page';
-import UnityResearch from '../pages/projects/unity_research/page';
+import { useParams, Navigate } from 'react-router-dom';
+import getProjects from                     './getProjects';
+import AssassinsShadowProject from          '../../projects/uniTeamProject1';
+import CommunityMapDevelopmentProject from  '../../projects/rtsCustomMaps';
+import DestructDroid from                   '../../projects/uniTeamProject2';
+import DSTMod from                          '../../projects/modDST';
+import JavaOpenEngine from                  '../../projects/javaOpenGLEngine';
+import Procedural from                      '../../projects/dissertation';
+import ProjectVale from                     '../../projects/projectVale';
+import UnityResearch from                   '../../projects/unityResearch';
 
 // Map project IDs to their components
 const PROJECT_COMPONENTS: Record<string, React.ComponentType> = {

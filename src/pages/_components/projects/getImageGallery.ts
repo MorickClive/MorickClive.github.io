@@ -1,4 +1,4 @@
-import type { Project } from '../types/types';
+import type { Project } from    '../../../data/types/types';
 import getProjects from './getProjects';
 
 export default function getImageGallery(projectID: string) {

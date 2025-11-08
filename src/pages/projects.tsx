@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import type { Project } from '../data/types/types.d.ts';
+import type { Project } from '../data/types/types';
 import getProjects from '../components/getProjects';
 
 const projectTypes = ["University", "Hobby"];

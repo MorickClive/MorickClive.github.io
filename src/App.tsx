@@ -2,8 +2,8 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
-import Header from './components/Header';
-import SiteFooter from './components/SiteFooter';
+import Header from './pages/_components/home/Header';
+import SiteFooter from './pages/_components/home/SiteFooter';
 
 export default function App() {
   const location = useLocation();

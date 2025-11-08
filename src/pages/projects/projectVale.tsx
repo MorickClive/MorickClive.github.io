@@ -25,18 +25,18 @@ export default function ProjectVale() {
         <h4>Repository link:</h4>
         <hr />
         <ul>
-            <li><a href="https://github.com/MorickClive/Project-Vale" target="_blank">[ Project Vale Repository ]</a></li>
-            <li><a href="https://github.com/MorickClive/Vale-React-Practice#vale-react-practice" target="_blank">[ Project Vale Full-Stack Repo ]</a></li >
+            <li><a href="https://github.com/MorickClive/Project-Vale" target="_blank" rel="noopener">[ Project Vale Repository ]</a></li>
+            <li><a href="https://github.com/MorickClive/Vale-React-Practice#vale-react-practice" target="_blank" rel="noopener">[ Project Vale Full-Stack Repo ]</a></li >
         </ul >
         <hr />
         <details>
             <summary>Additional</summary>
             <p>Example repo feature-branch adherence:</p>
-            <a href="https://github.com/MorickClive/Vale-Java-Practice/network" target="_blank">[ Example Feature Branch Model ]</a>
+            <a href="https://github.com/MorickClive/Vale-Java-Practice/network" target="_blank" rel="noopener">[ Example Feature Branch Model ]</a>
             <p>Issue Tracking:</p>
             <ul>
-                <li><Link href="https://github.com/MorickClive/Vale-Java-Practice/issues?q=is%3Aissue+is%3Aclosed" target="_blank">[ Vale-Java ]</Link></li>
-                <li><Link href="https://github.com/MorickClive/Vale-JDBC-Practice/issues?q=is%3Aissue+is%3Aclosed" target="_blank">[ Vale-JDBC ]</Link></li >
+                <li><Link href="https://github.com/MorickClive/Vale-Java-Practice/issues?q=is%3Aissue+is%3Aclosed" rel="noopener"target="_blank">[ Vale-Java ]</Link></li>
+                <li><Link href="https://github.com/MorickClive/Vale-JDBC-Practice/issues?q=is%3Aissue+is%3Aclosed" rel="noopener"target="_blank">[ Vale-JDBC ]</Link></li >
                 <li><Link href="https://github.com/MorickClive/Vale-SpringREST-Practice/issues?q=is%3Aissue+is%3Aclosed" target="_blank">[ Vale-SpringAPI ]</Link></li >
             </ul >
             <p>The name "Vale" came from raids instances in Guild Wars 2; it was an arbitrary naming convention that could act as nomenclature for potential projects, becoming a set of significant repositories on my GitHub.<br /><br />The raid instances are titled as follows:</p>

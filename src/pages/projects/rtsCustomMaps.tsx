@@ -1,5 +1,5 @@
-import getImageGallery from "../../../components/getImageGallery";
-import Carousel from "../../../components/imageCarousel";
+import getImageGallery from "../_components/projects/getImageGallery";
+import Carousel from "../_components/projects/imageCarousel";
 import { Link } from "react-router-dom";
 
 export default function CommunityMapDevelopmentProject() {
@@ -14,7 +14,7 @@ export default function CommunityMapDevelopmentProject() {
             <hr />
             <h4>About:</h4>
             <p>Before reaching university, my inspiration and motivation to develop video games spanned from my time after school and college. I would create content for various video games I owned, allowing me to prolong their life span and quality.</p>
-            <p>In time I started to produce high-quality maps with persistent study, even looking into the creation of mods and development for the Command and Conquer series. I published content for the community on sites like <a href="https://www.ppmsite.com/" target="_blank" >Project Perfect Mod</a> and <a href="https://www.cnclabs.com/maps/" target="_blank" >CnC labs</a>; upon each release, I began to find a passion for level design and scripting.</p >
+            <p>In time I started to produce high-quality maps with persistent study, even looking into the creation of mods and development for the Command and Conquer series. I published content for the community on sites like <a href="https://www.ppmsite.com/" target="_blank" rel="noopener" >Project Perfect Mod</a> and <a href="https://www.cnclabs.com/maps/" target="_blank" rel="noopener" >CnC labs</a>; upon each release, I began to find a passion for level design and scripting.</p >
             <p>After submitting and reviewing the feedback on each map, I felt compelled to create more - expanding my knowledge of the community tool to its limits. This entire experience gave me an appreciation for the difficulties of level design and game development; one of the benefits of the map-making tool included its flexibility beyond the existing maps that were officially available.</p>
             <p>Exploring map development and scripting helped boost my capability in planning and developing projects; it provided insight into the analysis, time management and the challenges of blockers related to project development.</p>
             <hr />
