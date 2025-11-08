@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
-import { verifyToken, extractPassKey } from "../_components/encryption/getKey";
+import { verifyEncryptedResource } from "../_components/encryption/decrypt_json";
 import Characters from "../_components/characters";
 
-const PUBLIC_KEY_PEM = `-----BEGIN PUBLIC KEY-----
-MCowBQYDK2VwAyEAWKyB244foj1CxO6Xm2RLftMXbtcP+BGIGkFIma0FDfw=
------END PUBLIC KEY-----`;
-
 export default function SylbenPage() {
+  const file_path = "/data/characters/sylben.json.enc";
   const [verified, setVerified] = useState(false);
   const [loading, setLoading] = useState(true);
   const [passkey, setPasskey] = useState<string>("???");
@@ -20,26 +17,27 @@ export default function SylbenPage() {
       return;
     }
 
-  const run_decrypt = async () => {
-    try {
-      const payload = await verifyToken(PUBLIC_KEY_PEM, token, "sylben");
-      if (!payload) {
+    const run_decrypt = async () => {
+
+      fetch(file_path)
+        .then((res) => res.text())
+        .then((encText) => verifyEncryptedResource(encText, token))
+        .then((check) => {
+          if (!check) throw new Error("Incorrect verification failed");
+          setVerified(true);
+          setPasskey(token);
+        })
+      .catch((err) => { 
+        console.error("Failed to load character data:", err);
         setVerified(false);
-        return;
-      }
+      })
+      .finally(() => {
+          setLoading(false);
+      });
 
-      setVerified(true);
-      const extractedKey = await extractPassKey(PUBLIC_KEY_PEM, token);
-      setPasskey(extractedKey || "???");
-    } catch (err) {
-      console.error("Verification failed:", err);
-      setVerified(false);
-    } finally {
-      setLoading(false);
-    }
-  };
+    };
 
-  run_decrypt();
+    run_decrypt();
 
   }, []);
 
@@ -56,5 +54,5 @@ export default function SylbenPage() {
       </div>
     </main>);
 
-  return <main id="main_dnd"><Characters path="/data/characters/sylben.json.enc" passkey={passkey} /></main>;
+  return <main id="main_dnd"><Characters path={file_path} passkey={passkey} /></main>;
 }

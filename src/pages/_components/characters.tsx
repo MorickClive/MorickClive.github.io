@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {decryptData} from "./characters/decrypt_json";
+import {decryptData} from "./encryption/decrypt_json";
 
 function BackgroundEntry({ title, character, attribute } : { title: string, character: any, attribute: string }) {
   return (
