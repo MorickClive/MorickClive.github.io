@@ -26,9 +26,7 @@ export default function App() {
     <div className="App">
       <Header />
       <div id="frontLayer">
-        <main id="main">
           <Outlet />
-        </main>
         <SiteFooter />
       </div>
       <div id="backLayer"></div>

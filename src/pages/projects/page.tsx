@@ -5,7 +5,7 @@ import getProjects from '../../components/getProjects';
 const projectTypes = ["University", "Hobby"];
 
 export default function Projects() {
-    return <>
+    return <main id="main">
         <div className="container">
             <h2 className='titleHeader'>Overview</h2>
             <hr className="article" />
@@ -20,7 +20,7 @@ export default function Projects() {
             </div>
         </div>
         {ProjectSections(getProjects())}
-    </>
+    </main>
 }
 
 function ProjectSections(data: Project[]) {

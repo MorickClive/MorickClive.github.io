@@ -16,3 +16,15 @@ export async function verifyToken(PUBLIC_KEY_PEM: string, token: string, expecte
     return null;
   }
 }
+
+export async function extractPassKey(PUBLIC_KEY_PEM: string, token: string) {
+  try {
+    const publicKey = await jose.importSPKI(PUBLIC_KEY_PEM, "EdDSA");
+    const { payload } = await jose.jwtVerify(token, publicKey);
+    
+    return (String)(payload.decrypt_code);
+  } catch (err) {
+    console.error("JWT verification failed:", err);
+    return null;
+  }
+}

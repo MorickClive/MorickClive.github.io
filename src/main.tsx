@@ -2,13 +2,13 @@
 import './scss/index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Home from './pages/home/page';
 import About from './pages/about/page';
 import Blog from './pages/blog/page';
 import Projects from './pages/projects/page';
-import SylbenPage from './pages/sylben';
+import SylbenPage from './pages/characters/sylben';
 import Contact from './pages/contact/page';
 import WorkInProgress from './pages/work-in-progress/page'
 

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function Portal() {
-    return <>
+    return <main id="main">
         <div className="container flex center">
             <div id="portal">
                 <h1>Welcome to my Site!</h1>
@@ -9,5 +9,5 @@ export default function Portal() {
             <hr className="footer" />
             <p>Checkout my <Link to="/about">[About Page]</Link> for more information.</p>
         </div>
-    </>;
+    </main>;
 }

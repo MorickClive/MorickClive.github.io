@@ -3,7 +3,7 @@ export const metadata = {title : '404 - Not Found'};
 
 export default function NotFound() {
 	
-	return (<>
+	return (<main id="main">
 			<div className="container">
 				<div style={{"textAlign":"center", "margin":" 5vh 0vh"}} >
 					<hr className="page" style={{"margin":"50px auto"}} />
@@ -12,6 +12,6 @@ export default function NotFound() {
 					<hr className="page" style={{"margin":"50px auto"}} />
 				</div>
 			</div>
-	</>
+	</main>
 	);
 };

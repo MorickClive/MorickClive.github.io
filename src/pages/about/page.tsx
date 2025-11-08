@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import SkillList from "./components/SkillList";
 
 export default function about() {
-    return <>
+    return <main id="main">
         <div className="container" >
             <h1 className="titleHeader">Alan Davies</h1>
             <hr className="header" />
@@ -29,7 +29,7 @@ export default function about() {
         <div className="container" >
             <Hobbies />
         </div>
-    </>
+    </ main>
 }
 
 const PreviousRoles = () => {
