@@ -2,11 +2,10 @@ import { useEffect, useState } from "react";
 import { verifyEncryptedResource } from "../_components/encryption/decrypt_json";
 import Characters from "../_components/characters";
 
-// Set as abstract component
-export default function SylbenPage() {
-  const common_path = "/data/characters/sylben/";
-  const file_path = `${common_path}/sylben.json.enc`;
-  const image_key = `${common_path}/img/sylben.key`;
+export default function CaspianPage() {
+  const common_path = "/data/characters/caspian/";
+  const file_path = `${common_path}/caspian.json.enc`;
+  const image_key = `${common_path}/img/caspian.key`;
   const [verified, setVerified] = useState(false);
   const [loading, setLoading] = useState(true);
   const [passkey, setPasskey] = useState<string>("???");
@@ -50,7 +49,7 @@ export default function SylbenPage() {
     <main id="main_dnd">
       <div className="characters-page">
         <div className="overview block">
-          <h3>Sheet: Sylben Tanner</h3>
+          <h3>Sheet: Caspian Lovett</h3>
           <p>Access denied.</p>
           <p>Invalid or missing token.</p>
         </div>

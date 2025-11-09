@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import {decryptData} from "./encryption/decrypt_json";
+import EncryptedImage  from "./encryption/decrypt_png";
 
 function BackgroundEntry({ title, character, attribute } : { title: string, character: any, attribute: string }) {
   return (
@@ -29,12 +30,12 @@ function BackgroundList({ title, character, attribute } : { title: string, chara
   );
 }
 
-export default function Characters({path, passkey}: {path: string, passkey: string}) {
+export default function Characters({path, passkey, imageKey}: {path: string, passkey: string, imageKey: string}) {
   //const [characters, setCharacters] = useState([]);
   const [activeCharacter, setActiveCharacter] = useState(null);
 
   useEffect(() => {
-    fetch(path)
+    fetch(path, { cache: "no-store" })
       .then((res) => res.text())
       .then((encText) => decryptData(encText, passkey))
       .then((decryptedJsonStr) => JSON.parse(decryptedJsonStr))
@@ -56,11 +57,12 @@ export default function Characters({path, passkey}: {path: string, passkey: stri
 
         <div className="overview block">
           <h3>Overview</h3>
-          <img
+          {/* <img
             src={activeCharacter.meta.image}
             alt={activeCharacter.character.name}
             className="character-image"
-          />
+          /> */}
+          <EncryptedImage character={activeCharacter} keyBase64={imageKey} />
           <p><strong>Race:</strong> {activeCharacter.character.race}</p>
           <p><strong>Gender:</strong> {activeCharacter.character.appearance.gender}</p>
           <p><strong>Age:</strong> {activeCharacter.character.appearance.age}</p>

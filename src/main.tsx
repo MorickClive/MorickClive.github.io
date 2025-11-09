@@ -9,6 +9,9 @@ import About from './pages/about';
 import Blog from './pages/blog';
 import Projects from './pages/projects';
 import SylbenPage from './pages/characters/sylben';
+import ImralaPage from './pages/characters/imrala';
+import CaspianPage from './pages/characters/caspian';
+import ZonePage from './pages/characters/zone';
 import Contact from './pages/contact';
 import WorkInProgress from './pages/redirects/work-in-progress'
 
@@ -25,6 +28,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="wip" element={<WorkInProgress />} />
           <Route path="characters" >
             <Route path="sylben" element={<SylbenPage />} />
+            <Route path="imrala" element={<ImralaPage />} />
+            <Route path="caspian" element={<CaspianPage />} />
+            <Route path="zone" element={<ZonePage />} />
           </Route>
           <Route path="*" element={<WorkInProgress />} />
         </Route>

@@ -15,7 +15,9 @@ export default function App() {
       '/blog': 'Blog',
       '/projects': 'Projects',
       '/contact': 'Contact',
-      '/characters/sylben': "Sylben Tanner"
+      '/characters/sylben': "Sylben Tanner",
+      '/characters/imrala': "Imrala Dirthor",
+      '/characters/caspian': "Caspian Lovett"
     };
 
     const pageTitle = titleMap[location.pathname] || 'Not Found';
