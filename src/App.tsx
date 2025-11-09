@@ -17,7 +17,8 @@ export default function App() {
       '/contact': 'Contact',
       '/characters/sylben': "Sylben Tanner",
       '/characters/imrala': "Imrala Dirthor",
-      '/characters/caspian': "Caspian Lovett"
+      '/characters/caspian': "Caspian Lovett",
+      '/characters/zone': "Zone of the Lost",
     };
 
     const pageTitle = titleMap[location.pathname] || 'Not Found';
