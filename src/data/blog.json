@@ -16,21 +16,75 @@
             "date": "24/06/2023"
         }
     },
-    {"mainTitle": "Website Updates",
+    {"mainTitle": "Website Update: 13/07/2023",
         "intro": {
             "title": "Intro",
-            "content": "<p>As part of the development of this site, I wanted to create a site that presents some of the projects I’ve been working on; this post is just an update from the last post.</p>"
+            "content": "<p>As part of the development of this site, I wanted to create a site that presents some of the projects I've been working on; this post is just an update from the last post.</p>"
         },
         "body": {
             "title": "What's New?",
-            "content": "<p>I’ve been able to add significant project pages and respective links to each of my University projects; there are some coding-specific projects I’ve yet to add(such as the C++ pancake decorator pattern & OpenGL mesh rendering technique), as well as a few hobby projects I’ve not put priority on to add to the site just yet.</p><h4>Image Carousel</h4><p>Using custom CSS and React components I have created image galleries for the project Pages, adding a visual element of some of the works and achievements I’ve accrued during my time in university as well as my hobby achievements.</p><h4>Site Footer</h4><p>The contact page used to have social media redirects; I’ve now included a site footer that lists social media icons for specific sites. Because of the nature of this site, media sites will primarily be professional profiles as they provide the most value to identifying my technical expertise.</p><h4>Custom Styling</h4><p>Scss has been a surprising tool in creating the style of this site; it’s provided insight into how to implement and maintain the layout. I’m still exploring ways to remove redundancy that results from inheritance, balancing the implications of global styling against page-specific styles.</p>"
+            "content": "<p>I've been able to add significant project pages and respective links to each of my University projects; there are some coding-specific projects I've yet to add(such as the C++ pancake decorator pattern & OpenGL mesh rendering technique), as well as a few hobby projects I've not put priority on to add to the site just yet.</p><h4>Image Carousel</h4><p>Using custom CSS and React components I have created image galleries for the project Pages, adding a visual element of some of the works and achievements I've accrued during my time in university as well as my hobby achievements.</p><h4>Site Footer</h4><p>The contact page used to have social media redirects; I've now included a site footer that lists social media icons for specific sites. Because of the nature of this site, media sites will primarily be professional profiles as they provide the most value to identifying my technical expertise.</p><h4>Custom Styling</h4><p>Scss has been a surprising tool in creating the style of this site; it's provided insight into how to implement and maintain the layout. I'm still exploring ways to remove redundancy that results from inheritance, balancing the implications of global styling against page-specific styles.</p>"
         },
         "ending": {
             "title": "What's Next?",
-            "content": "<p>I’m quite happy about how this site has turned out; it may not be perfect; however, it has been an interesting few weeks of exploring React and modifying the original single-page application that it used to be.</p><p>There are a few areas I’d like to add; I have gathered these points and created a list below.</p><h3>Project Scroller</h3><details><summary>expand</summary><p>There’s a scrolling issue with the projects page; I want to outline five projects visible at any time; this might mean I’ll be focusing on identifying the scaling issue so that the cards reside within the bounding box.</p></details><h3>Blog Page improvements</h3><details><summary>expand</summary><p>The blog page will eventually overflow and become difficult to view; I’d like to ensure that there is an easy way to get the most out of the page. Adding a floating window to display posts from different years and incorporating link anchors to these items; should provide a navigational aid and overview of the posts I’ve released.</p></details><h3>Testing & Maintaince</h3><details><summary>expand</summary><p>Adding testing will give an overview of what functions/methods of implementation practices and where I can refine certain functions. Exploration of React Next.js is good; best practice is better and helps reinforce maintainability.</p><p>Whilst I’ve worked with Junit and Mockito, following SOLID principles, I’ve not looked into the presentation layer and type/javascript approaches given the more asynchronous behaviours; however, building the site up to support modularity and maintainability should be the goal.</p><p>At some point, I’d like to explore adding a webpage widget to demonstrate the Dungeons & Dragons explorable map; this will be an interesting project to implement. Previously I looked into this during my Angular9 skill refresh from AngularJS but only integrated a PDF viewer; the feature allowed me to quickly select a specific D&D PDF to reference whilst hosting my game(quick official book searches are surprisingly easy to scan through using PDF search tools).</p></details><hr /><p>I’ve outlined the potential issues to implement in the following priority order:</p><details><summary>expand</summary><h4>Must:</h4><ul><li>Scrolling/overflow issues on the projects page.</li></ul><h4>Should:</h4><ul><li>Update additional projects from Uni and Hobby Works.</li><li>Collapse/Expandable blog messages with custom Styling.</li><li>Maintain code by incorporating Jest test coverage(95%) for the site.</li></ul><h4>Could: </h4><ul><li>Modify the backdrop graphic to even out the colour distribution.</li><li>Add a timeline for blog posts</li><ul> <li>Using chronologically listed anchors</li><li>Specific fetch requests for blog posts in certain years.</li></ul></ul><h4>Would Like:</h4><ul><li>D&D map display.</li></ul></details>"
+            "content": "<p>I'm quite happy about how this site has turned out; it may not be perfect; however, it has been an interesting few weeks of exploring React and modifying the original single-page application that it used to be.</p><p>There are a few areas I'd like to add; I have gathered these points and created a list below.</p><h3>Project Scroller</h3><details><summary>expand</summary><p>There's a scrolling issue with the projects page; I want to outline five projects visible at any time; this might mean I'll be focusing on identifying the scaling issue so that the cards reside within the bounding box.</p></details><h3>Blog Page improvements</h3><details><summary>expand</summary><p>The blog page will eventually overflow and become difficult to view; I'd like to ensure that there is an easy way to get the most out of the page. Adding a floating window to display posts from different years and incorporating link anchors to these items; should provide a navigational aid and overview of the posts I've released.</p></details><h3>Testing & Maintaince</h3><details><summary>expand</summary><p>Adding testing will give an overview of what functions/methods of implementation practices and where I can refine certain functions. Exploration of React Next.js is good; best practice is better and helps reinforce maintainability.</p><p>Whilst I've worked with Junit and Mockito, following SOLID principles, I've not looked into the presentation layer and type/javascript approaches given the more asynchronous behaviours; however, building the site up to support modularity and maintainability should be the goal.</p><p>At some point, I'd like to explore adding a webpage widget to demonstrate the Dungeons & Dragons explorable map; this will be an interesting project to implement. Previously I looked into this during my Angular9 skill refresh from AngularJS but only integrated a PDF viewer; the feature allowed me to quickly select a specific D&D PDF to reference whilst hosting my game(quick official book searches are surprisingly easy to scan through using PDF search tools).</p></details><hr /><p>I've outlined the potential issues to implement in the following priority order:</p><details><summary>expand</summary><h4>Must:</h4><ul><li>Scrolling/overflow issues on the projects page.</li></ul><h4>Should:</h4><ul><li>Update additional projects from Uni and Hobby Works.</li><li>Collapse/Expandable blog messages with custom Styling.</li><li>Maintain code by incorporating Jest test coverage(95%) for the site.</li></ul><h4>Could: </h4><ul><li>Modify the backdrop graphic to even out the colour distribution.</li><li>Add a timeline for blog posts</li><ul> <li>Using chronologically listed anchors</li><li>Specific fetch requests for blog posts in certain years.</li></ul></ul><h4>Would Like:</h4><ul><li>D&D map display.</li></ul></details>"
         },
         "meta": {
             "date": "13/07/2023"
+        }
+    },
+    {
+        "mainTitle": "Campaign Reflections & Finding Balance: 01/11/2025",
+        "intro": {
+            "title": "Intro",
+            "content": "<p>I've recently started another D&D campaign. There's a part of me that feels a little sad—my first campaign now lies dormant, set aside due to shifting schedules. Still, I hope I can return to it one day and continue what we began.</p>"
+        },
+        "body": {
+            "title": "Building on Past Lessons",
+            "content": "<p>This new setting expands upon my previous campaign, reusing map features while developing a more abstract, full-world structure. It's been an opportunity to reduce overplanning and focus on narrative flexibility.</p><p>My first campaign was my first real attempt at storytelling on this scale. I learned a lot from its rough edges, especially where I misplaced my planning effort—thinking too much about grand plotlines instead of the player experience. This time, I'm guided by the question: <em>what matters most?</em></p><h4>Player-Centric Philosophy</h4><p>As a Game Master, I aim to build a believable, immersive world, but the players' experience must take priority. It's their choices, not my worldbuilding alone, that bring the setting to life. Balancing depth and agency has become my central design goal.</p><h4>From Maps to Roleplay</h4><p>My background in Command & Conquer map design taught me to find structure through creation. But this campaign emphasizes roleplay over mechanics. I've also been developing a D&D tracker tool to help manage NPC relationships and track key entities—making it easier to maintain story continuity.</p>"
+        },
+        "ending": {
+            "title": "Closing Thoughts",
+            "content": "<p>The campaign began around <strong>20/07/2025</strong> and runs bi-weekly. Returning to this rhythm of preparation and improvisation has been refreshing. My hope is that the experience is as rewarding for my players as it has been for me—one built on collaboration, learning, and shared storytelling.</p>"
+        },
+        "meta": {
+            "date": "01/11/2025"
+        }
+    },
+    {
+        "mainTitle": "On Encryption & Character Sheets: 07/11/2025",
+        "intro": {
+            "title": "Intro",
+            "content": "<p>Recently, I've begun exploring ways to integrate D&D character sheets into this site. The idea is to create a digital reference point for character development and campaign tracking, while also providing a tangible goal to drive continued front-end improvements.</p>"
+        },
+        "body": {
+            "title": "Implementing Encryption and Security",
+            "content": "<p>As part of this challenge, I wanted to implement a basic form of encryption so that non-technical users can't access restricted pages without the correct passkey. This has led me into a field I've only briefly explored before—public-private key relationships and data protection.</p><p>By encrypting sensitive files (such as character data and images) stored within a Git repository, I can share access securely with other Game Masters using unique URLs—without requiring logins or resource-heavy applications. While not foolproof, it's a practical solution for casual collaboration.</p><h4>Learning with AI</h4><p>I'll admit—AI has fueled much of this exploration. While it's helped me implement complex concepts like encryption, I remain cautious about convenience replacing understanding. Coding tools should empower insight, not obscure it. Good design comes from sound practice, not automation alone.</p>"
+        },
+        "ending": {
+            "title": "Reflections",
+            "content": "<p>This project blends technical curiosity with creative intent. By applying cryptographic principles to a game-related context, I've found a meaningful way to practice both secure coding and iterative design. It's a reminder that learning by doing often teaches the most.</p>"
+        },
+        "meta": {
+            "date": "07/11/2025"
+        }
+    },
+    {
+        "mainTitle": "Website & World Building Update: 10/11/2025",
+        "intro": {
+            "title": "Intro",
+            "content": "<p>Around June, I wanted to update this site to increment the copyright year to 2025. Unfortunately, it turned out that the method invocation wasn't as dynamic as I had hoped, resulting in broken CSS and deployment issues on GitHub Pages.</p>"
+        },
+        "body": {
+            "title": "Building with Vite and Exploring Leaflet.js",
+            "content": "<p>This year, I've had the opportunity to work with <strong>Vite</strong>, initially for my local D&D game tracker. I suspected it might also help reconstruct this website to explore <strong>Leaflet.js</strong> and its potential for hosting interactive points of interest across my campaign's world map.</p><p>Working with Vite has improved both speed and build structure, opening ideas for more dynamic content generation. I'm excited to explore how this can translate into a flexible platform for creative world-building.</p><h4>Future Direction</h4><p>With a bit of luck, I hope to adapt my D&D campaign setting into this website—turning it into a digital archive that I can manage and share with others who share my passion for tabletop storytelling and creative design.</p>"
+        },
+        "ending": {
+            "title": "Looking Ahead",
+            "content": "<p>This update may be small in scope, but it lays the groundwork for something more cohesive: an online hub for my campaign setting, player references, and technical experiments that merge creativity and development practice.</p>"
+        },
+        "meta": {
+            "date": "10/11/2025"
         }
     }
 ]
