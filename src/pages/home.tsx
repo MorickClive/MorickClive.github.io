@@ -7,7 +7,7 @@ export default function Portal() {
                 <h1>Welcome to my Site!</h1>
             </div>
             <hr className="footer" />
-            <p>Checkout my <Link to="/about">[About Page]</Link> for more information.</p>
+            <p>Checkout my <Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}>[About Page]</Link> for more information.</p>
         </div>
     </main>;
 }

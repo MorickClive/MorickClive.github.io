@@ -2,8 +2,7 @@ import './index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import type { Project } from './data/types/types';
-import projectsData from './data/projects.json';
+import ScrollToTop from './pages/_components/home/scrollFunction';
 
 import App from './App';
 import Home from './pages/home';
@@ -20,6 +19,7 @@ const characterPaths = ["Sylben Tanner", "Imrala Drithor", "Caspian Lovett", "Zo
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter basename="/">
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />

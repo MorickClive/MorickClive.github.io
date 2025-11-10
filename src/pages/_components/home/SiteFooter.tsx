@@ -6,6 +6,6 @@ export default function SiteFooter() {
         <a title="LinkedIn" href="https://www.linkedin.com/in/alan-davies-b9957b100/" target="_blank" rel="noopener noreferrer"><GrLinkedin /></a>
         <h4>|</h4>
 
-        <em>Alan Davies. © {new Date().getFullYear()}</em>
+        <em>Alan Davies. © 2022 - {new Date().getFullYear()}</em>
     </footer>
 }

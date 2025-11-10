@@ -34,13 +34,13 @@ export default function CommunityMapDevelopmentProject() {
             <hr />
             <h4><strong>Links</strong></h4>
             <ul>
-                <li><Link to="https:www.cnclabs.com/forums/default.aspx?g=posts&t=9040" target="_blank" >CnCLabs Forum post "<b>Battlebase Koi</b>"</Link></li>
-                <li><Link to="https:www.cnclabs.com/forums/default.aspx?g=posts&t=9015" target="_blank" >CnCLabs Forum post "<strong>A Place in the Heavens</strong>"</Link></li>
+                <li><a href="https:www.cnclabs.com/forums/default.aspx?g=posts&t=9040" target="_blank" rel="noopener">CnCLabs Forum post "<b>Battlebase Koi</b>"</a></li>
+                <li><a href="https:www.cnclabs.com/forums/default.aspx?g=posts&t=9015" target="_blank" rel="noopener">CnCLabs Forum post "<strong>A Place in the Heavens</strong>"</a></li>
             </ul>
             <hr />
             <p><em>Created with: "Command & Conquer: Red Alert™ 3 WorldBuilder"<br />Created by: Alan Davies(Tiberian Fiend), 2007-2010.</em></p>
             <hr />
-            <p><em>Disclaimer:<br />I do not claim to own any part of Command and Conquer Red Alert 3, all assets/engine code belong to their respective owners. These projects were built purely for the benefit of the Red Alert 3 community from publicly available tool sets.<br /><br />If you own this material and wish it removed please <a href="../contact">contact</a> me.</em></p>
+            <p><em>Disclaimer:<br />I do not claim to own any part of Command and Conquer Red Alert 3, all assets/engine code belong to their respective owners. These projects were built purely for the benefit of the Red Alert 3 community from publicly available tool sets.<br /><br />If you own this material and wish it removed please <Link to="/contact">contact</Link> me.</em></p>
             <hr />
             <Link className="project__return-link" to={`/projects`}> Return </Link>
         </div >
