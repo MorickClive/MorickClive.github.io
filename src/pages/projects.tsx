@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Project } from '../data/types/types';
-import getProjects from './_components/projects/getProjects';
+import projectsData from '../data/projects.json';
 
 const projectTypes = ["University", "Hobby"];
 
@@ -13,13 +13,8 @@ export default function Projects() {
             <p>I've worked on many different projects, I've provided a few projects below for viewing.</p>
             <em>~ If there is a project you'd like to know more about then please contact me, I can update the site or pass you some additional details upon request. ~</em>
             
-		    <div className="wipBox">
-                <hr className="article top"/>
-                <h1 className="constructionBanner">Migration in Progress!</h1>
-                <hr className="article bottom" />
-            </div>
         </div>
-        {ProjectSections(getProjects())}
+        {ProjectSections(projectsData)}
     </main>
 }
 

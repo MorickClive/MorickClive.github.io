@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function UnityResearch() {
 
-    return <>
+    return <main id="main">
         <div className="container project">
             <h2>Unity Research Project: C#</h2>
             <hr />
@@ -19,7 +19,7 @@ export default function UnityResearch() {
                 <hr />
                 <h4>Final Scenes</h4>
                 <hr />
-                <Carousel height="400px" imgList={getImageGallery("unity_research")} />
+                <Carousel height="400px" imgList={getImageGallery("unityResearch")} />
             </div>
             <p>Another development of this project is a custom raycaster as part of the challenge of creating interaction in a 3-dimensional space. Using a raycaster allows the user to target objects in a scene with a first-person camera by firing a line to collide with a specific object; I had to write a custom raycaster that enables the use of interaction with the first-person camera controller as the provided system for Unity had collision issues with the crosshair object and thus failed to behave successfully.</p>
             <p>Through the combination of the raycaster and material swapper, I created a model set in the scene that a user could click on and change the texture/material that coated it; I hoped that it would present as a good feature, demonstrating different atmospheres by allowing the user to change the model - using provided materials and surfaces.</p>
@@ -29,7 +29,7 @@ export default function UnityResearch() {
             <hr /><p><em>Created with: C#, MonoDevelop&nbsp;and Cg shader language.</em></p>
             <p><em>Created by: Alan Davies</em></p>
             <hr />
-            <Link className="project__return-link" to={`../projects#unity_research`}> Return </Link>
+            <Link className="project__return-link" to={`/projects`}> Return </Link>
         </div>
-    </>
+    </main>
 }

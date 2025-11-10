@@ -1,5 +1,5 @@
 import { useParams, Navigate } from 'react-router-dom';
-import getProjects from                     './getProjects';
+import projectsData from '../../../data/projects.json';
 import AssassinsShadowProject from          '../../projects/uniTeamProject1';
 import CommunityMapDevelopmentProject from  '../../projects/rtsCustomMaps';
 import DestructDroid from                   '../../projects/uniTeamProject2';
@@ -23,7 +23,7 @@ const PROJECT_COMPONENTS: Record<string, React.ComponentType> = {
 
 export default function ProjectDetails() {
     const { projectId } = useParams();
-    const project = getProjects().find(p => p.id === projectId);
+    const project = projectsData.find(p => p.id === projectId);
 
     if (!project || !PROJECT_COMPONENTS[projectId as string]) {
         return <Navigate to="/projects" replace />;

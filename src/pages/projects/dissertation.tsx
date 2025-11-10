@@ -2,10 +2,10 @@ import getImageGallery from "../_components/projects/getImageGallery";
 import Carousel from "../_components/projects/imageCarousel";
 import { Link } from "react-router-dom";
 
-const imageList = getImageGallery("procedural_material_generation");
+const imageList = getImageGallery("dissertation");
 
 export default function Procedural() {
-    return <>
+    return <main id="main">
         <div className="container project">
             <h2>Dissertation – Procedural Materials</h2>
             <hr />
@@ -35,8 +35,8 @@ export default function Procedural() {
             <p ><em>Created by Alan Davies, 2016.</em></p>
             <p ><em>Supervised by Paul Angel &amp; Carl Jones (2016, University of South Wales).</em></p>
             <hr />
-            <Link className="project__return-link" to="/projects#procedural_material_generation"> Return </Link>
+            <Link className="project__return-link" to="/projects"> Return </Link>
         </div>
-    </>
+    </main>
 }
 

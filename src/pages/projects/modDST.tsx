@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function DSTMod() {
 
-    return <div className="container project">
+    return <main id="main"><div className="container project">
             <h2>Mod: Warrick the Afflicted, Don't Starve Together</h2>
             <hr />
             <p>Whilst seeking my first role after graduating, I began exploring ways to incorporate my passion for coding with my gaming.</p>
@@ -24,7 +24,7 @@ export default function DSTMod() {
             <div className="flex center" >
                 <h3>Image Gallery</h3>
                 <hr />
-                <Carousel height="300px" imgList={getImageGallery("dst_mod")} />
+                <Carousel height="300px" imgList={getImageGallery("modDST")} />
                 <hr />
                 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=935464768" target="_blank" rel="noopener" > [ Steam Workshop: Warrick the Afflicted ] </a >
                 <hr />
@@ -34,6 +34,7 @@ export default function DSTMod() {
             <hr />
             <p><em>Created with:<br />LUA, XML, Don't Starve Mod Tools.<br />Testing Tool: Don't Starve Together Dedicated Server.&nbsp;</em></p>
             <hr />
-            <Link className="project__return-link" to={`../projects#dst_mod`}> Return </Link>
+            <Link className="project__return-link" to={`/projects`}> Return </Link>
         </div>
+        </main>;
 }

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function CommunityMapDevelopmentProject() {
 
-    return <>
+    return <main id="main">
         <div className="container project">
             <h2>Command & Conquer: Community Map Development</h2>
             <hr />
@@ -20,7 +20,7 @@ export default function CommunityMapDevelopmentProject() {
             <hr />
             <h4>Final Scenes</h4>
             <hr />
-            <Carousel height="400px" imgList={getImageGallery("community_map_development")} />
+            <Carousel height="400px" imgList={getImageGallery("rtsCustomMaps")} />
             <hr />
             <h4><u>Competition winner</u></h4>
             <p>As part of my creation efforts, I entered a contest with “CnCMaps.com”, creating the map “Battle Base Koi” as my entry and succeeding in reaching first place. Sponsored by Electronic Arts in 2009, the contest included prizes by EA and included:</p>
@@ -42,7 +42,7 @@ export default function CommunityMapDevelopmentProject() {
             <hr />
             <p><em>Disclaimer:<br />I do not claim to own any part of Command and Conquer Red Alert 3, all assets/engine code belong to their respective owners. These projects were built purely for the benefit of the Red Alert 3 community from publicly available tool sets.<br /><br />If you own this material and wish it removed please <a href="../contact">contact</a> me.</em></p>
             <hr />
-            <Link className="project__return-link" to={`../projects#community_map_development`}> Return </Link>
+            <Link className="project__return-link" to={`/projects`}> Return </Link>
         </div >
-    </>
+    </main>
 }

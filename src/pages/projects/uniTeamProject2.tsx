@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function DestructDroid() {
 
-    return <>
+    return <main id="main">
         <div className="container project">
             <h2>Team Project: Destruct Droid</h2>
             <hr />
@@ -46,7 +46,7 @@ export default function DestructDroid() {
             <div className="flex center" >
                 <h4>Final Scenes</h4>
                 <hr />
-                <Carousel height="400px" imgList={getImageGallery("destruct_droid")} />
+                <Carousel height="400px" imgList={getImageGallery("uniTeamProject2")} />
             </div>
             <p>As part of delivering a rounded experience, I wanted to ensure that we had some city defences to provide a threat to the player when they attempted to destroy the city levels; during a meeting, I presented some example models we could use as prototype tanks and helicopter models.</p>
             <p>Working closely with J. Evans, who worked with AI/pathing aspects of the game, we ensured turret movement acted separately from the body of the tank and manually tested the result of the enemy.</p>
@@ -61,7 +61,7 @@ export default function DestructDroid() {
             </details>
             <p><em><strong>Module Lecturer</strong>: Mike Reddy&nbsp;(University of South Wales)</em></p>
             <hr />
-            <Link className="project__return-link" to={`../projects#destruct_droid`}> Return </Link>
+            <Link className="project__return-link" to={`/projects`}> Return </Link>
         </div>
-    </>
+    </main>
 }

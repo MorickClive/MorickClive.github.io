@@ -1,8 +1,8 @@
 import type { Project } from    '../../../data/types/types';
-import getProjects from './getProjects';
+import projectsData from '../../../data/projects.json';
 
 export default function getImageGallery(projectID: string) {
-    const projects: Array<Project> = getProjects();   
+    const projects: Array<Project> = projectsData;   
     const project : Project | undefined = projects.find(project => project.id === projectID);
     if(project !== undefined) {
         return project.imageURLs;
