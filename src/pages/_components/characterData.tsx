@@ -1,36 +1,9 @@
-import { useState, useEffect } from "react";
-import {decryptData} from "./encryption/decrypt_json";
-import EncryptedImage  from "./encryption/decrypt_png";
 
-function BackgroundEntry({ title, character, attribute } : { title: string, character: any, attribute: string }) {
-  return (
-    <>
-      <p><strong>{title}:</strong></p>
-      <div className="story-block">
-        {
-            Object.entries(character[attribute]).map(([key, val]) => (
-                <p key={key}><strong>{key.charAt(0).toUpperCase() + key.slice(1)}:</strong> {val}</p>
-            ))
-        }
-      </div>
-      </>
-  );
-}
+import { useEffect, useState } from "react";
+import { decryptData } from "../_components/encryption/decrypt_json";
+import EncryptedImage  from "../_components/encryption/decrypt_png";
 
-function BackgroundList({ title, character, attribute } : { title: string, character: any, attribute: string }) {
-  return (
-    <>
-      <p><strong>{title}:</strong></p>
-      <ul className="story-block">
-        {character[attribute].split('\n').map((line:any, idx:any) => (
-          <li key={idx}>{line}</li>
-        ))}
-      </ul>
-    </>
-  );
-}
-
-export default function Characters({path, passkey, imageKey}: {path: string, passkey: string, imageKey: string}) {
+export default function CharacterData({path, passkey, imageKey}: {path: string, passkey: string, imageKey: string}) {
   //const [characters, setCharacters] = useState([]);
   const [activeCharacter, setActiveCharacter] = useState(null);
 
@@ -89,18 +62,7 @@ export default function Characters({path, passkey, imageKey}: {path: string, pas
           {activeCharacter.character.notes.split('\\n').map((line:any, idx:any) => (
             <p key={idx}>{line}</p>
           ))}
-        </div>
-
-        {/* <div className="background block">
-          <h3>Background</h3>
-          <BackgroundEntry title="Appearance" character={activeCharacter.character} attribute="appearance" />
-          <BackgroundList title="Bonds" character={activeCharacter.character.background_details} attribute="bonds" />
-          <BackgroundEntry title="Traits" character={activeCharacter.character.background_details} attribute="personality_traits" />
-          <BackgroundEntry title="Ideals" character={activeCharacter.character.background_details} attribute="ideals" />
-          <BackgroundEntry title="Flaws" character={activeCharacter.character.background_details} attribute="flaws" />
-          <BackgroundEntry title="Backstory" character={activeCharacter.character} attribute="notes" />
-        </div> */}
-        
+        </div>        
       </section>
     </div>
   );
